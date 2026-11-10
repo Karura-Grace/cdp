@@ -1,0 +1,138 @@
+/* Staff app, option C (owner pick Q-RD2-5 and Q-RD3, 27 and 28 Oct 2026): cream canvas, white cards with hairlines and large radius, pill chips and buttons, Inter. The frame lives in portal.css (.af). Scoped to .stf. */
+.stf{
+  --paper:#FAF7F2; --paper-2:#F3EEE5; --ink:#131313; --grey:#706F6F; --orange:#EB5733; --orange-d:#C2401D;
+  --line:rgba(19,19,19,.09); --line-2:rgba(19,19,19,.16); --hit:#2F6F40; --blue:#2E86C1; --amber:#A86A00; --bad:#B3261E; --hair:#E9E2D6; --soft:#F4EFE6;
+  --e1:0 1px 2px rgba(19,19,19,.06),0 0 0 1px rgba(19,19,19,.04);
+  --e2:0 10px 30px rgba(19,19,19,.08),0 1px 3px rgba(19,19,19,.06);
+  --ease:cubic-bezier(.23,1,.32,1);
+  font-family:var(--font-inter),'Roboto','Open Sans',system-ui,sans-serif; font-size:14px; line-height:1.5;
+  background:var(--paper); color:var(--ink); min-height:100vh;
+}
+.stf{--o:var(--orange);--o-dark:var(--orange-d);--muted:var(--grey);--font-poppins:var(--font-inter)}
+.stf *{box-sizing:border-box}
+.stf h1,.stf h2,.stf h3{font-family:inherit;letter-spacing:-.01em}
+
+.stf [id]{scroll-margin-top:96px}
+
+/* buttons */
+.stf .sbtn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1.5px solid var(--ink);background:var(--ink);color:#fff;border-radius:999px;padding:9px 18px;min-height:40px;font:700 13px/1 inherit;font-family:inherit;text-decoration:none;cursor:pointer;transition:transform .12s var(--ease),background-color .15s var(--ease),box-shadow .15s var(--ease)}
+.stf .sbtn:hover{box-shadow:var(--e2)}
+.stf .sbtn:active{transform:scale(.97)}
+.stf .sbtn.orange{background:var(--orange);border-color:var(--orange);color:var(--ink)}
+.stf .sbtn.orange:hover{background:var(--orange-d);border-color:var(--orange-d)}
+.stf .sbtn.ghost{background:transparent;color:var(--ink);border-color:var(--line-2)}
+.stf .sbtn.ghost:hover{border-color:var(--ink);background:#fff}
+.stf .sbtn:disabled{opacity:.45;cursor:not-allowed;box-shadow:none}
+.stf .sbtn:focus-visible,.stf a:focus-visible,.stf button:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+
+/* surfaces */
+.stf .scard{background:#fff;border:1px solid var(--hair,#E9E2D6);border-radius:22px;padding:20px 22px;margin-bottom:18px}
+.stf .scard h2{font-size:16px;font-weight:800;letter-spacing:-.01em}
+.stf .scard-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.stf .smuted{color:var(--grey)}
+.stf .ssmall{font-size:12.5px}
+
+/* KPI strip */
+.stf-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:18px}
+.stf-kpi{background:#fff;border:1px solid var(--hair,#E9E2D6);border-radius:22px;padding:18px 20px}
+.stf-kpi .l{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--grey)}
+.stf-kpi .v{font-size:clamp(28px,3.4vw,38px);font-weight:800;letter-spacing:-.03em;line-height:1;margin-top:8px;font-variant-numeric:tabular-nums}
+.stf-kpi .n{font-size:12px;color:var(--grey);margin-top:4px}
+
+/* tags */
+.stf .stag{display:inline-flex;align-items:center;gap:6px;height:24px;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:0 10px;border-radius:999px;background:#F4EFE6;color:#5a5750;white-space:nowrap}
+.stf .stag.ok{background:#e6f1e8;color:var(--hit)}
+.stf .stag.warn{background:#fbf0da;color:var(--amber)}
+.stf .stag.orange{background:#fdeee9;color:var(--orange-d)}
+.stf .stag.blue{background:#e3eef7;color:#1F6A9C}
+
+/* stage tracker: the engagement states as a path */
+.stf-stages{display:flex;gap:0;margin:2px 0 16px;overflow-x:auto;scrollbar-width:thin;padding-bottom:4px}
+.stf-stage{flex:1 1 0;min-width:104px;white-space:nowrap;position:relative;padding-top:18px;font-size:11.5px;font-weight:600;color:var(--grey);text-align:center}
+.stf-stage::before{content:"";position:absolute;top:5px;left:0;right:0;height:2px;background:var(--line-2)}
+.stf-stage::after{content:"";position:absolute;top:0;left:calc(50% - 6px);width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--line-2)}
+.stf-stage:first-child::before{left:50%}
+.stf-stage:last-child::before{right:50%}
+.stf-stage.done{color:var(--ink)}
+.stf-stage.done::before{background:var(--orange)}
+.stf-stage.done::after{background:var(--orange);border-color:var(--orange)}
+.stf-stage.now{color:var(--ink);font-weight:700}
+.stf-stage.now::after{border-color:var(--orange);background:#fff;box-shadow:0 0 0 4px rgba(235,87,51,.18)}
+.stf-stage.now::before{background:linear-gradient(90deg,var(--orange) 50%,var(--line-2) 50%)}
+
+/* next step bar */
+.stf-next{display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#fff7f3;border:1px dashed #f0c9bb;border-radius:14px;padding:10px 14px;margin-bottom:14px}
+.stf-next .k{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-d)}
+
+/* table */
+.stf .stblwrap{overflow-x:auto;border:1px solid var(--hair,#E9E2D6);border-radius:16px;background:#fff}
+.stf .stbl{width:100%;border-collapse:collapse;font-size:13.5px}
+.stf .stbl th{text-align:left;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--grey);background:#F4EFE6;padding:10px 14px;border-bottom:1px solid var(--hair,#E9E2D6)}
+.stf .stbl td{padding:12px 14px;border-bottom:1px solid var(--hair,#E9E2D6);vertical-align:middle}
+.stf .stbl tr:last-child td{border-bottom:0}
+.stf .stbl tbody tr:hover td{background:#FDFBF8}
+.stf .sempty{padding:26px;text-align:center;color:var(--grey)}
+
+@media (prefers-reduced-motion:reduce){.stf *{transition:none!important}}
+
+.stf .tbl th{background:var(--paper)}
+.stf .btn{border-radius:999px;font-family:inherit;padding:11px 22px}
+.stf .btn.gold{background:var(--orange);color:var(--ink)}
+.stf .btn.gold:hover{background:#d94a28}
+.stf .planhead{display:grid;grid-template-columns:minmax(220px,2.4fr) 1fr 1fr .8fr 1.2fr .7fr;gap:10px;padding:0 14px;background:var(--paper)}
+.stf .planhead th{padding-inline:0;border-bottom:0}
+.stf .stbl:has(.planhead) thead,.stf .stbl:has(.planhead) tbody{display:block}
+.stf .stbl:has(.planhead) tbody tr{display:block}
+.stf .stbl:has(.planhead) tbody td{display:block;border-bottom:1px solid var(--line)}
+.stf .stbl:has(.planhead) thead{border-bottom:1px solid var(--line)}
+
+/* State pattern (design system v1.2, States): icon plus words, same system as everything else */
+.stf .state{display:flex;gap:16px;align-items:flex-start;padding:22px 24px;border-radius:22px;background:#fff;box-shadow:0 0 0 1px var(--hair,#E9E2D6);margin-bottom:18px}
+.stf .state-ico{flex:none;width:40px;height:40px;border-radius:99px;display:grid;place-items:center;background:var(--paper-2);color:var(--ink)}
+.stf .state-ico svg{width:20px;height:20px}
+.stf .state-title{font-size:17px;font-weight:700;margin:0;line-height:1.3}
+.stf .state-text{margin:6px 0 0;color:var(--grey);max-width:62ch}
+.stf .state-act{margin-top:14px;display:flex;gap:8px;flex-wrap:wrap}
+.stf .state-empty{border:1px dashed var(--line-2);background:transparent;box-shadow:none}
+.stf .state-warning{background:#FBF1E1;box-shadow:0 0 0 1px #EBCB95}
+.stf .state-warning .state-ico{background:#fff;color:var(--amber)}
+.stf .state-blocking{background:#F8E6E3;box-shadow:0 0 0 1px #E3B4AD}
+.stf .state-blocking .state-ico{background:#fff;color:var(--bad)}
+.stf .state-success{background:var(--ink);color:#FAF7F2}
+.stf .state-success .state-text{color:#B8B2A9}
+.stf .state-success .state-ico{background:var(--orange);color:#fff}
+.stf .state-unavailable,.stf .state-locked{background:var(--paper-2);box-shadow:none}
+.stf .state-suppressed{background:repeating-linear-gradient(135deg,#fff 0 10px,var(--paper-2) 10px 20px);box-shadow:0 0 0 1px var(--line-2)}
+@media (max-width:560px){.stf .state{flex-direction:column;gap:10px;padding:18px}}
+.stf .state-body{min-width:0}
+
+/* Portfolio: where you are, role guide, and the setup checklist */
+.stf-where{margin:0 0 12px;padding:12px 16px;border-radius:14px;background:var(--paper-2,#f4f1ea);font-size:13.5px;line-height:1.5;color:var(--ink)}
+.stf-where b{font-weight:700}
+.stf-where .stf-who{display:block;margin-top:2px;color:var(--grey)}
+.stf-roleguide{margin:0 0 16px;border:1px solid var(--hair,#E9E2D6);border-radius:16px;background:#fff;padding:0 14px}
+.stf-roleguide summary{cursor:pointer;padding:12px 0;font-size:13.5px;font-weight:700}
+.stf-roleguide ul{margin:0 0 12px;padding-left:18px;font-size:13.5px;line-height:1.6;color:var(--ink)}
+.stf-checklist{margin:0 0 18px;padding:18px 20px;border:1px solid var(--hair,#E9E2D6);border-radius:22px;background:#fff}
+.stf-checklist h2{margin:0 0 2px;font-size:16px}
+.stf-checklist ol{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+.stf-checklist li{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;line-height:1.45}
+.stf-checklist .tk{flex:none;width:20px;height:20px;border-radius:50%;border:2px solid var(--line-2);display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;background:#fff}
+.stf-checklist li.done .tk{background:var(--hit,#2e7d4f);border-color:var(--hit,#2e7d4f)}
+.stf-checklist li.next .tk{border-color:var(--orange,#eb5733)}
+.stf-checklist li.next{font-weight:700}
+.stf-checklist .by{color:var(--grey);font-weight:400}
+.stf-checklist .sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* option C journey strip (same as the portfolio .pt-steps): thicker line, filled dots */
+.stf-stage::before{height:3px;background:#EAE4D8}
+.stf-stage::after{width:13px;height:13px;left:calc(50% - 6.5px);background:#EAE4D8;border:2px solid #fff}
+.stf-stage.done::before,.stf-stage.done::after{background:var(--orange);border-color:#fff}
+.stf-stage.now::after{background:#fff;border:3px solid var(--orange);box-shadow:none}
+
+/* option C for the older shared classes from globals.css (.tag, .muted) inside the app frame */
+.stf .tag{display:inline-flex;align-items:center;height:24px;padding:0 10px;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;background:var(--soft);color:#5a5750}
+.stf .tag.ok{background:#e6f1e8;color:var(--hit)}.stf .tag.bad{background:#fbe6e3;color:var(--bad)}.stf .tag.warn{background:#fbf0da;color:var(--amber)}.stf .tag.grey{background:var(--soft);color:#5a5750}
+.stf .muted{color:var(--grey)}
+.stf .pt-help{font-size:13px;color:var(--grey);margin:2px 0 12px;max-width:80ch}
+.stf .sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}

@@ -1,0 +1,2468 @@
+{
+  "label": "1.1",
+  "note": "Advice library version 1.0 (owner rounds Q-AL1 to Q-AL25, 31 Oct 2026). Drafted by Claude for owner review. Items marked from_playbook take their actions, signal, watch list, what good looks like and traps from the orientation playbook (PAC/CDP/ACT/001) as is. {{key}} placeholders quote the live cut points from the rules configuration. 1.1 (1 Nov 2026): every diagnosis quotes this report's own numbers; deeper analysis, contradictions, posture, quick wins, phases, department friction and sources added.",
+  "items": [
+    {
+      "key": "definition.orientations",
+      "topic": "DEFINITION",
+      "section": "definition.orientations",
+      "title": "How to read the four orientations",
+      "diagnosis": "Every respondent shared 100 points across four descriptions of how the organisation works, once for how it is Now and once for how they would prefer it to be. The four descriptions are the orientations. A score is the average share of points, so the four always add up to 100 and an even split would be 25 each.",
+      "why": "No orientation is good or bad on its own. Each creates value in a different way, and each turns into a weakness when there is too much or too little of it. What matters is whether the mix fits the strategy.",
+      "rule": {}
+    },
+    {
+      "key": "definition.current",
+      "topic": "DEFINITION",
+      "section": "definition.current",
+      "title": "Culture strength and the leading orientation",
+      "diagnosis": "The leading orientation is the one with the most points Now. Culture strength is how far it leads: the distance between the leading orientation and the average of the others.",
+      "why": "A strong culture is recognisable and steady, but harder to move. A diffuse culture is flexible, but people may not share a clear sense of what the organisation stands for.",
+      "good": [
+        "Diffuse: strength under {{scoring.strength.bands.0}} points. No orientation clearly leads.",
+        "Moderate: {{scoring.strength.bands.0}} to {{scoring.strength.bands.1}} points. One orientation leads, others still carry weight.",
+        "Strong: {{scoring.strength.bands.1}} to {{scoring.strength.bands.2}} points. The culture has a clear character.",
+        "Highly concentrated: {{scoring.strength.bands.2}} points or more. One orientation dominates almost everything."
+      ],
+      "rule": {}
+    },
+    {
+      "key": "definition.dimensions",
+      "topic": "DEFINITION",
+      "section": "definition.dimensions",
+      "title": "How to read the six dimensions",
+      "diagnosis": "The same 100 point question was asked about six parts of working life. Each chart shows which orientation leads in that part of working life Now, and where people would prefer it to be.",
+      "why": "When the same orientation leads in most dimensions the culture is consistent. When dimensions lead with different orientations, people get mixed messages: what leaders say, what gets rewarded and what holds people together point different ways.",
+      "good": [
+        "Highly congruent: the leading orientation also leads in at least {{scoring.congruence.bands.0}} of the six dimensions.",
+        "Moderately congruent: it leads in at least {{scoring.congruence.bands.1}} but fewer than {{scoring.congruence.bands.0}} dimensions.",
+        "Fragmented: it leads in fewer than {{scoring.congruence.bands.1}} dimensions."
+      ],
+      "rule": {}
+    },
+    {
+      "key": "definition.gaps",
+      "topic": "DEFINITION",
+      "section": "definition.gaps",
+      "title": "How to read the gap",
+      "diagnosis": "The gap is Preferred minus Now for each orientation. A positive gap means people want more of it; a negative gap means they want less.",
+      "why": "The size of the gap sets the reading, and the reading sets what the plan does with that orientation.",
+      "good": [
+        "Build: a gap of {{scoring.gap.build}} points or more. A significant shift people want; it becomes a priority.",
+        "Strengthen: {{scoring.gap.strengthen}} to {{scoring.gap.build}} points. A moderate increase worth building deliberately.",
+        "Keep and protect: within {{scoring.gap.strengthen}} points either way. Close to where people want it.",
+        "Moderate: {{scoring.gap.strengthen}} points or more below Now. People want less of it; ease off carefully.",
+        "Cultural entropy adds the size of all four gaps together: low under {{analytics.entropy_bands.0}}, moderate to {{analytics.entropy_bands.1}}, high to {{analytics.entropy_bands.2}}, critical above."
+      ],
+      "rule": {}
+    },
+    {
+      "key": "definition.perception",
+      "topic": "DEFINITION",
+      "section": "definition.perception",
+      "title": "How to read the executive and staff view",
+      "diagnosis": "Executives and staff answered the same questions. The difference is the distance, in points, between how the two groups describe the culture Now for each orientation.",
+      "why": "A small difference is normal. A large one means leaders are deciding on a picture of the organisation that staff do not recognise.",
+      "good": [
+        "Aligned: under {{segments.perception.0}} points apart.",
+        "Blind spot to watch: {{segments.perception.0}} to {{segments.perception.1}} points apart.",
+        "Shadow culture: more than {{segments.perception.1}} points apart. Leaders and staff describe different organisations."
+      ],
+      "rule": {}
+    },
+    {
+      "key": "definition.departments",
+      "topic": "DEFINITION",
+      "section": "definition.departments",
+      "title": "How to read the department results",
+      "diagnosis": "Each department is compared with the whole organisation, orientation by orientation. Departments with too few responses to protect anonymity are not shown.",
+      "why": "A department that leads with a different orientation from the organisation is a sub culture. That is often healthy; it becomes a risk when teams that depend on each other pull in opposite directions.",
+      "rule": {}
+    },
+    {
+      "key": "definition.voice",
+      "topic": "DEFINITION",
+      "section": "definition.voice",
+      "title": "How to read the employee voice scores",
+      "diagnosis": "Each of the eight questions is answered on a scale of 0 to 10. Advocates answer {{scoring.eos.advocate_min}} or 10, critics answer {{scoring.eos.critic_max}} or less. The net score is the share of advocates minus the share of critics, so it runs from minus 100 to plus 100.",
+      "why": "A net score below zero means critics outnumber advocates. That is the earliest warning the survey gives of attrition and resistance.",
+      "good": [
+        "Critical: below {{scoring.eos.band_edges.0}}. Critics outnumber advocates.",
+        "Marginal: {{scoring.eos.band_edges.0}} to {{scoring.eos.band_edges.1}}.",
+        "Good: above {{scoring.eos.band_edges.1}} to {{scoring.eos.band_edges.2}}.",
+        "Excellent: above {{scoring.eos.band_edges.2}}."
+      ],
+      "rule": {}
+    },
+    {
+      "key": "definition.readiness",
+      "topic": "DEFINITION",
+      "section": "definition.readiness",
+      "title": "How to read readiness",
+      "diagnosis": "Digital readiness, psychological safety and adaptive capacity are each the average of twelve statements rated 1 to 5. The Transformation Probability Score (TPS) combines adaptive capacity, psychological safety, leadership alignment and digital readiness, weighted in that order.",
+      "why": "Readiness does not say what to change. It says how much change the organisation can carry at once, and what must be built first so the change holds.",
+      "good": [
+        "Each readiness score has five bands, with upper edges at {{scoring.readiness.band_edges.0}}, {{scoring.readiness.band_edges.1}}, {{scoring.readiness.band_edges.2}} and {{scoring.readiness.band_edges.3}}.",
+        "TPS high risk: under {{scoring.tps.bands.0}}. Build the conditions for change before launching change content.",
+        "TPS enablement required: {{scoring.tps.bands.0}} to {{scoring.tps.bands.1}}. Change is possible with deliberate support; carry fewer priorities.",
+        "TPS targeted support: {{scoring.tps.bands.1}} to {{scoring.tps.bands.2}}.",
+        "TPS strong readiness: {{scoring.tps.bands.2}} or more."
+      ],
+      "rule": {}
+    },
+    {
+      "key": "definition.risk",
+      "topic": "DEFINITION",
+      "section": "definition.risk",
+      "title": "How to read the Culture Risk Index",
+      "diagnosis": "The Culture Risk Index combines three things on a scale of 0 to 100: how big the gaps are, how much respondents disagree with each other, and how far executives and staff are apart.",
+      "why": "It is a measure for setting priorities inside the organisation, not a benchmark against others.",
+      "good": [
+        "Low: under {{analytics.risk.bands.0}}.",
+        "Medium: {{analytics.risk.bands.0}} to {{analytics.risk.bands.1}}.",
+        "High: above {{analytics.risk.bands.1}}."
+      ],
+      "rule": {}
+    },
+    {
+      "key": "definition.checks",
+      "topic": "DEFINITION",
+      "section": "definition.checks",
+      "title": "How to read the four checks",
+      "diagnosis": "Each check compares the culture with something the organisation needs from it: the strategy, leadership behaviour, the systems that shape behaviour, and the business model.",
+      "why": "A hit means the culture supports what is needed. A miss means it does not yet. A systemic miss means the organisation's own systems keep producing the culture it wants to leave behind.",
+      "good": [
+        "Strategy fit is a hit when the culture gives at least {{checks.alignment_bands.0}}% of what the strategic priorities need, and a partial hit from {{checks.alignment_bands.1}}%."
+      ],
+      "rule": {}
+    },
+    {
+      "key": "definition.leaders",
+      "topic": "DEFINITION",
+      "section": "definition.leaders",
+      "title": "How to read the Leadership 360 summary",
+      "diagnosis": "Each leader was rated by their manager, peers and direct reports, and rated themselves. A result needs at least {{scoring.360.min_raters}} rater forms. The summary shows patterns across leaders; no leader is named.",
+      "why": "Leaders shape culture more than any message. Where leaders as a group default to a different orientation from the one the strategy needs, the strategy is experienced as words rather than practice.",
+      "rule": {}
+    },
+    {
+      "key": "definition.kpis",
+      "topic": "DEFINITION",
+      "section": "definition.kpis",
+      "title": "Leading and lagging measures",
+      "diagnosis": "Leading measures, such as psychological safety and employee voice, move first and warn early. Lagging measures, such as attrition and the culture gap at reassessment, confirm the change has landed.",
+      "why": "A plan that tracks only lagging measures learns too late whether it is working.",
+      "rule": {}
+    },
+    {
+      "key": "gaps.ENGAGE.BUILD",
+      "topic": "ORIENTATION",
+      "section": "gaps.ENGAGE",
+      "priority": 80,
+      "from_playbook": "ENGAGE",
+      "title": "Build Engage: people want far more belonging and development",
+      "diagnosis": "Engage moves from {{f:now.ENGAGE|1}} Now to {{f:pref.ENGAGE|1}} Preferred, a gap of {{f:gap.ENGAGE|+1}} points. People want significantly more Engage than they experience Now. They are asking for relationships, development and care to count for more in how the organisation runs.",
+      "why": "When people feel like a resource rather than part of a team, they give what the job requires and little more. Discretionary effort, knowledge sharing and loyalty through difficult periods all depend on Engage.",
+      "risks": [
+        "Rising voluntary attrition, starting with the people the organisation most wants to keep.",
+        "Knowledge leaves with people, and new joiners take longer to become productive.",
+        "Change is met with quiet withdrawal rather than open resistance, so it is hard to see until it is late."
+      ],
+      "questions": [
+        "Which managers already build strong teams here, and what do they do differently?",
+        "When did the organisation last promote someone mainly for developing others?",
+        "What do exit interviews say about why people leave?"
+      ],
+      "rule": {
+        "fact": "class.ENGAGE",
+        "op": "eq",
+        "value": "BUILD"
+      }
+    },
+    {
+      "key": "gaps.ENGAGE.STRENGTHEN",
+      "topic": "ORIENTATION",
+      "section": "gaps.ENGAGE",
+      "priority": 60,
+      "from_playbook": "ENGAGE",
+      "title": "Strengthen Engage: a moderate call for more connection",
+      "diagnosis": "Engage moves from {{f:now.ENGAGE|1}} Now to {{f:pref.ENGAGE|1}} Preferred, a gap of {{f:gap.ENGAGE|+1}} points. People want somewhat more Engage than Now. The foundation is there; the ask is for it to show up more consistently.",
+      "why": "A moderate Engage gap is the cheapest gap to close: it usually needs consistent manager behaviour rather than new programmes.",
+      "risks": [
+        "Engagement varies widely by manager, so experience depends on who you report to.",
+        "Good people in weaker teams leave first."
+      ],
+      "questions": [
+        "Where is Engage already strong, and how can that practice spread?",
+        "Do managers have the time and skills to develop their people?"
+      ],
+      "rule": {
+        "fact": "class.ENGAGE",
+        "op": "eq",
+        "value": "STRENGTHEN"
+      }
+    },
+    {
+      "key": "gaps.ENGAGE.MODERATE",
+      "topic": "ORIENTATION",
+      "section": "gaps.ENGAGE",
+      "priority": 60,
+      "title": "Rebalance Engage: people want less comfort and more accountability",
+      "diagnosis": "Engage moves from {{f:now.ENGAGE|1}} Now to {{f:pref.ENGAGE|1}} Preferred, a gap of {{f:gap.ENGAGE|+1}} points. People want less Engage than they experience Now. This is rarely a wish for less care; it is usually a wish for less avoidance of hard conversations and for loyalty to count less than contribution.",
+      "why": "Overdone, Engage protects people from feedback and the organisation from decisions. Performance problems linger and the strongest performers feel carried rather than challenged.",
+      "risks": [
+        "High performers leave for places where contribution is recognised.",
+        "Decisions slow down because everyone must be kept on board."
+      ],
+      "actions": [
+        {
+          "text": "Agree with the executive team what honest, caring feedback looks like here, and model it in the next round of reviews.",
+          "owner_role": "Executive team",
+          "horizon": "0 to 30 days"
+        },
+        {
+          "text": "Separate recognition of effort from recognition of results, so both are seen.",
+          "owner_role": "Chief People Officer",
+          "horizon": "30 to 90 days"
+        },
+        {
+          "text": "Set a time limit for consultation on decisions, with a named decision owner.",
+          "owner_role": "Executive team",
+          "horizon": "30 to 90 days"
+        }
+      ],
+      "signal": "Within 30 days, a leader openly names and acts on a performance issue that had been left to run, and explains why.",
+      "good": [
+        "Care and candour sit together: people are supported and told the truth.",
+        "Decisions are made on time, after people have been heard."
+      ],
+      "traps": [
+        "Swinging from care to coldness. Keep what people value about belonging.",
+        "Announcing a performance culture without changing what is rewarded."
+      ],
+      "questions": [
+        "Which conversations are avoided here because they feel unkind?",
+        "How long does it take to address an underperformer?"
+      ],
+      "rule": {
+        "fact": "class.ENGAGE",
+        "op": "eq",
+        "value": "MODERATE"
+      }
+    },
+    {
+      "key": "gaps.ENGAGE.KEEP",
+      "topic": "ORIENTATION",
+      "section": "gaps.ENGAGE",
+      "priority": 40,
+      "title": "Keep and protect Engage",
+      "diagnosis": "Engage stands at {{f:now.ENGAGE|1}} Now against {{f:pref.ENGAGE|1}} Preferred ({{f:gap.ENGAGE|+1}} points). Engage is close to where people want it. Belonging and development are working as people expect.",
+      "why": "Strengths that are not named are the first casualties of change. While other parts of the culture shift, protect the rituals that carry Engage.",
+      "actions": [
+        {
+          "text": "Name the two or three practices that carry belonging here (for example how new joiners are welcomed) and protect them in the change plan.",
+          "owner_role": "Chief People Officer",
+          "horizon": "0 to 90 days"
+        }
+      ],
+      "traps": [
+        "Cutting development budgets first when the change gets expensive."
+      ],
+      "rule": {
+        "fact": "class.ENGAGE",
+        "op": "eq",
+        "value": "KEEP_AND_PROTECT"
+      }
+    },
+    {
+      "key": "gaps.INNOVATE.BUILD",
+      "topic": "ORIENTATION",
+      "section": "gaps.INNOVATE",
+      "priority": 80,
+      "from_playbook": "INNOVATE",
+      "title": "Build Innovate: people want far more room for new ideas",
+      "diagnosis": "Innovate moves from {{f:now.INNOVATE|1}} Now to {{f:pref.INNOVATE|1}} Preferred, a gap of {{f:gap.INNOVATE|+1}} points. People want significantly more Innovate than Now. They see a need to experiment, learn faster and look outward, and the culture does not yet make room for it.",
+      "why": "When new ideas wait for permission, competitors set the pace. The people with ideas are usually the first to leave a culture that does not use them.",
+      "risks": [
+        "The organisation falls behind changes in its market and technology.",
+        "Creative and digital talent is hard to hire and harder to keep.",
+        "Improvement depends on a few leaders instead of the whole organisation."
+      ],
+      "questions": [
+        "How many approval steps stand between an idea and a small pilot?",
+        "What happened to the last person whose experiment failed?",
+        "Is there any budget that can be spent on a test without a full business case?"
+      ],
+      "rule": {
+        "fact": "class.INNOVATE",
+        "op": "eq",
+        "value": "BUILD"
+      }
+    },
+    {
+      "key": "gaps.INNOVATE.STRENGTHEN",
+      "topic": "ORIENTATION",
+      "section": "gaps.INNOVATE",
+      "priority": 60,
+      "from_playbook": "INNOVATE",
+      "title": "Strengthen Innovate: a moderate call for more experimentation",
+      "diagnosis": "Innovate moves from {{f:now.INNOVATE|1}} Now to {{f:pref.INNOVATE|1}} Preferred, a gap of {{f:gap.INNOVATE|+1}} points. People want somewhat more Innovate than Now. Ideas exist; they need a clearer route from suggestion to trial.",
+      "why": "A moderate Innovate gap is best closed with a visible, protected channel for ideas rather than a culture programme.",
+      "risks": [
+        "Ideas surface but stall, which is more discouraging than not being asked."
+      ],
+      "questions": [
+        "Where do ideas go once someone raises them?",
+        "Who can say yes to a small experiment?"
+      ],
+      "rule": {
+        "fact": "class.INNOVATE",
+        "op": "eq",
+        "value": "STRENGTHEN"
+      }
+    },
+    {
+      "key": "gaps.INNOVATE.MODERATE",
+      "topic": "ORIENTATION",
+      "section": "gaps.INNOVATE",
+      "priority": 60,
+      "title": "Rebalance Innovate: people want fewer initiatives and more follow through",
+      "diagnosis": "Innovate moves from {{f:now.INNOVATE|1}} Now to {{f:pref.INNOVATE|1}} Preferred, a gap of {{f:gap.INNOVATE|+1}} points. People want less Innovate than they experience Now. This usually means too many initiatives started and too few finished, not a wish to stop improving.",
+      "why": "Overdone, Innovate scatters energy. Good ideas never reach the discipline needed to scale, and people grow tired of change that does not land.",
+      "risks": [
+        "Change fatigue: people stop engaging with new initiatives.",
+        "Delivery suffers as attention moves to the next idea."
+      ],
+      "actions": [
+        {
+          "text": "List every open initiative, and stop or pause those without an owner, a budget and a measure.",
+          "owner_role": "Executive team",
+          "horizon": "0 to 30 days"
+        },
+        {
+          "text": "Introduce a simple stage gate so ideas earn their next round of investment.",
+          "owner_role": "Chief Operating Officer",
+          "horizon": "30 to 90 days"
+        }
+      ],
+      "signal": "Within 30 days, the executive team publicly closes several initiatives and explains which few it is backing.",
+      "traps": [
+        "Killing the energy for ideas along with the excess. Keep a protected channel open."
+      ],
+      "questions": [
+        "How many initiatives are running, and how many have finished in the last year?"
+      ],
+      "rule": {
+        "fact": "class.INNOVATE",
+        "op": "eq",
+        "value": "MODERATE"
+      }
+    },
+    {
+      "key": "gaps.INNOVATE.KEEP",
+      "topic": "ORIENTATION",
+      "section": "gaps.INNOVATE",
+      "priority": 40,
+      "title": "Keep and protect Innovate",
+      "diagnosis": "Innovate stands at {{f:now.INNOVATE|1}} Now against {{f:pref.INNOVATE|1}} Preferred ({{f:gap.INNOVATE|+1}} points). Innovate is close to where people want it.",
+      "why": "Experimentation is fragile: it is the first thing cut when budgets tighten or a pilot fails publicly.",
+      "actions": [
+        {
+          "text": "Protect the experimentation budget and time that already exist, and report what they produced.",
+          "owner_role": "Executive team",
+          "horizon": "Ongoing"
+        }
+      ],
+      "rule": {
+        "fact": "class.INNOVATE",
+        "op": "eq",
+        "value": "KEEP_AND_PROTECT"
+      }
+    },
+    {
+      "key": "gaps.PERFORM.BUILD",
+      "topic": "ORIENTATION",
+      "section": "gaps.PERFORM",
+      "priority": 80,
+      "from_playbook": "PERFORM",
+      "title": "Build Perform: people want far clearer goals and accountability",
+      "diagnosis": "Perform moves from {{f:now.PERFORM|1}} Now to {{f:pref.PERFORM|1}} Preferred, a gap of {{f:gap.PERFORM|+1}} points. People want significantly more Perform than Now. They are asking for clear targets, honest measurement and consequences that follow results.",
+      "why": "Without Perform, good intentions do not convert into results. People who want to achieve become frustrated when effort and outcome are not linked.",
+      "risks": [
+        "Commitments slip without anyone being clearly accountable.",
+        "Strong performers leave for organisations where results are recognised.",
+        "The strategy is agreed but not delivered."
+      ],
+      "questions": [
+        "Can every team name its two most important measures?",
+        "What happens when a commitment is missed?",
+        "Are targets set with the people who must deliver them?"
+      ],
+      "rule": {
+        "fact": "class.PERFORM",
+        "op": "eq",
+        "value": "BUILD"
+      }
+    },
+    {
+      "key": "gaps.PERFORM.STRENGTHEN",
+      "topic": "ORIENTATION",
+      "section": "gaps.PERFORM",
+      "priority": 60,
+      "from_playbook": "PERFORM",
+      "title": "Strengthen Perform: a moderate call for sharper focus on results",
+      "diagnosis": "Perform moves from {{f:now.PERFORM|1}} Now to {{f:pref.PERFORM|1}} Preferred, a gap of {{f:gap.PERFORM|+1}} points. People want somewhat more Perform than Now.",
+      "why": "Usually closed by making a few measures visible and reviewing them regularly, not by raising targets.",
+      "risks": [
+        "Accountability stays uneven between teams."
+      ],
+      "questions": [
+        "Which measures are reviewed at every leadership meeting?"
+      ],
+      "rule": {
+        "fact": "class.PERFORM",
+        "op": "eq",
+        "value": "STRENGTHEN"
+      }
+    },
+    {
+      "key": "gaps.PERFORM.MODERATE",
+      "topic": "ORIENTATION",
+      "section": "gaps.PERFORM",
+      "priority": 60,
+      "title": "Rebalance Perform: people want less pressure on the number",
+      "diagnosis": "Perform moves from {{f:now.PERFORM|1}} Now to {{f:pref.PERFORM|1}} Preferred, a gap of {{f:gap.PERFORM|+1}} points. People want less Perform than they experience Now. The pressure for results is felt as too narrow or too relentless: the number has become the only story.",
+      "why": "Overdone, Perform burns people out, rewards short term wins over long term investment and sets teams against each other. Results built on exhausted people do not last.",
+      "risks": [
+        "Burnout and absence rise, then attrition among capable people.",
+        "Collaboration suffers as teams protect their own numbers.",
+        "Service and quality decline behind the headline results."
+      ],
+      "actions": [
+        {
+          "text": "Add one people measure and one quality measure beside every financial target in leadership reviews.",
+          "owner_role": "Chief Executive",
+          "horizon": "0 to 30 days"
+        },
+        {
+          "text": "Review incentive schemes for rewards that set teams against each other, and add a shared team element.",
+          "owner_role": "Chief People Officer",
+          "horizon": "3 to 6 months"
+        },
+        {
+          "text": "Check workload against headcount in the teams with the highest pressure.",
+          "owner_role": "Chief Operating Officer",
+          "horizon": "30 to 90 days"
+        }
+      ],
+      "signal": "Within 30 days, a leader publicly recognises a team for how it delivered, not only for what it delivered.",
+      "good": [
+        "Results stay high while people have room to recover and improve.",
+        "Teams win together rather than at each other's expense."
+      ],
+      "traps": [
+        "Lowering the bar. People want a broader definition of success, not less ambition."
+      ],
+      "questions": [
+        "Is the pace a deliberate choice or an unmanaged default?",
+        "Are managers rewarded only for output?"
+      ],
+      "rule": {
+        "fact": "class.PERFORM",
+        "op": "eq",
+        "value": "MODERATE"
+      }
+    },
+    {
+      "key": "gaps.PERFORM.KEEP",
+      "topic": "ORIENTATION",
+      "section": "gaps.PERFORM",
+      "priority": 40,
+      "title": "Keep and protect Perform",
+      "diagnosis": "Perform stands at {{f:now.PERFORM|1}} Now against {{f:pref.PERFORM|1}} Preferred ({{f:gap.PERFORM|+1}} points). Perform is close to where people want it.",
+      "why": "Clear goals and accountability are an asset while other parts of the culture change; protect them.",
+      "actions": [
+        {
+          "text": "Keep the measures and review rhythm that work, and use them to track the culture plan too.",
+          "owner_role": "Executive team",
+          "horizon": "Ongoing"
+        }
+      ],
+      "rule": {
+        "fact": "class.PERFORM",
+        "op": "eq",
+        "value": "KEEP_AND_PROTECT"
+      }
+    },
+    {
+      "key": "gaps.GOVERN.BUILD",
+      "topic": "ORIENTATION",
+      "section": "gaps.GOVERN",
+      "priority": 80,
+      "from_playbook": "GOVERN",
+      "title": "Build Govern: people want far more clarity and consistency",
+      "diagnosis": "Govern moves from {{f:now.GOVERN|1}} Now to {{f:pref.GOVERN|1}} Preferred, a gap of {{f:gap.GOVERN|+1}} points. People want significantly more Govern than Now. They are asking for clear processes, consistent standards and decisions that do not depend on who you ask.",
+      "why": "When Govern is low, quality varies from team to team, risks surface late and people improvise where a clear standard would serve them better. Growth amplifies the problem.",
+      "risks": [
+        "Quality and customer experience vary between teams and sites.",
+        "Risks and compliance issues surface late and cost more to fix.",
+        "People waste time redoing work or chasing decisions."
+      ],
+      "questions": [
+        "Which decisions are made differently depending on who makes them?",
+        "Where do mistakes repeat because no standard exists?",
+        "Who owns each core process end to end?"
+      ],
+      "rule": {
+        "fact": "class.GOVERN",
+        "op": "eq",
+        "value": "BUILD"
+      }
+    },
+    {
+      "key": "gaps.GOVERN.STRENGTHEN",
+      "topic": "ORIENTATION",
+      "section": "gaps.GOVERN",
+      "priority": 60,
+      "from_playbook": "GOVERN",
+      "title": "Strengthen Govern: a moderate call for clearer process",
+      "diagnosis": "Govern moves from {{f:now.GOVERN|1}} Now to {{f:pref.GOVERN|1}} Preferred, a gap of {{f:gap.GOVERN|+1}} points. People want somewhat more Govern than Now.",
+      "why": "Usually closed by clarifying decision rights and documenting the few processes that matter most.",
+      "risks": [
+        "Inconsistency grows as the organisation grows."
+      ],
+      "questions": [
+        "Which three processes, if standardised, would remove the most friction?"
+      ],
+      "rule": {
+        "fact": "class.GOVERN",
+        "op": "eq",
+        "value": "STRENGTHEN"
+      }
+    },
+    {
+      "key": "gaps.GOVERN.MODERATE",
+      "topic": "ORIENTATION",
+      "section": "gaps.GOVERN",
+      "priority": 60,
+      "title": "Rebalance Govern: people want fewer approvals and more trust",
+      "diagnosis": "Govern moves from {{f:now.GOVERN|1}} Now to {{f:pref.GOVERN|1}} Preferred, a gap of {{f:gap.GOVERN|+1}} points. People want less Govern than they experience Now. Process is felt as control for its own sake: approvals stack up and initiative waits for permission.",
+      "why": "Overdone, Govern becomes bureaucracy. It slows customers, frustrates capable people and teaches everyone that the safest move is no move.",
+      "risks": [
+        "Slow decisions lose customers and opportunities.",
+        "Capable people leave for more latitude.",
+        "Risk is hidden rather than managed, because raising it creates more process."
+      ],
+      "actions": [
+        {
+          "text": "Map the approval steps for three common decisions and remove every step that does not change the outcome.",
+          "owner_role": "Chief Operating Officer",
+          "horizon": "0 to 90 days"
+        },
+        {
+          "text": "Delegate decision rights to the lowest sensible level, in writing, with limits.",
+          "owner_role": "Executive team",
+          "horizon": "30 to 90 days"
+        },
+        {
+          "text": "Keep the controls that protect customers, safety and regulation, and say so clearly.",
+          "owner_role": "Chief Risk Officer",
+          "horizon": "0 to 90 days"
+        }
+      ],
+      "signal": "Within 30 days, retire one well known approval step and tell everyone it is gone.",
+      "good": [
+        "Clear standards where they matter, freedom where they do not.",
+        "Decisions are made close to the work."
+      ],
+      "traps": [
+        "Removing controls that regulators or customers rely on. Name the non negotiables first."
+      ],
+      "questions": [
+        "Which approvals exist because of one incident years ago?",
+        "How long does it take to approve a small spend?"
+      ],
+      "rule": {
+        "fact": "class.GOVERN",
+        "op": "eq",
+        "value": "MODERATE"
+      }
+    },
+    {
+      "key": "gaps.GOVERN.KEEP",
+      "topic": "ORIENTATION",
+      "section": "gaps.GOVERN",
+      "priority": 40,
+      "title": "Keep and protect Govern",
+      "diagnosis": "Govern stands at {{f:now.GOVERN|1}} Now against {{f:pref.GOVERN|1}} Preferred ({{f:gap.GOVERN|+1}} points). Govern is close to where people want it.",
+      "why": "Reliable processes are what let the rest of the change happen safely; protect them.",
+      "actions": [
+        {
+          "text": "Name the standards that must not slip during the change, and assign an owner to each.",
+          "owner_role": "Chief Operating Officer",
+          "horizon": "0 to 30 days"
+        }
+      ],
+      "rule": {
+        "fact": "class.GOVERN",
+        "op": "eq",
+        "value": "KEEP_AND_PROTECT"
+      }
+    },
+    {
+      "key": "gaps.entropy.high",
+      "topic": "GAP",
+      "section": "gaps.entropy",
+      "priority": 70,
+      "title": "The overall gap is high: choose few priorities",
+      "diagnosis": "Cultural entropy is {{f:entropy.score|1}}, in the {{f:entropy.band}} band. Cultural entropy is high or critical: much of the organisation's energy goes into the distance between how things are and how people want them to be.",
+      "why": "When the gap is wide everywhere, trying to close it everywhere at once spreads effort too thin and nothing visibly changes.",
+      "risks": [
+        "Frustration grows as people see the survey but no change.",
+        "Delivery slows as energy goes into working around the culture."
+      ],
+      "actions": [
+        {
+          "text": "Choose at most the number of priorities readiness allows, starting with the gap that matters most to the strategy.",
+          "owner_role": "Executive team",
+          "horizon": "0 to 30 days"
+        },
+        {
+          "text": "Tell people which gaps are not being worked on yet, and why.",
+          "owner_role": "Chief Executive",
+          "horizon": "0 to 30 days"
+        }
+      ],
+      "rule": {
+        "fact": "entropy.band",
+        "op": "in",
+        "value": [
+          "HIGH",
+          "CRITICAL"
+        ]
+      }
+    },
+    {
+      "key": "gaps.tension",
+      "topic": "GAP",
+      "section": "gaps.tension",
+      "priority": 60,
+      "title": "A high tension: the change pulls two ways at once",
+      "diagnosis": "Tension scores are {{f:tension_score.ENGAGE_PERFORM|1}} between Engage and Perform and {{f:tension_score.INNOVATE_GOVERN|1}} between Innovate and Govern, out of 10. People want one orientation to grow while its opposite shrinks. The two are natural opposites, so moving one feels like a loss of the other.",
+      "why": "Each side of a tension protects something people value. If the change story ignores what is being given up, it meets passive resistance.",
+      "actions": [
+        {
+          "text": "In the leadership debrief, name what each side of the tension protects before deciding what gives ground.",
+          "owner_role": "Executive team",
+          "horizon": "0 to 30 days"
+        },
+        {
+          "text": "Frame the change as using one strength to serve the other, and say plainly what each side keeps.",
+          "owner_role": "Chief Executive",
+          "horizon": "0 to 90 days"
+        }
+      ],
+      "rule": {
+        "any": [
+          {
+            "fact": "tension.ENGAGE_PERFORM",
+            "op": "eq",
+            "value": "HIGH"
+          },
+          {
+            "fact": "tension.INNOVATE_GOVERN",
+            "op": "eq",
+            "value": "HIGH"
+          }
+        ]
+      }
+    },
+    {
+      "key": "current.strong",
+      "topic": "CURRENT",
+      "section": "current.strength",
+      "priority": 50,
+      "title": "A strong culture: an asset that resists change",
+      "diagnosis": "{{f:dominant}} leads at {{f:dominant_value|1}} points, with {{f:secondary}} second at {{f:secondary_value|1}}; culture strength is {{f:strength|1}}. One orientation clearly leads the culture.",
+      "why": "A strong culture gives people a shared sense of how things are done. The same strength makes it slow to move, so change needs to build on it rather than fight it.",
+      "actions": [
+        {
+          "text": "Describe the change in the language of the leading orientation, so people see it as an evolution, not a rejection.",
+          "owner_role": "Chief Executive",
+          "horizon": "0 to 30 days"
+        }
+      ],
+      "traps": [
+        "Treating the leading orientation as the problem. It is usually the reason the organisation succeeded."
+      ],
+      "rule": {
+        "fact": "strength_band",
+        "op": "in",
+        "value": [
+          "STRONG",
+          "HIGHLY_CONCENTRATED"
+        ]
+      }
+    },
+    {
+      "key": "current.diffuse",
+      "topic": "CURRENT",
+      "section": "current.strength",
+      "priority": 50,
+      "title": "A diffuse culture: flexible but less distinctive",
+      "diagnosis": "{{f:dominant}} leads at {{f:dominant_value|1}} points, with {{f:secondary}} second at {{f:secondary_value|1}}; culture strength is {{f:strength|1}}. No orientation clearly leads the culture.",
+      "why": "A diffuse culture adapts easily, but people may not share a clear sense of what the organisation stands for, and different teams may pull in different directions.",
+      "actions": [
+        {
+          "text": "Agree and state the one or two orientations the strategy needs most, so the culture has a direction.",
+          "owner_role": "Executive team",
+          "horizon": "0 to 90 days"
+        }
+      ],
+      "rule": {
+        "fact": "strength_band",
+        "op": "eq",
+        "value": "DIFFUSE"
+      }
+    },
+    {
+      "key": "current.fragmented",
+      "topic": "CURRENT",
+      "section": "current.congruence",
+      "priority": 60,
+      "title": "Mixed messages across working life",
+      "diagnosis": "{{f:dominant}} leads the culture overall but not in most of the six dimensions. The leading orientation leads in only a few of the six dimensions. Different parts of working life pull in different directions.",
+      "why": "People experience this as mixed messages: the strategy says one thing, the reward system another, and leaders a third.",
+      "actions": [
+        {
+          "text": "Identify which dimension contradicts the strategy most, and fix that first.",
+          "owner_role": "Executive team",
+          "horizon": "30 to 90 days"
+        }
+      ],
+      "rule": {
+        "fact": "congruence.band",
+        "op": "eq",
+        "value": "FRAGMENTED"
+      }
+    },
+    {
+      "key": "dimensions.D2",
+      "topic": "DIMENSION",
+      "section": "dimensions.D2",
+      "priority": 60,
+      "title": "Leadership leads with a different orientation",
+      "diagnosis": "Here {{f:dim.D2.top}} leads at {{f:dim.D2.top_value|1}} points, while the culture overall leads with {{f:dominant}}. In the Leadership Blueprint, how leaders lead and what they are recognised for, a different orientation leads from the culture as a whole.",
+      "why": "People copy what leaders do. When leadership models a different orientation from the culture, the culture will drift toward the leaders over time, for better or worse.",
+      "actions": [
+        {
+          "text": "Check whether the leadership orientation is the one the strategy needs. If it is, use it deliberately; if not, make it the focus of leader development.",
+          "owner_role": "Executive team",
+          "horizon": "30 to 90 days"
+        }
+      ],
+      "questions": [
+        "Is the way leaders lead a deliberate choice?"
+      ],
+      "rule": {
+        "fact": "dim.D2.diverges",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "key": "dimensions.D3",
+      "topic": "DIMENSION",
+      "section": "dimensions.D3",
+      "priority": 55,
+      "title": "People management pulls a different way",
+      "diagnosis": "Here {{f:dim.D3.top}} leads at {{f:dim.D3.top_value|1}} points, while the culture overall leads with {{f:dominant}}. In the People Architecture, how people are managed, developed and appraised, a different orientation leads from the culture as a whole.",
+      "why": "People systems are where culture is enforced. If they reward a different orientation from the one the organisation wants, they will keep producing it.",
+      "actions": [
+        {
+          "text": "Review performance and promotion criteria against the orientation the strategy needs.",
+          "owner_role": "Chief People Officer",
+          "horizon": "3 to 6 months"
+        }
+      ],
+      "rule": {
+        "fact": "dim.D3.diverges",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "key": "dimensions.D5",
+      "topic": "DIMENSION",
+      "section": "dimensions.D5",
+      "priority": 55,
+      "title": "Priorities are set by a different orientation",
+      "diagnosis": "Here {{f:dim.D5.top}} leads at {{f:dim.D5.top_value|1}} points, while the culture overall leads with {{f:dominant}}. In the Strategic Compass, what guides priorities and the allocation of money and time, a different orientation leads from the culture as a whole.",
+      "why": "Where money and time go is the truest statement of what an organisation values. A difference here means the stated culture and the funded culture are not the same.",
+      "actions": [
+        {
+          "text": "At the next budget round, check that funding follows the priorities of the culture plan.",
+          "owner_role": "Chief Financial Officer",
+          "horizon": "Next budget cycle"
+        }
+      ],
+      "rule": {
+        "fact": "dim.D5.diverges",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "key": "dimensions.D6",
+      "topic": "DIMENSION",
+      "section": "dimensions.D6",
+      "priority": 55,
+      "title": "Success is defined differently",
+      "diagnosis": "Here {{f:dim.D6.top}} leads at {{f:dim.D6.top_value|1}} points, while the culture overall leads with {{f:dominant}}. In the Victory Conditions, how success is defined, measured and celebrated, a different orientation leads from the culture as a whole.",
+      "why": "What gets celebrated is what people repeat. If success is defined differently from the culture the organisation wants, celebrations quietly undo the change.",
+      "actions": [
+        {
+          "text": "Change what is celebrated at the next all staff event so it reflects the target culture.",
+          "owner_role": "Chief Executive",
+          "horizon": "0 to 30 days"
+        }
+      ],
+      "rule": {
+        "fact": "dim.D6.diverges",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "key": "perception.shadow",
+      "topic": "PERCEPTION",
+      "section": "perception.shadow",
+      "priority": 80,
+      "title": "A shadow culture: leaders and staff describe different organisations",
+      "diagnosis": "The widest difference is on {{f:perception.widest}}: executives score it {{f:perception.exec_value|1}} and staff {{f:perception.staff_value|1}}, {{f:perception.widest_by|1}} points apart. On at least one orientation, executives and staff are far apart in how they describe the culture Now.",
+      "why": "Leaders may believe the organisation is further along than staff experience it. Decisions made on the leaders' picture will miss, and announcements will be met with disbelief.",
+      "risks": [
+        "Change plans built on the leaders' view fail to land.",
+        "Trust in leadership falls as staff see their experience ignored."
+      ],
+      "actions": [
+        {
+          "text": "Hold listening sessions in which executives hear staff directly, without managers in the room.",
+          "owner_role": "Executive team",
+          "horizon": "0 to 30 days"
+        },
+        {
+          "text": "Test each priority of the plan against what staff said before it is announced.",
+          "owner_role": "Chief People Officer",
+          "horizon": "0 to 90 days"
+        }
+      ],
+      "signal": "Within 30 days, executives share back what they heard from staff and one thing they will do differently.",
+      "questions": [
+        "Where do executives get their picture of the culture from?"
+      ],
+      "rule": {
+        "any": [
+          {
+            "fact": "perception.ENGAGE",
+            "op": "eq",
+            "value": "SHADOW_CULTURE"
+          },
+          {
+            "fact": "perception.INNOVATE",
+            "op": "eq",
+            "value": "SHADOW_CULTURE"
+          },
+          {
+            "fact": "perception.PERFORM",
+            "op": "eq",
+            "value": "SHADOW_CULTURE"
+          },
+          {
+            "fact": "perception.GOVERN",
+            "op": "eq",
+            "value": "SHADOW_CULTURE"
+          }
+        ]
+      }
+    },
+    {
+      "key": "perception.watch",
+      "topic": "PERCEPTION",
+      "section": "perception.watch",
+      "priority": 50,
+      "title": "Blind spots to watch between leaders and staff",
+      "diagnosis": "The widest difference is on {{f:perception.widest}}: executives score it {{f:perception.exec_value|1}} and staff {{f:perception.staff_value|1}}, {{f:perception.widest_by|1}} points apart. On some orientations executives and staff are far enough apart to watch, though not yet a shadow culture.",
+      "why": "Small differences grow when leaders announce progress staff do not feel.",
+      "actions": [
+        {
+          "text": "Check plans with a sample of staff before announcing them.",
+          "owner_role": "Chief People Officer",
+          "horizon": "0 to 90 days"
+        }
+      ],
+      "rule": {
+        "all": [
+          {
+            "not": {
+              "any": [
+                {
+                  "fact": "perception.ENGAGE",
+                  "op": "eq",
+                  "value": "SHADOW_CULTURE"
+                },
+                {
+                  "fact": "perception.INNOVATE",
+                  "op": "eq",
+                  "value": "SHADOW_CULTURE"
+                },
+                {
+                  "fact": "perception.PERFORM",
+                  "op": "eq",
+                  "value": "SHADOW_CULTURE"
+                },
+                {
+                  "fact": "perception.GOVERN",
+                  "op": "eq",
+                  "value": "SHADOW_CULTURE"
+                }
+              ]
+            }
+          },
+          {
+            "any": [
+              {
+                "fact": "perception.ENGAGE",
+                "op": "eq",
+                "value": "WATCH"
+              },
+              {
+                "fact": "perception.INNOVATE",
+                "op": "eq",
+                "value": "WATCH"
+              },
+              {
+                "fact": "perception.PERFORM",
+                "op": "eq",
+                "value": "WATCH"
+              },
+              {
+                "fact": "perception.GOVERN",
+                "op": "eq",
+                "value": "WATCH"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "voice.Q1",
+      "topic": "VOICE",
+      "section": "voice.Q1",
+      "priority": 70,
+      "title": "People would not readily recommend the organisation",
+      "diagnosis": "The net score for recommending the organisation as a place to work is {{f:eos.Q1|+0}}, in the critical or marginal band.",
+      "why": "This is the clearest early signal of attrition risk, and it affects hiring as people talk about where they work.",
+      "risks": [
+        "Attrition rises, starting with people who have options.",
+        "Hiring becomes slower and more expensive."
+      ],
+      "actions": [
+        {
+          "text": "Run short stay interviews with people in critical roles to learn what would make them leave.",
+          "owner_role": "Chief People Officer",
+          "horizon": "0 to 30 days"
+        },
+        {
+          "text": "Act visibly on the top two reasons and say so.",
+          "owner_role": "Executive team",
+          "horizon": "30 to 90 days"
+        }
+      ],
+      "rule": {
+        "fact": "eos_band.Q1",
+        "op": "in",
+        "value": [
+          "NEGATIVE",
+          "ACCEPTABLE"
+        ]
+      }
+    },
+    {
+      "key": "voice.Q2",
+      "topic": "VOICE",
+      "section": "voice.Q2",
+      "priority": 70,
+      "title": "Confidence in leadership is weak",
+      "diagnosis": "The net score for the quality of leadership is {{f:eos.Q2|+0}}, in the critical or marginal band.",
+      "why": "Visible, consistent leadership behaviour will matter more than any new message. People need to see leaders do what they ask of others.",
+      "actions": [
+        {
+          "text": "Each executive commits to one visible behaviour change and reports on it at the next all staff meeting.",
+          "owner_role": "Executive team",
+          "horizon": "0 to 90 days"
+        }
+      ],
+      "rule": {
+        "fact": "eos_band.Q2",
+        "op": "in",
+        "value": [
+          "NEGATIVE",
+          "ACCEPTABLE"
+        ]
+      }
+    },
+    {
+      "key": "voice.Q3",
+      "topic": "VOICE",
+      "section": "voice.Q3",
+      "priority": 60,
+      "title": "People do not see a real commitment to new ideas",
+      "diagnosis": "The net score for the innovation climate is {{f:eos.Q3|+0}}, in the critical or marginal band.",
+      "why": "Experiments need permission, protection and visible recognition before people will risk them.",
+      "actions": [
+        {
+          "text": "Recognise one experiment publicly, including one that did not work, for what it taught.",
+          "owner_role": "Chief Executive",
+          "horizon": "0 to 30 days"
+        }
+      ],
+      "rule": {
+        "fact": "eos_band.Q3",
+        "op": "in",
+        "value": [
+          "NEGATIVE",
+          "ACCEPTABLE"
+        ]
+      }
+    },
+    {
+      "key": "voice.Q4",
+      "topic": "VOICE",
+      "section": "voice.Q4",
+      "priority": 65,
+      "title": "People do not see a growth path",
+      "diagnosis": "The net score for development and growth is {{f:eos.Q4|+0}}, in the critical or marginal band.",
+      "why": "Skilled people look elsewhere unless development becomes visible and fair.",
+      "actions": [
+        {
+          "text": "Publish how promotions and development places are decided, and the criteria used.",
+          "owner_role": "Chief People Officer",
+          "horizon": "30 to 90 days"
+        },
+        {
+          "text": "Give every manager a development conversation target for their team this quarter.",
+          "owner_role": "Chief People Officer",
+          "horizon": "0 to 90 days"
+        }
+      ],
+      "rule": {
+        "fact": "eos_band.Q4",
+        "op": "in",
+        "value": [
+          "NEGATIVE",
+          "ACCEPTABLE"
+        ]
+      }
+    },
+    {
+      "key": "voice.Q5",
+      "topic": "VOICE",
+      "section": "voice.Q5",
+      "priority": 60,
+      "title": "People hear decisions without the reasons",
+      "diagnosis": "The net score for communication from leadership is {{f:eos.Q5|+0}}, in the critical or marginal band.",
+      "why": "Explaining why, early and in person, is the lowest cost fix in this report.",
+      "actions": [
+        {
+          "text": "For every significant decision, managers brief their teams on the reason within a week.",
+          "owner_role": "Executive team",
+          "horizon": "0 to 30 days"
+        }
+      ],
+      "rule": {
+        "fact": "eos_band.Q5",
+        "op": "in",
+        "value": [
+          "NEGATIVE",
+          "ACCEPTABLE"
+        ]
+      }
+    },
+    {
+      "key": "voice.Q6",
+      "topic": "VOICE",
+      "section": "voice.Q6",
+      "priority": 70,
+      "title": "Work and life are out of balance",
+      "diagnosis": "The net score for wellbeing is {{f:eos.Q6|+0}}, in the critical or marginal band.",
+      "why": "Change added on top of current load will be resisted however good its intent. Capacity has to be made before change is asked for.",
+      "risks": [
+        "Burnout and absence rise.",
+        "The culture plan is seen as more work rather than better work."
+      ],
+      "actions": [
+        {
+          "text": "Stop or pause one piece of low value work for every new change activity.",
+          "owner_role": "Executive team",
+          "horizon": "0 to 30 days"
+        },
+        {
+          "text": "Review workload in the teams with the lowest scores.",
+          "owner_role": "Chief Operating Officer",
+          "horizon": "30 to 90 days"
+        }
+      ],
+      "rule": {
+        "fact": "eos_band.Q6",
+        "op": "in",
+        "value": [
+          "NEGATIVE",
+          "ACCEPTABLE"
+        ]
+      }
+    },
+    {
+      "key": "voice.Q7",
+      "topic": "VOICE",
+      "section": "voice.Q7",
+      "priority": 70,
+      "title": "Some people do not feel treated fairly",
+      "diagnosis": "The net score for inclusion and fairness is {{f:eos.Q7|+0}}, in the critical or marginal band.",
+      "why": "Unfairness felt by one group spreads distrust to all. Look at promotion, pay and voice by group before the gap widens.",
+      "actions": [
+        {
+          "text": "Review promotion and pay outcomes by group, and publish what will change.",
+          "owner_role": "Chief People Officer",
+          "horizon": "3 to 6 months"
+        }
+      ],
+      "rule": {
+        "fact": "eos_band.Q7",
+        "op": "in",
+        "value": [
+          "NEGATIVE",
+          "ACCEPTABLE"
+        ]
+      }
+    },
+    {
+      "key": "voice.Q8",
+      "topic": "VOICE",
+      "section": "voice.Q8",
+      "priority": 75,
+      "title": "People do not see how the strategy connects to their work",
+      "diagnosis": "The net score for strategic clarity is {{f:eos.Q8|+0}}, in the critical or marginal band.",
+      "why": "A strategy people cannot connect to their own work will not shape what they do. Translate it into what each team does differently.",
+      "risks": [
+        "Teams optimise for their own goals, not the organisation's.",
+        "The culture plan feels disconnected from the business."
+      ],
+      "actions": [
+        {
+          "text": "Each team writes, on one page, what the strategy means for its work and what it will stop doing.",
+          "owner_role": "Executive team",
+          "horizon": "0 to 90 days"
+        },
+        {
+          "text": "Leaders open every team meeting for a quarter by linking one decision to the strategy.",
+          "owner_role": "Executive team",
+          "horizon": "0 to 90 days"
+        }
+      ],
+      "signal": "Within 30 days, every manager can explain the strategy in their team's own terms.",
+      "rule": {
+        "fact": "eos_band.Q8",
+        "op": "in",
+        "value": [
+          "NEGATIVE",
+          "ACCEPTABLE"
+        ]
+      }
+    },
+    {
+      "key": "readiness.D7",
+      "topic": "READINESS",
+      "section": "readiness.D7",
+      "priority": 60,
+      "title": "Digital adoption will need leading",
+      "diagnosis": "Digital readiness is {{f:readiness.d7|2}} out of 5. Digital readiness is in the lower bands: people use technology as required, but not as the way work is done.",
+      "why": "Technology investment stalls when people route around new tools. Adoption follows leaders who use the tools themselves and retire the old routes.",
+      "actions": [
+        {
+          "text": "For every new system, retire the old route on a published date.",
+          "owner_role": "Chief Operating Officer",
+          "horizon": "Per project"
+        },
+        {
+          "text": "Leaders use the new tools visibly in their own meetings and reports.",
+          "owner_role": "Executive team",
+          "horizon": "0 to 90 days"
+        }
+      ],
+      "rule": {
+        "fact": "readiness.d7",
+        "op": "lte",
+        "value": "3.0"
+      }
+    },
+    {
+      "key": "readiness.D8",
+      "topic": "READINESS",
+      "section": "readiness.D8",
+      "priority": 75,
+      "title": "People are cautious about speaking up",
+      "diagnosis": "Psychological safety is {{f:readiness.d8|2}} out of 5. Psychological safety is in the lower bands: people speak up selectively, usually to peers rather than to leaders.",
+      "why": "Without safety, problems surface late and change is agreed in the room and resisted outside it. Every other priority depends on people telling the truth.",
+      "risks": [
+        "Bad news reaches leaders too late to act.",
+        "Plans are agreed but not believed."
+      ],
+      "actions": [
+        {
+          "text": "Leaders ask for challenge in every meeting and thank the first person who gives it.",
+          "owner_role": "Executive team",
+          "horizon": "0 to 30 days"
+        },
+        {
+          "text": "Respond to bad news by asking what is needed, never who is to blame.",
+          "owner_role": "Executive team",
+          "horizon": "Ongoing"
+        }
+      ],
+      "signal": "Within 30 days, a leader acts publicly on a concern raised from below and credits the person who raised it.",
+      "rule": {
+        "fact": "readiness.d8",
+        "op": "lte",
+        "value": "3.5"
+      }
+    },
+    {
+      "key": "readiness.D9",
+      "topic": "READINESS",
+      "section": "readiness.D9",
+      "priority": 65,
+      "title": "The organisation can start change but may not sustain it",
+      "diagnosis": "Adaptive capacity is {{f:readiness.d9|2}} out of 5. Adaptive capacity is in the lower bands.",
+      "why": "Change needs clear ownership, visible progress and time for people to adjust. Without them, each new initiative replaces the last before it lands.",
+      "actions": [
+        {
+          "text": "Give each priority one owner and a monthly progress update everyone can see.",
+          "owner_role": "Executive team",
+          "horizon": "0 to 30 days"
+        },
+        {
+          "text": "Sequence the priorities instead of launching them together.",
+          "owner_role": "Executive team",
+          "horizon": "0 to 30 days"
+        }
+      ],
+      "rule": {
+        "fact": "readiness.d9",
+        "op": "lte",
+        "value": "3.5"
+      }
+    },
+    {
+      "key": "readiness.tps.low",
+      "topic": "READINESS",
+      "section": "readiness.tps",
+      "priority": 80,
+      "title": "Readiness limits how much change can be carried",
+      "diagnosis": "The Transformation Probability Score is {{f:readiness.tps|2}} out of 5. The Transformation Probability Score is in a lower band.",
+      "why": "The organisation can change, but not everywhere at once. Fewer priorities, well supported, will move the culture further than many priorities thinly spread.",
+      "actions": [
+        {
+          "text": "Limit the plan to the number of priorities readiness allows, and build safety and capacity first.",
+          "owner_role": "Executive team",
+          "horizon": "0 to 30 days"
+        }
+      ],
+      "traps": [
+        "Launching every priority at once to show ambition."
+      ],
+      "rule": {
+        "fact": "readiness.tps_band",
+        "op": "in",
+        "value": [
+          "HIGH_RISK",
+          "ENABLEMENT_REQUIRED"
+        ]
+      }
+    },
+    {
+      "key": "risk.high",
+      "topic": "RISK",
+      "section": "risk.index",
+      "priority": 70,
+      "title": "Cultural debt is building",
+      "diagnosis": "The Culture Risk Index is {{f:risk.index}} out of 100. The Culture Risk Index is medium or high.",
+      "why": "The cost of a gap grows the longer it stays open: more energy goes into working around the culture, and the people with options leave first.",
+      "actions": [
+        {
+          "text": "Review the risk measures at every executive meeting until they are back on target.",
+          "owner_role": "Executive team",
+          "horizon": "Monthly"
+        },
+        {
+          "text": "Pulse at 90 days to see whether the priority gaps are closing.",
+          "owner_role": "Chief People Officer",
+          "horizon": "90 days"
+        }
+      ],
+      "rule": {
+        "fact": "risk.band",
+        "op": "in",
+        "value": [
+          "MEDIUM",
+          "HIGH"
+        ]
+      }
+    },
+    {
+      "key": "checks.C1",
+      "topic": "CHECK",
+      "section": "checks.C1",
+      "priority": 80,
+      "title": "Strategy fit: close the gap the strategy depends on",
+      "diagnosis": "The culture does not yet give the strategy enough of the orientations it needs.",
+      "why": "The strategy depends on behaviour the culture does not yet reward, so delivery slips and the plan is quietly reinterpreted.",
+      "actions": [
+        {
+          "text": "Name the orientation the strategy needs, in one sentence everyone can repeat.",
+          "owner_role": "Chief Executive",
+          "horizon": "0 to 30 days"
+        },
+        {
+          "text": "Make one visible change that rewards that orientation.",
+          "owner_role": "Chief Executive",
+          "horizon": "0 to 30 days"
+        },
+        {
+          "text": "Align recognition and promotion to it.",
+          "owner_role": "Chief People Officer",
+          "horizon": "3 to 6 months"
+        }
+      ],
+      "questions": [
+        "Were the strategic priorities in setup the ones the board actually holds the executive to?",
+        "Which single KPI matters most?"
+      ],
+      "rule": {
+        "fact": "check.C1",
+        "op": "in",
+        "value": [
+          "MISS",
+          "PARTIAL_HIT"
+        ]
+      }
+    },
+    {
+      "key": "checks.C2",
+      "topic": "CHECK",
+      "section": "checks.C2",
+      "priority": 80,
+      "title": "Leadership behaviour: leaders go first",
+      "diagnosis": "Leaders' behaviour, as staff see it, is not yet what the strategy needs.",
+      "why": "People copy what leaders do, not what they say. A gap here undoes every other intervention.",
+      "actions": [
+        {
+          "text": "Agree five observable leadership behaviours and build them into one to one coaching.",
+          "owner_role": "Executive team",
+          "horizon": "0 to 90 days"
+        },
+        {
+          "text": "Use the Leadership 360 as the baseline and measure again in twelve months.",
+          "owner_role": "Chief People Officer",
+          "horizon": "12 months"
+        },
+        {
+          "text": "Add a culture stewardship objective to every people manager's review.",
+          "owner_role": "Chief People Officer",
+          "horizon": "Next review cycle"
+        }
+      ],
+      "questions": [
+        "Which leadership behaviours are recognised at promotion here?"
+      ],
+      "rule": {
+        "fact": "check.C2",
+        "op": "in",
+        "value": [
+          "MISS",
+          "PARTIAL_HIT"
+        ]
+      }
+    },
+    {
+      "key": "checks.C3",
+      "topic": "CHECK",
+      "section": "checks.C3",
+      "priority": 85,
+      "title": "What to stop and start: fix the systems first",
+      "diagnosis": "Current systems (performance, promotion, reward, approvals) reward parts of the culture people want less of.",
+      "why": "Processes that reward the old culture keep producing it, whatever leaders announce. They shape behaviour more than any message.",
+      "actions": [
+        {
+          "text": "Change at least one visible ritual that signals the old culture.",
+          "owner_role": "Chief Executive",
+          "horizon": "0 to 30 days"
+        },
+        {
+          "text": "Redesign performance management, promotion criteria and incentives against the target culture.",
+          "owner_role": "Chief People Officer",
+          "horizon": "Within 90 days"
+        }
+      ],
+      "questions": [
+        "Which recognition ritual most clearly rewards the old culture?"
+      ],
+      "rule": {
+        "fact": "check.C3",
+        "op": "in",
+        "value": [
+          "MISS",
+          "PARTIAL_HIT",
+          "SYSTEMIC_MISS"
+        ]
+      }
+    },
+    {
+      "key": "checks.C4",
+      "topic": "CHECK",
+      "section": "checks.C4",
+      "priority": 75,
+      "title": "Business model readiness: build the culture before the model goes live",
+      "diagnosis": "The culture does not yet fit the business model the organisation runs or plans to move to.",
+      "why": "A model change built on a culture that does not fit it runs late and over budget.",
+      "actions": [
+        {
+          "text": "Build the orientations the target model needs, starting with the teams who will run it.",
+          "owner_role": "Executive team",
+          "horizon": "6 to 18 months"
+        },
+        {
+          "text": "Add culture readiness to the model change programme's go live criteria.",
+          "owner_role": "The Board",
+          "horizon": "Before go live"
+        }
+      ],
+      "rule": {
+        "fact": "check.C4",
+        "op": "in",
+        "value": [
+          "MISS",
+          "PARTIAL_HIT"
+        ]
+      }
+    },
+    {
+      "key": "checks.allhit",
+      "topic": "CHECK",
+      "section": "checks.all",
+      "priority": 50,
+      "title": "All four checks hit: protect what works",
+      "diagnosis": "The culture supports the strategy, leadership, systems and business model.",
+      "why": "The risk is erosion: drift as the organisation grows, and loss of the rituals that sustain the profile.",
+      "actions": [
+        {
+          "text": "Name the rituals that carry the culture and make them part of onboarding.",
+          "owner_role": "Chief People Officer",
+          "horizon": "0 to 90 days"
+        }
+      ],
+      "rule": {
+        "all": [
+          {
+            "fact": "check.C1",
+            "op": "eq",
+            "value": "HIT"
+          },
+          {
+            "fact": "check.C2",
+            "op": "eq",
+            "value": "HIT"
+          },
+          {
+            "fact": "check.C3",
+            "op": "eq",
+            "value": "HIT"
+          },
+          {
+            "fact": "check.C4",
+            "op": "eq",
+            "value": "HIT"
+          }
+        ]
+      }
+    },
+    {
+      "key": "departments.diverges",
+      "topic": "GROUP",
+      "level": "GROUP",
+      "section": "departments.dominant",
+      "priority": 60,
+      "title": "A distinct sub culture",
+      "diagnosis": "This department leads with {{f:seg.dominant}}, where the organisation leads with {{f:dominant}}. This department leads with a different orientation from the organisation as a whole.",
+      "why": "Some difference is healthy and fits the work. It becomes a risk when teams that depend on this one pull the other way, or when it moves away from the culture the strategy needs.",
+      "actions": [
+        {
+          "text": "Ask the department head whether the difference fits the work, and record the answer.",
+          "owner_role": "Executive sponsor",
+          "horizon": "0 to 30 days"
+        },
+        {
+          "text": "Where it does not fit, include the department in the first wave of the plan.",
+          "owner_role": "Department head",
+          "horizon": "0 to 90 days"
+        }
+      ],
+      "questions": [
+        "Does the work of this department need a different culture?",
+        "Which other teams depend on it?"
+      ],
+      "rule": {
+        "fact": "seg.diverges",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "key": "departments.more.ENGAGE",
+      "topic": "GROUP",
+      "level": "GROUP",
+      "section": "departments.ENGAGE",
+      "priority": 50,
+      "title": "More Engage than the organisation",
+      "diagnosis": "Here Engage is {{f:seg.now.ENGAGE|1}} against {{f:now.ENGAGE|1}} for the organisation ({{f:seg.diff.ENGAGE|+1}} points). This department shows clearly more Engage than the organisation.",
+      "why": "Strong team loyalty is an asset; watch that decisions are not slowed by the wish to keep everyone on board.",
+      "actions": [
+        {
+          "text": "Use this team's practice of developing people as a model for others.",
+          "owner_role": "Department head",
+          "horizon": "0 to 90 days"
+        }
+      ],
+      "rule": {
+        "fact": "seg.diff.ENGAGE",
+        "op": "gte",
+        "value": 5
+      }
+    },
+    {
+      "key": "departments.less.ENGAGE",
+      "topic": "GROUP",
+      "level": "GROUP",
+      "section": "departments.ENGAGE",
+      "priority": 55,
+      "title": "Less Engage than the organisation",
+      "diagnosis": "Here Engage is {{f:seg.now.ENGAGE|1}} against {{f:now.ENGAGE|1}} for the organisation ({{f:seg.diff.ENGAGE|+1}} points). This department shows clearly less Engage than the organisation.",
+      "why": "Watch for people feeling like a resource rather than part of a team, and for quiet exits.",
+      "actions": [
+        {
+          "text": "Check attrition and absence for this department against the organisation.",
+          "owner_role": "Chief People Officer",
+          "horizon": "0 to 30 days"
+        }
+      ],
+      "rule": {
+        "fact": "seg.diff.ENGAGE",
+        "op": "lte",
+        "value": -5
+      }
+    },
+    {
+      "key": "departments.more.INNOVATE",
+      "topic": "GROUP",
+      "level": "GROUP",
+      "section": "departments.INNOVATE",
+      "priority": 50,
+      "title": "More Innovate than the organisation",
+      "diagnosis": "Here Innovate is {{f:seg.now.INNOVATE|1}} against {{f:now.INNOVATE|1}} for the organisation ({{f:seg.diff.INNOVATE|+1}} points). This department experiments more than the organisation.",
+      "why": "Expect energy for new ideas; watch for initiatives that start and are never finished.",
+      "actions": [
+        {
+          "text": "Use this department to pilot changes the organisation wants to test.",
+          "owner_role": "Executive sponsor",
+          "horizon": "0 to 90 days"
+        }
+      ],
+      "rule": {
+        "fact": "seg.diff.INNOVATE",
+        "op": "gte",
+        "value": 5
+      }
+    },
+    {
+      "key": "departments.less.INNOVATE",
+      "topic": "GROUP",
+      "level": "GROUP",
+      "section": "departments.INNOVATE",
+      "priority": 50,
+      "title": "Less Innovate than the organisation",
+      "diagnosis": "Here Innovate is {{f:seg.now.INNOVATE|1}} against {{f:now.INNOVATE|1}} for the organisation ({{f:seg.diff.INNOVATE|+1}} points). New ideas get less room in this department.",
+      "why": "Watch for good ideas that never surface, and for the team falling behind changes outside.",
+      "actions": [
+        {
+          "text": "Give this department one protected improvement project with a named sponsor.",
+          "owner_role": "Department head",
+          "horizon": "30 to 90 days"
+        }
+      ],
+      "rule": {
+        "fact": "seg.diff.INNOVATE",
+        "op": "lte",
+        "value": -5
+      }
+    },
+    {
+      "key": "departments.more.PERFORM",
+      "topic": "GROUP",
+      "level": "GROUP",
+      "section": "departments.PERFORM",
+      "priority": 50,
+      "title": "More Perform than the organisation",
+      "diagnosis": "Here Perform is {{f:seg.now.PERFORM|1}} against {{f:now.PERFORM|1}} for the organisation ({{f:seg.diff.PERFORM|+1}} points). This department is more driven by targets and results than the organisation.",
+      "why": "Expect pace and accountability; watch for burnout, and for winning locally at the cost of other teams.",
+      "actions": [
+        {
+          "text": "Check workload and absence, and add a shared goal with the teams this department depends on.",
+          "owner_role": "Department head",
+          "horizon": "30 to 90 days"
+        }
+      ],
+      "rule": {
+        "fact": "seg.diff.PERFORM",
+        "op": "gte",
+        "value": 5
+      }
+    },
+    {
+      "key": "departments.less.PERFORM",
+      "topic": "GROUP",
+      "level": "GROUP",
+      "section": "departments.PERFORM",
+      "priority": 50,
+      "title": "Less Perform than the organisation",
+      "diagnosis": "Here Perform is {{f:seg.now.PERFORM|1}} against {{f:now.PERFORM|1}} for the organisation ({{f:seg.diff.PERFORM|+1}} points). Targets and results count for less in this department.",
+      "why": "Watch for slipping deadlines and for outcomes that nobody clearly owns.",
+      "actions": [
+        {
+          "text": "Agree two measures the department reviews every month.",
+          "owner_role": "Department head",
+          "horizon": "0 to 30 days"
+        }
+      ],
+      "rule": {
+        "fact": "seg.diff.PERFORM",
+        "op": "lte",
+        "value": -5
+      }
+    },
+    {
+      "key": "departments.more.GOVERN",
+      "topic": "GROUP",
+      "level": "GROUP",
+      "section": "departments.GOVERN",
+      "priority": 50,
+      "title": "More Govern than the organisation",
+      "diagnosis": "Here Govern is {{f:seg.now.GOVERN|1}} against {{f:now.GOVERN|1}} for the organisation ({{f:seg.diff.GOVERN|+1}} points). This department values process and control more than the organisation.",
+      "why": "Expect consistent, low risk work; watch for slow approvals and rules that outlive their purpose.",
+      "actions": [
+        {
+          "text": "Review the department's approval steps for ones that no longer change outcomes.",
+          "owner_role": "Department head",
+          "horizon": "30 to 90 days"
+        }
+      ],
+      "rule": {
+        "fact": "seg.diff.GOVERN",
+        "op": "gte",
+        "value": 5
+      }
+    },
+    {
+      "key": "departments.less.GOVERN",
+      "topic": "GROUP",
+      "level": "GROUP",
+      "section": "departments.GOVERN",
+      "priority": 50,
+      "title": "Less Govern than the organisation",
+      "diagnosis": "Here Govern is {{f:seg.now.GOVERN|1}} against {{f:now.GOVERN|1}} for the organisation ({{f:seg.diff.GOVERN|+1}} points). Process and control count for less in this department.",
+      "why": "Watch for uneven quality, shortcuts and risks that nobody owns.",
+      "actions": [
+        {
+          "text": "Document the three processes where mistakes repeat most.",
+          "owner_role": "Department head",
+          "horizon": "30 to 90 days"
+        }
+      ],
+      "rule": {
+        "fact": "seg.diff.GOVERN",
+        "op": "lte",
+        "value": -5
+      }
+    },
+    {
+      "key": "leaders.general",
+      "topic": "LEADER",
+      "section": "leaders.development",
+      "priority": 50,
+      "title": "Turning the 360 into development",
+      "diagnosis": "Each leader has a private result and a development plan. The organisation's job is to make development happen, not to read individual results.",
+      "why": "Leader results are for development only. They never feed performance ratings, pay, succession or discipline, so leaders can trust the feedback.",
+      "actions": [
+        {
+          "text": "Give every leader with a result a coaching conversation within 30 days.",
+          "owner_role": "Chief People Officer",
+          "horizon": "0 to 30 days"
+        },
+        {
+          "text": "Track that development plans exist and are reviewed, without reading their content.",
+          "owner_role": "Chief People Officer",
+          "horizon": "Quarterly"
+        }
+      ],
+      "rule": {}
+    },
+    {
+      "key": "roadmap.sequence",
+      "topic": "PLAN",
+      "section": "roadmap.sequence",
+      "priority": 50,
+      "title": "How to sequence the change",
+      "diagnosis": "The plan works in three phases: foundation in the first 90 days, activation in months 4 to 12, and embedding in years 2 and 3.",
+      "why": "Early visible changes build belief; system changes make the culture stick; embedding makes it survive leadership changes.",
+      "actions": [
+        {
+          "text": "Make the first visible change inside 30 days.",
+          "owner_role": "Chief Executive",
+          "horizon": "0 to 30 days"
+        },
+        {
+          "text": "Set up a culture council with members from every level.",
+          "owner_role": "Chief People Officer",
+          "horizon": "0 to 90 days"
+        },
+        {
+          "text": "Pulse at 90 and 180 days and reassess at twelve months.",
+          "owner_role": "Chief People Officer",
+          "horizon": "12 months"
+        }
+      ],
+      "traps": [
+        "Announcing the plan before the first change is made.",
+        "Measuring activity (workshops held) instead of change (gaps closing)."
+      ],
+      "rule": {}
+    },
+    {
+      "key": "kpis.rhythm",
+      "topic": "KPI",
+      "section": "kpis.rhythm",
+      "priority": 50,
+      "title": "Make culture a standing agenda item",
+      "diagnosis": "Culture measures only change behaviour when the people who can act on them look at them regularly.",
+      "why": "A scorecard reviewed once a year is a report; one reviewed monthly is a management tool.",
+      "actions": [
+        {
+          "text": "Review the culture measures at the executive meeting every month and at the Board every quarter.",
+          "owner_role": "Chief Executive",
+          "horizon": "Monthly"
+        },
+        {
+          "text": "Pair every lagging measure with a leading one that moves first.",
+          "owner_role": "Chief People Officer",
+          "horizon": "0 to 90 days"
+        }
+      ],
+      "rule": {}
+    },
+    {
+      "key": "glossary.now",
+      "topic": "GLOSSARY",
+      "section": "glossary",
+      "title": "Now",
+      "diagnosis": "The culture as people experience it at the time of the survey.",
+      "rule": {}
+    },
+    {
+      "key": "glossary.preferred",
+      "topic": "GLOSSARY",
+      "section": "glossary",
+      "title": "Preferred",
+      "diagnosis": "The culture people believe the organisation needs to succeed.",
+      "rule": {}
+    },
+    {
+      "key": "glossary.gap",
+      "topic": "GLOSSARY",
+      "section": "glossary",
+      "title": "Gap",
+      "diagnosis": "Preferred minus Now for an orientation. Positive means people want more of it.",
+      "rule": {}
+    },
+    {
+      "key": "glossary.strength",
+      "topic": "GLOSSARY",
+      "section": "glossary",
+      "title": "Culture strength",
+      "diagnosis": "How far the leading orientation leads the others.",
+      "rule": {}
+    },
+    {
+      "key": "glossary.entropy",
+      "topic": "GLOSSARY",
+      "section": "glossary",
+      "title": "Cultural entropy",
+      "diagnosis": "The total size of the gaps across all four orientations: the energy lost between the culture people live and the one they want.",
+      "rule": {}
+    },
+    {
+      "key": "glossary.tension",
+      "topic": "GLOSSARY",
+      "section": "glossary",
+      "title": "Tension",
+      "diagnosis": "When people want one orientation to grow while its natural opposite shrinks.",
+      "rule": {}
+    },
+    {
+      "key": "glossary.subculture",
+      "topic": "GLOSSARY",
+      "section": "glossary",
+      "title": "Sub culture",
+      "diagnosis": "A department whose culture Now leads with a different orientation from the organisation, or differs enough to treat as distinct.",
+      "rule": {}
+    },
+    {
+      "key": "glossary.shadow",
+      "topic": "GLOSSARY",
+      "section": "glossary",
+      "title": "Shadow culture",
+      "diagnosis": "When executives and staff describe the culture so differently that they are, in effect, describing different organisations.",
+      "rule": {}
+    },
+    {
+      "key": "glossary.netscore",
+      "topic": "GLOSSARY",
+      "section": "glossary",
+      "title": "Net score",
+      "diagnosis": "The share of advocates minus the share of critics on an employee voice question, from minus 100 to plus 100.",
+      "rule": {}
+    },
+    {
+      "key": "glossary.tps",
+      "topic": "GLOSSARY",
+      "section": "glossary",
+      "title": "Transformation Probability Score",
+      "diagnosis": "A score from 1 to 5 combining adaptive capacity, psychological safety, leadership alignment and digital readiness. It sets how many priorities the organisation can carry at once.",
+      "rule": {}
+    },
+    {
+      "key": "glossary.priorityzero",
+      "topic": "GLOSSARY",
+      "section": "glossary",
+      "title": "Priority zero",
+      "diagnosis": "A pre condition that must be done before the priorities it holds back can start.",
+      "rule": {}
+    },
+    {
+      "key": "glossary.signal",
+      "topic": "GLOSSARY",
+      "section": "glossary",
+      "title": "Visible signal",
+      "diagnosis": "A change people can see within 30 days that shows the plan is real.",
+      "rule": {}
+    },
+    {
+      "priority": 70,
+      "key": "gaps.consensus",
+      "topic": "ANALYSIS",
+      "section": "gaps.consensus",
+      "title": "How far people agree on the culture Now",
+      "diagnosis": "Answers spread most on {{f:spread.top}}. The average spread is {{f:spread.ENGAGE|1}} points for Engage, {{f:spread.INNOVATE|1}} for Innovate, {{f:spread.PERFORM|1}} for Perform and {{f:spread.GOVERN|1}} for Govern.",
+      "why": "A small average gap can hide a contested culture. Where spread is high, people in different teams describe different organisations, and any change story will land differently in each.",
+      "risks": [
+        "One message is read in opposite ways by different teams.",
+        "Energy goes into arguing about how things are done rather than doing them."
+      ],
+      "actions": [
+        {
+          "text": "In the leadership debrief, ask which teams experience the culture most differently on the orientation with the widest spread, and why.",
+          "owner_role": "Executive team",
+          "horizon": "0 to 30 days"
+        }
+      ],
+      "questions": [
+        "Where do people describe this organisation most differently, and what in their work explains it?"
+      ],
+      "rule": {}
+    },
+    {
+      "priority": 68,
+      "key": "gaps.axes",
+      "topic": "ANALYSIS",
+      "section": "gaps.axes",
+      "title": "Where the culture points: inward or outward, flexible or structured",
+      "diagnosis": "Inward focus (Engage and Govern) totals {{f:axis.inward|1}} points against {{f:axis.outward|1}} outward (Innovate and Perform): the culture reads as {{f:axis.focus}}. Flexibility (Engage and Innovate) totals {{f:axis.flexible|1}} against {{f:axis.structured|1}} for structure (Perform and Govern): it reads as {{f:axis.style}}.",
+      "why": "The two axes show the trade offs the organisation is making without saying so: looking after its own people and systems or competing outside, and adapting quickly or keeping control.",
+      "rule": {}
+    },
+    {
+      "priority": 66,
+      "key": "gaps.values_reality",
+      "topic": "ANALYSIS",
+      "section": "gaps.values_reality",
+      "title": "What people say against what is lived",
+      "diagnosis": "The widest difference between what people say the organisation is (Cultural DNA) and what holds it together and gets rewarded (Cohesion Drivers and Victory Conditions) is in {{f:vr.widest}}: {{f:vr.widest_delta|+1}} points.",
+      "why": "Where stated values and lived rewards differ, people follow the rewards. A value that is declared but not lived costs trust each time leaders repeat it.",
+      "risks": [
+        "Values statements are heard as slogans.",
+        "New joiners learn the real rules from colleagues, not from induction."
+      ],
+      "actions": [
+        {
+          "text": "Pick the value with the widest difference and change one reward or recognition practice so it is lived, not only stated.",
+          "owner_role": "Chief People Officer",
+          "horizon": "30 to 90 days"
+        }
+      ],
+      "rule": {
+        "fact": "vr.widest_abs",
+        "op": "gte",
+        "value": 3
+      }
+    },
+    {
+      "priority": 85,
+      "key": "dimensions.innovation_contradiction",
+      "topic": "CONTRADICTION",
+      "section": "dimensions.contradiction",
+      "title": "Success celebrates new ideas, but people do not feel free to try them",
+      "diagnosis": "Victory Conditions lead with Innovate ({{f:dim.D6.top_value|1}} points), yet the innovation climate voice score is {{f:eos.Q3|+0}}.",
+      "why": "The organisation says it rewards innovation but has not built the conditions for it: time, permission and protection when an experiment fails.",
+      "risks": [
+        "Ideas stay in people's heads.",
+        "Recognition for innovation goes to the same few people and others stop trying."
+      ],
+      "actions": [
+        {
+          "text": "Protect time for one cross team experiment a quarter, with an executive sponsor.",
+          "owner_role": "Executive team",
+          "horizon": "30 to 90 days"
+        },
+        {
+          "text": "Recognise one well run experiment that failed, and say what it taught.",
+          "owner_role": "Chief Executive",
+          "horizon": "0 to 30 days"
+        }
+      ],
+      "signal": "Within 30 days, a leader publicly thanks a team for an experiment that did not work.",
+      "rule": {
+        "all": [
+          {
+            "fact": "dim.D6.top",
+            "op": "eq",
+            "value": "INNOVATE"
+          },
+          {
+            "fact": "eos_band.Q3",
+            "op": "in",
+            "value": [
+              "NEGATIVE",
+              "ACCEPTABLE"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "priority": 85,
+      "key": "dimensions.leadership_contradiction",
+      "topic": "CONTRADICTION",
+      "section": "dimensions.contradiction",
+      "title": "Leaders coach in style, but people are not confident in their leadership",
+      "diagnosis": "The Leadership Blueprint leads with Engage ({{f:dim.D2.top_value|1}} points), yet the leadership voice score is {{f:eos.Q2|+0}}.",
+      "why": "People see leaders as supportive but not yet effective: the warmth is there, the follow through, clarity and advocacy are not.",
+      "risks": [
+        "Neutral staff drift to critics when promises are not kept."
+      ],
+      "actions": [
+        {
+          "text": "Each executive names one commitment to their teams and reports back on it within 60 days.",
+          "owner_role": "Executive team",
+          "horizon": "30 to 90 days"
+        }
+      ],
+      "rule": {
+        "all": [
+          {
+            "fact": "dim.D2.top",
+            "op": "eq",
+            "value": "ENGAGE"
+          },
+          {
+            "fact": "eos_band.Q2",
+            "op": "in",
+            "value": [
+              "NEGATIVE",
+              "ACCEPTABLE"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "priority": 84,
+      "key": "dimensions.development_contradiction",
+      "topic": "CONTRADICTION",
+      "section": "dimensions.contradiction",
+      "title": "People management is described as developmental, but people do not see a growth path",
+      "diagnosis": "People Architecture leads with Engage ({{f:dim.D3.top_value|1}} points), yet the development and growth voice score is {{f:eos.Q4|+0}}.",
+      "why": "Day to day management feels supportive, but careers do not move. Without visible paths, the best people leave for growth elsewhere.",
+      "actions": [
+        {
+          "text": "Publish how development places and promotions are decided, and the criteria used.",
+          "owner_role": "Chief People Officer",
+          "horizon": "30 to 90 days"
+        }
+      ],
+      "rule": {
+        "all": [
+          {
+            "fact": "dim.D3.top",
+            "op": "eq",
+            "value": "ENGAGE"
+          },
+          {
+            "fact": "eos_band.Q4",
+            "op": "in",
+            "value": [
+              "NEGATIVE",
+              "ACCEPTABLE"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "priority": 82,
+      "key": "dimensions.glue_contradiction",
+      "topic": "CONTRADICTION",
+      "section": "dimensions.contradiction",
+      "title": "The organisation is held together by results alone",
+      "diagnosis": "Cohesion Drivers lead with Perform ({{f:dim.D4.top_value|1}} points) while people want Engage to rise by {{f:gap.ENGAGE|+1}} points.",
+      "why": "Cohesion built only on hitting targets is brittle: when results dip, there is little else holding people together.",
+      "risks": [
+        "A bad quarter becomes a wave of resignations."
+      ],
+      "actions": [
+        {
+          "text": "Add one shared team ritual that is not about results, such as a monthly learning review.",
+          "owner_role": "Leaders at every level",
+          "horizon": "0 to 30 days"
+        }
+      ],
+      "rule": {
+        "all": [
+          {
+            "fact": "dim.D4.top",
+            "op": "eq",
+            "value": "PERFORM"
+          },
+          {
+            "fact": "class.ENGAGE",
+            "op": "in",
+            "value": [
+              "BUILD",
+              "STRENGTHEN"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "priority": 80,
+      "key": "dimensions.compass_contradiction",
+      "topic": "CONTRADICTION",
+      "section": "dimensions.contradiction",
+      "title": "Strategy bets on stability while people ask for new ideas",
+      "diagnosis": "The Strategic Compass leads with Govern ({{f:dim.D5.top_value|1}} points), while the largest increase people want is in Innovate ({{f:gap.INNOVATE|+1}} points).",
+      "why": "Where money and time go decides the culture more than any message. If the budget protects stability, innovation stays a slogan.",
+      "actions": [
+        {
+          "text": "Ring fence a small innovation budget in the next planning round.",
+          "owner_role": "Chief Financial Officer",
+          "horizon": "3 to 6 months"
+        }
+      ],
+      "rule": {
+        "all": [
+          {
+            "fact": "dim.D5.top",
+            "op": "eq",
+            "value": "GOVERN"
+          },
+          {
+            "fact": "largest_gap",
+            "op": "eq",
+            "value": "INNOVATE"
+          }
+        ]
+      }
+    },
+    {
+      "priority": 80,
+      "key": "perception.leaders_see_more",
+      "topic": "CONTRADICTION",
+      "section": "perception.direction",
+      "title": "Leaders see a warmer organisation than staff do",
+      "diagnosis": "Executives score Engage {{f:exec.now.ENGAGE|1}} and staff {{f:staff.now.ENGAGE|1}}.",
+      "why": "Leaders believe they are building a collaborative place to work; staff experience something different. Every people initiative will be judged against that gap.",
+      "actions": [
+        {
+          "text": "Hold monthly listening sessions where executives hear staff directly, with no agenda.",
+          "owner_role": "Chief Executive",
+          "horizon": "0 to 30 days"
+        }
+      ],
+      "rule": {
+        "all": [
+          {
+            "fact": "perception.widest",
+            "op": "eq",
+            "value": "ENGAGE"
+          },
+          {
+            "fact": "perception.leaders_higher",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "priority": 78,
+      "key": "perception.staff_see_more_perform",
+      "topic": "CONTRADICTION",
+      "section": "perception.direction",
+      "title": "Staff feel more pressure for results than leaders see",
+      "diagnosis": "Staff score Perform {{f:staff.now.PERFORM|1}} and executives {{f:exec.now.PERFORM|1}}.",
+      "why": "Pressure felt lower down is often invisible at the top. It shows up later as burnout and attrition.",
+      "actions": [
+        {
+          "text": "Review workload in the teams with the highest Perform scores before adding new targets.",
+          "owner_role": "Chief Operating Officer",
+          "horizon": "30 to 90 days"
+        }
+      ],
+      "rule": {
+        "all": [
+          {
+            "fact": "perception.widest",
+            "op": "eq",
+            "value": "PERFORM"
+          },
+          {
+            "fact": "perception.leaders_higher",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      }
+    },
+    {
+      "priority": 75,
+      "key": "departments.opposes",
+      "topic": "GROUP",
+      "level": "GROUP",
+      "section": "departments.friction",
+      "title": "This department pulls against the organisation's lead",
+      "diagnosis": "It leads with {{f:seg.dominant}}, the natural opposite of the organisation's {{f:dominant}}.",
+      "why": "Opposite orientations value different things: one protects what the other wants to change. Hand offs with other teams are where the friction shows.",
+      "risks": [
+        "Hand offs slow down and blame grows between teams.",
+        "Customers feel the inconsistency."
+      ],
+      "actions": [
+        {
+          "text": "Run a facilitated session between this department and the teams it hands work to, to agree shared norms.",
+          "owner_role": "Chief People Officer",
+          "horizon": "30 to 90 days"
+        }
+      ],
+      "questions": [
+        "Where does work pass between this team and others, and what goes wrong there?"
+      ],
+      "rule": {
+        "fact": "seg.opposes",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "priority": 95,
+      "key": "roadmap.posture.sustain",
+      "topic": "POSTURE",
+      "section": "roadmap.posture",
+      "title": "Strategic posture: sustain and strengthen",
+      "diagnosis": "No orientation needs a large build ({{f:build_count}} at the build level) and readiness is not high risk.",
+      "why": "Wholesale change would be unnecessary and risky. Protect what works and make a few targeted, high leverage investments.",
+      "rule": {
+        "all": [
+          {
+            "fact": "build_count",
+            "op": "eq",
+            "value": 0
+          },
+          {
+            "fact": "readiness.tps_band",
+            "op": "ne",
+            "value": "HIGH_RISK"
+          }
+        ]
+      }
+    },
+    {
+      "priority": 95,
+      "key": "roadmap.posture.targeted",
+      "topic": "POSTURE",
+      "section": "roadmap.posture",
+      "title": "Strategic posture: a targeted shift",
+      "diagnosis": "One orientation needs a large build ({{f:largest_gap}}, {{f:build_count}} at the build level).",
+      "why": "Focus the plan on that one move and protect everything else, so people can see the change without feeling everything is changing.",
+      "rule": {
+        "fact": "build_count",
+        "op": "eq",
+        "value": 1
+      }
+    },
+    {
+      "priority": 95,
+      "key": "roadmap.posture.transform",
+      "topic": "POSTURE",
+      "section": "roadmap.posture",
+      "title": "Strategic posture: transformation",
+      "diagnosis": "{{f:build_count}} orientations need a large build, or readiness is high risk.",
+      "why": "The culture people want is a different culture. Stage the change, build readiness first, and expect two to three years.",
+      "rule": {
+        "any": [
+          {
+            "fact": "build_count",
+            "op": "gte",
+            "value": 2
+          },
+          {
+            "fact": "readiness.tps_band",
+            "op": "eq",
+            "value": "HIGH_RISK"
+          }
+        ]
+      }
+    },
+    {
+      "priority": 90,
+      "key": "roadmap.quickwin.ceo",
+      "topic": "QUICK_WIN",
+      "section": "roadmap.quickwin",
+      "title": "A personal culture commitment from the Chief Executive",
+      "diagnosis": "Specific and personal, naming what the leader will do differently, not a values message.",
+      "rule": {}
+    },
+    {
+      "priority": 90,
+      "key": "roadmap.quickwin.cascade",
+      "topic": "QUICK_WIN",
+      "section": "roadmap.quickwin",
+      "title": "Share this report with the leadership team, and a summary with all staff",
+      "diagnosis": "Publishing the uncomfortable findings is itself a signal that the change is real.",
+      "rule": {}
+    },
+    {
+      "priority": 90,
+      "key": "roadmap.quickwin.council",
+      "topic": "QUICK_WIN",
+      "section": "roadmap.quickwin",
+      "title": "Form a small culture working group across levels and teams",
+      "diagnosis": "With a named sponsor, a budget and a monthly slot with the executive team.",
+      "rule": {}
+    },
+    {
+      "priority": 90,
+      "key": "roadmap.quickwin.listening",
+      "topic": "QUICK_WIN",
+      "section": "roadmap.quickwin",
+      "title": "Start monthly listening sessions between executives and staff",
+      "diagnosis": "Executives hear staff directly, with no agenda, starting with the orientation where the two groups differ most.",
+      "rule": {
+        "any": [
+          {
+            "fact": "perception.ENGAGE",
+            "op": "in",
+            "value": [
+              "WATCH",
+              "SHADOW_CULTURE"
+            ]
+          },
+          {
+            "fact": "perception.INNOVATE",
+            "op": "in",
+            "value": [
+              "WATCH",
+              "SHADOW_CULTURE"
+            ]
+          },
+          {
+            "fact": "perception.PERFORM",
+            "op": "in",
+            "value": [
+              "WATCH",
+              "SHADOW_CULTURE"
+            ]
+          },
+          {
+            "fact": "perception.GOVERN",
+            "op": "in",
+            "value": [
+              "WATCH",
+              "SHADOW_CULTURE"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "priority": 90,
+      "key": "roadmap.quickwin.growth",
+      "topic": "QUICK_WIN",
+      "section": "roadmap.quickwin",
+      "title": "Announce the intent to invest in development",
+      "diagnosis": "Even if the programme takes 90 days to design, say now that it is coming and when.",
+      "rule": {
+        "fact": "eos_band.Q4",
+        "op": "in",
+        "value": [
+          "NEGATIVE",
+          "ACCEPTABLE"
+        ]
+      }
+    },
+    {
+      "priority": 90,
+      "key": "roadmap.quickwin.safety",
+      "topic": "QUICK_WIN",
+      "section": "roadmap.quickwin",
+      "title": "Leaders commit to how they will respond to bad news",
+      "diagnosis": "A short, visible pledge on how challenge and mistakes will be received.",
+      "rule": {
+        "fact": "readiness.d8",
+        "op": "lte",
+        "value": "3.5"
+      }
+    },
+    {
+      "priority": 90,
+      "key": "roadmap.quickwin.clarity",
+      "topic": "QUICK_WIN",
+      "section": "roadmap.quickwin",
+      "title": "Every manager explains the strategy in their team's own terms",
+      "diagnosis": "One page per team: what the strategy means for its work and what it will stop doing.",
+      "rule": {
+        "fact": "eos_band.Q8",
+        "op": "in",
+        "value": [
+          "NEGATIVE",
+          "ACCEPTABLE"
+        ]
+      }
+    },
+    {
+      "priority": 80,
+      "key": "roadmap.phase.1",
+      "topic": "PHASE",
+      "section": "roadmap.phase",
+      "title": "Phase 1, 0 to 90 days: foundation and alignment",
+      "diagnosis": "Agree the findings, close the pre conditions, form the working group, start the listening sessions and make the first visible change.",
+      "good": [
+        "Working group meeting monthly",
+        "First visible change made and announced",
+        "Pulse baseline taken"
+      ],
+      "rule": {}
+    },
+    {
+      "priority": 80,
+      "key": "roadmap.phase.2",
+      "topic": "PHASE",
+      "section": "roadmap.phase",
+      "title": "Phase 2, 4 to 12 months: activation and build",
+      "diagnosis": "Redesign the systems that reward behaviour (performance, promotion, recognition), build manager capability and run the priority interventions.",
+      "good": [
+        "Psychological safety at or above the 12 month target",
+        "Largest executive and staff gap under 5 points",
+        "Employee voice index rising at each pulse"
+      ],
+      "rule": {}
+    },
+    {
+      "priority": 80,
+      "key": "roadmap.phase.3",
+      "topic": "PHASE",
+      "section": "roadmap.phase",
+      "title": "Phase 3, years 2 to 3: embedding and sustaining",
+      "diagnosis": "Culture is part of every talent process, reviewed by the board each year and reassessed against this baseline.",
+      "good": [
+        "Reassessment shows the preferred culture moving toward Now",
+        "Cultural entropy in the low band",
+        "Culture risk reported beside financial and operational risk"
+      ],
+      "rule": {}
+    },
+    {
+      "priority": 50,
+      "key": "sources.edmondson",
+      "topic": "SOURCE",
+      "section": "sources",
+      "title": "Edmondson, A. (1999). Psychological safety and learning behavior in work teams. Administrative Science Quarterly, 44(2), 350 to 383.",
+      "diagnosis": "The idea of psychological safety used in the readiness chapter.",
+      "rule": {}
+    },
+    {
+      "priority": 50,
+      "key": "sources.dweck",
+      "topic": "SOURCE",
+      "section": "sources",
+      "title": "Dweck, C. S. (2006). Mindset: The New Psychology of Success. New York: Random House.",
+      "diagnosis": "The growth mindset idea behind the draft mindset statements.",
+      "rule": {}
+    },
+    {
+      "priority": 50,
+      "key": "sources.reichheld",
+      "topic": "SOURCE",
+      "section": "sources",
+      "title": "Reichheld, F. F. (2003). The one number you need to grow. Harvard Business Review, 81(12).",
+      "diagnosis": "The advocate minus critic method used for the employee voice scores.",
+      "rule": {}
+    },
+    {
+      "priority": 50,
+      "key": "sources.kotter",
+      "topic": "SOURCE",
+      "section": "sources",
+      "title": "Kotter, J. P. (1995). Leading change: why transformation efforts fail. Harvard Business Review, 73(2).",
+      "diagnosis": "The staging of change and early visible wins used in the roadmap.",
+      "rule": {}
+    },
+    {
+      "priority": 50,
+      "key": "sources.duhigg",
+      "topic": "SOURCE",
+      "section": "sources",
+      "title": "Duhigg, C. (2016, 25 February). What Google learned from its quest to build the perfect team. The New York Times Magazine.",
+      "diagnosis": "Public account of team research that found psychological safety mattered most.",
+      "rule": {}
+    }
+  ]
+}

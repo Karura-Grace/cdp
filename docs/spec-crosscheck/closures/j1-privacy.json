@@ -1,0 +1,125 @@
+[
+  {
+    "id": "S1.4.5-001",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/consent-template.mjs:14-21 (right to withdraw paragraph); apps/web/app/engagements/[id]/setup/consent-draft-note.tsx",
+    "evidence_test": "scripts/check-consent-template.mjs: right to withdraw cells (explicit wording, how, no consequence and the limit after submit, every regime, DRAFT note in the staff screen)",
+    "notes": "The template now carries an explicit right to withdraw paragraph in plain English: withdraw before submit by closing the page, pressing I do not agree, or writing to hello@pac.africa; no consequence; after submit answers cannot be taken back because they are separated from the name. It is DRAFT wording for PAC legal review, drafted by Claude: the staff screen where the consent text is approved shows a DRAFT note while the text carries the paragraph. Remove the note once legal signs the wording off. Existing consent texts made before this change do not have the paragraph until a new version is made."
+  },
+  {
+    "id": "S1.4.5-002",
+    "status": "Partial",
+    "severity": "Low",
+    "evidence_code": "apps/web/lib/consent-template.mjs:24 (consentPurposeGap); apps/web/lib/consent-purpose-warning.ts",
+    "evidence_test": "scripts/check-consent-template.mjs: purpose gap cells; scripts/e2e-privacy.mjs: purpose cells (unchanged)",
+    "notes": "Purpose is stored and copied into consent text and covers (as before). New: a warning only (never a block) when the approved consent text does not state the purpose: consentPurposeWarning(engagementId) in lib/consent-purpose-warning.ts returns {id: CONSENT_PURPOSE, message} or null. It is NOT yet called by lib/preflight.ts (the lead owns that file): call it where the warnings are collected. Partial until wired."
+  },
+  {
+    "id": "S1.4.5-003",
+    "status": "Built",
+    "evidence_code": "apps/web/app/v1/survey/route.ts:30-40,60-72; apps/web/app/respond/flow.tsx:223 (About you); supabase/migrations/20261019010000_j1b_privacy_scorecard.sql (rpc_set_invitation_attributes, rpc_invitation_prefill)",
+    "evidence_test": "scripts/e2e-privacy.mjs: About you cells",
+    "notes": "The respondent answers the organisation's declared attributes (closed lists, Prefer not to say always last and the starting choice) on the S2-04 About you screen. Answers travel with the final submit, are written by rpc_set_invitation_attributes into the invitation's demographic snapshot under attributes (the existing capture mechanism, validated against the closed list and the invitation's own organisation) and are copied to the response by the unchanged submit_response, which also empties the snapshot and destroys the person link. No response row can join to a person (the check counts the response columns, and counts rather than reads responses). Not built here: segment views by these attributes (AXES in lib/segments.ts is unchanged). Re identification risk to note: an attribute adds a dimension to a response's group snapshot; the segment floor of 5 applies only to axes the segment API allows. Checks pass against migration 20261019010000 and the rebuilt server, except the action link cells, which need migration 20261019010100 (rpc_action_link_kpi) applied: the service role cannot update public.action directly (the schema probe in e2e-privacy says so)."
+  },
+  {
+    "id": "S1.4.5-004",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/privacy.ts:SENSITIVE_DEFAULT; apps/web/app/v1/survey/route.ts (PREFER_NOT); apps/web/app/respond/rights/rights.tsx",
+    "evidence_test": "scripts/e2e-privacy.mjs: sensitive attribute always offers Prefer not to say; About you: every list ends with Prefer not to say, exactly once",
+    "notes": "Sensitive attributes always carry Prefer not to say, answering is optional, a cleared value reads as Prefer not to say, nothing blocks. On the survey About you screen every attribute (sensitive or not) offers it and starts on it."
+  },
+  {
+    "id": "S1.4.5-005",
+    "status": "Built",
+    "evidence_code": "apps/web/app/v1/survey/rights/route.ts; apps/web/lib/privacy.ts:80 (openObjectionTask); supabase/migrations/20261019010000_j1b_privacy_scorecard.sql (issue_person_invitations, pulse_issue skip objection; consultant_task); apps/web/app/v1/assessments/[id]/invitations/route.ts:40; apps/web/components/rights-link.tsx; apps/web/lib/email.ts:28",
+    "evidence_test": "scripts/e2e-privacy.mjs: rights cells, objection cells (roster skips open and done, refused does not, database function skips, tasks and RLS); scripts/check-consent-template.mjs: rights page links",
+    "notes": "Self service by survey link is unchanged. Decided effect of an objection: further links to that person are blocked (an OPEN or DONE OBJECT request; REFUSED does not block) by the roster route and by the database functions that issue survey and pulse links, which skip rather than refuse; the roster answer reports skipped_objection. A consultant task is opened (public.consultant_task, listed under Tasks on the privacy page, consultant marks it done). A person who objected keeps a link they already hold. 360 rater links are not covered (only survey and pulse links). The rights page is linked from the consent screen, the invitation email (same token) and the survey footer. The SUBMITTED state still has no check (needs a submitted link). Checks pass against migration 20261019010000 and the rebuilt server, except the action link cells, which need migration 20261019010100 (rpc_action_link_kpi) applied: the service role cannot update public.action directly (the schema probe in e2e-privacy says so)."
+  },
+  {
+    "id": "S1.4.5-006",
+    "status": "Partial",
+    "severity": "Low",
+    "evidence_code": "apps/web/lib/retention.ts:9,31; apps/web/app/v1/engagements/[id]/privacy/retention/",
+    "evidence_test": "scripts/e2e-retention.mjs (all passed); scripts/e2e-privacy.mjs retention cells",
+    "notes": "Decision confirmed: retention is consultant triggered and no scheduled job is added. Notices already go to every Client Admin of the tenant plus hello@pac.africa (lib/retention.ts), the page text now says so, and the privacy page says nothing runs on a timer. Partial only because the recipients rule has no automated check: email is not configured in the test setup, so the e2e accepts 503 for the send, and the destruction check is the database test."
+  },
+  {
+    "id": "S1.4.5-007",
+    "status": "Built",
+    "evidence_code": "unchanged",
+    "evidence_test": "unchanged",
+    "notes": "Not touched."
+  },
+  {
+    "id": "S1.4.5-008",
+    "status": "Built",
+    "evidence_code": "apps/web/app/v1/engagements/[id]/privacy/odpc/route.ts; apps/web/lib/privacy.ts:92 (checkOdpc); apps/web/app/engagements/[id]/privacy/page.tsx:79,94; supabase/migrations/20261019010000_j1b_privacy_scorecard.sql (tenant.odpc_registration_ref, odpc_confirmed_on; breach_contact setting)",
+    "evidence_test": "scripts/e2e-privacy.mjs: ODPC cells, breach contact is a platform setting, the privacy page shows the ODPC reference and date, the breach contact, the tasks and the 30 day rule",
+    "notes": "ODPC registration reference and confirmed date on the tenant (both or neither, date not in the future), set by the consultant, shown on the register section, changes audited. Breach contact is the platform_setting breach_contact (cdp@pac.africa, Imran Issa; the mailbox does not exist yet), shown on the breach section for the consultant and the Client Admin. Nothing emails the contact when an incident is opened (not asked). Checks pass against migration 20261019010000 and the rebuilt server, except the action link cells, which need migration 20261019010100 (rpc_action_link_kpi) applied: the service role cannot update public.action directly (the schema probe in e2e-privacy says so)."
+  },
+  {
+    "id": "S1.4.5-009",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/preflight.ts:66; apps/web/app/v1/engagements/[id]/privacy/[kind]/route.ts",
+    "evidence_test": "scripts/e2e-privacy.mjs: DPIA cells (launch blocked 422 PREFLIGHT_FAILED with DPIA, role cells, recorded sets tenant.dpia_recorded_at, launch then succeeds)",
+    "notes": "App side check named DPIA, blocking, added after the engine's L1 to L8 (Question 10). Seeds now set dpia_recorded_at; other e2e scripts that create a tenant through the API and launch may need one (see report)."
+  },
+  {
+    "id": "S1.4.5-010",
+    "status": "Unverified",
+    "severity": "Low",
+    "evidence_code": "",
+    "evidence_test": "",
+    "notes": "Owned by Stage 4 rows; not worked on."
+  },
+  {
+    "id": "S1.4.1-015",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/privacy.ts:46",
+    "evidence_test": "scripts/e2e-privacy.mjs: demographics cells (purpose required, closed list, free text refused, sensitive default, database trigger refuses a value outside the list)",
+    "notes": "Names, closed value list (2 to 30), is_sensitive, analytical purpose required."
+  },
+  {
+    "id": "S1-05",
+    "status": "Partial",
+    "severity": "Medium",
+    "evidence_code": "apps/web/app/v1/survey/route.ts:30-40; apps/web/app/respond/flow.tsx:223",
+    "evidence_test": "scripts/e2e-privacy.mjs: About you cells",
+    "notes": "Attributes can be defined and set, and respondents now answer them in the survey and the answers are stored in the response snapshot. Still not built: previewing cohort sizes against the five respondent floor for these attributes, and cutting segment views by them. Checks pass against migration 20261019010000 and the rebuilt server, except the action link cells, which need migration 20261019010100 (rpc_action_link_kpi) applied: the service role cannot update public.action directly (the schema probe in e2e-privacy says so)."
+  },
+  {
+    "id": "AC-1.7",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/privacy.ts:46; supabase/migrations/20261018093000_demographics.sql",
+    "evidence_test": "scripts/e2e-privacy.mjs: purpose required, one word purpose refused, free text values refused",
+    "notes": ""
+  },
+  {
+    "id": "S1.4.1-003",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/fielding.ts:14 (rate); apps/web/lib/export/full-model.ts:55; apps/web/lib/export/model.ts:75; apps/web/app/reports/[id]/story.tsx:142; apps/web/lib/report-extras.ts",
+    "evidence_test": "scripts/e2e-privacy.mjs: response rate on the engagement page and in the report method section is submitted of invited, not headcount",
+    "notes": "Decision: response rate is submitted divided by invited everywhere. Fixed: the report method table and the PDF and PPTX summaries divided the responses used for scoring by invited; they now use submitted. No use of tenant.headcount as a denominator exists in the code (the tenant field stays as declared context). Per cohort rates with at least 5 invited (S2.5-002) are not built. The spec line 485 still says headcount is the denominator; the spec copy should be changed to match."
+  },
+  {
+    "id": "S1.4.6-004",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/privacy.ts:57; apps/web/app/v1/engagements/[id]/privacy/[kind]/[rid]/route.ts; supabase/migrations/20261018100000_privacy_rights.sql:15",
+    "evidence_test": "scripts/e2e-privacy.mjs: coach assignment cells (role cells, not a Coach, foreign leader, dates, Coach reads assigned only, not started grants nothing, end stops access)",
+    "notes": "Create and end by consultant only. Ending sets the end date to yesterday so access stops at once."
+  },
+  {
+    "id": "S0.5-007",
+    "status": "Built",
+    "evidence_code": "supabase/migrations/20261018100000_privacy_rights.sql:15-28",
+    "evidence_test": "scripts/e2e-privacy.mjs: Coach reads results and development items of assigned leaders only; reads nothing before, outside dates or after ending",
+    "notes": "Coach policies on leader_result (new) and development_item (tenant wide Coach clause replaced by the assigned one; beyond the brief but needed for the LDP half). e2e-privacy not run here, needs the server."
+  },
+  {
+    "id": "S2-04",
+    "status": "Built",
+    "evidence_code": "apps/web/app/respond/flow.tsx:223 (AboutYou); apps/web/app/v1/survey/route.ts:30-40,60-72",
+    "evidence_test": "scripts/e2e-privacy.mjs: About you cells (lists, prefill, refusals, database function, submit, snapshot emptied, count only check, no join column)",
+    "notes": "After consent and before the questions, shown only when the organisation defined attributes. Closed lists, Prefer not to say always offered and preselected, optional. Grade and unit (and team) are shown from the invitation snapshot read by token (rpc_invitation_prefill, no id returned) and cannot be edited. Drafts keep the answers in the browser only until the final submit, as for the other answers. Checks pass against migration 20261019010000 and the rebuilt server, except the action link cells, which need migration 20261019010100 (rpc_action_link_kpi) applied: the service role cannot update public.action directly (the schema probe in e2e-privacy says so)."
+  }
+]

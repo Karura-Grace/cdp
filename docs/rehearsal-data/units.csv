@@ -1,0 +1,10 @@
+unit_key,name,type,parent_key,rollup_to_parent
+ORG,Head office,DIVISION,,false
+OPS,Operations,DEPARTMENT,ORG,false
+FIN,Finance,DEPARTMENT,ORG,false
+SAL,Sales,DEPARTMENT,ORG,false
+OPS-1,Warehouse,TEAM,OPS,false
+OPS-2,Delivery,TEAM,OPS,false
+FIN-1,Accounts,TEAM,FIN,false
+SAL-1,Key accounts,TEAM,SAL,false
+SAL-2,Online orders,TEAM,SAL,false

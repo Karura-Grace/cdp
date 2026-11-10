@@ -1,0 +1,4 @@
+node_modules
+dist
+coverage
+oracle/**/__pycache__

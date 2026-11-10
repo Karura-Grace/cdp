@@ -1,0 +1,28 @@
+# Culture Dynamics Profile (CDP)
+
+> The Culture Dynamics Profile (CDP) is an organisational culture assessment from Priority Activator Consulting (PAC). It measures whether a culture can deliver the organisation's strategy, shows where the culture will resist, and sets owned, dated actions, then measures whether the culture moved.
+
+CDP runs on PAC's 4D Framework (Diagnose, Design, Develop, Deliver). It describes culture as a mix of four orientations (Engage, Innovate, Perform, Govern) read through nine dimensions.
+
+## Core pages
+
+- [What is CDP?](https://cdp.pac.africa/what-is-cdp): Plain description of the Culture Dynamics Profile.
+- [Platform](https://cdp.pac.africa/platform): How the Assess, Diagnose, Decide, Act, Measure cycle works.
+- [Methodology](https://cdp.pac.africa/methodology): The 4D Framework and the nine culture dimensions.
+- [Solutions](https://cdp.pac.africa/solutions): Where CDP fits, by the question a leader or board is asking.
+- [Security](https://cdp.pac.africa/security): How the platform protects an organisation's data.
+- [About](https://cdp.pac.africa/about): Priority Activator Consulting.
+- [Contact](https://cdp.pac.africa/contact): Book a CDP briefing.
+
+## Insights
+
+- [What is the Culture Dynamics Profile (CDP)? A plain English guide](https://cdp.pac.africa/insights/what-is-the-culture-dynamics-profile)
+- [Culture assessment vs engagement survey: what is the difference?](https://cdp.pac.africa/insights/culture-assessment-vs-engagement-survey)
+- [Current vs preferred culture: how to read the gap](https://cdp.pac.africa/insights/current-vs-preferred-culture)
+
+## Optional
+
+- [Privacy](https://cdp.pac.africa/privacy)
+- [Terms](https://cdp.pac.africa/terms)
+- [Cookies](https://cdp.pac.africa/cookies)
+- [Sitemap](https://cdp.pac.africa/sitemap.xml)

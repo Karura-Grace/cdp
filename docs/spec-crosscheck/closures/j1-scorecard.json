@@ -1,0 +1,73 @@
+[
+  {
+    "id": "S1.4.3-001",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/scorecard.ts:22-35",
+    "evidence_test": "scripts/e2e-scorecard.mjs: refused: empty title / title over 200 / no linked priority / priority not in Section B / priority twice / title twice",
+    "notes": "Objective is a stored entity (public.objective) linked to Section B priorities by ref (B3.n); at least one link is required."
+  },
+  {
+    "id": "S1.4.3-002",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/scorecard.ts:36-40",
+    "evidence_test": "scripts/e2e-scorecard.mjs: refused: empty KPI name / over 120 / name twice",
+    "notes": "Name limit is 120 as in the spec (the table allows 200); names unique across the scorecard. Section C keeps its own rule."
+  },
+  {
+    "id": "S1.4.3-003",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/iso4217.ts:3; apps/web/lib/scorecard.ts:52",
+    "evidence_test": "scripts/e2e-scorecard.mjs: refused: a three letter code that is not an ISO 4217 currency / XXX / KSH; currency code KES, USD, EUR, ZAR, XOF is accepted",
+    "notes": "currency_code is checked against the ISO 4217 list embedded in lib/iso4217.ts (176 active codes; the test code XTS and XXX, the no currency code, are left out). The database column still checks only the shape. Checks pass against migration 20261019010000 and the rebuilt server, except the action link cells, which need migration 20261019010100 (rpc_action_link_kpi) applied: the service role cannot update public.action directly (the schema probe in e2e-privacy says so)."
+  },
+  {
+    "id": "S1.4.3-004",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/scorecard.ts:48-50",
+    "evidence_test": "scripts/e2e-scorecard.mjs: refused: direction outside the list; stored as UP/DOWN, read back as HIGHER_IS_BETTER",
+    "notes": "API uses the spec words and maps to the UP and DOWN stored by migration 20261018091000."
+  },
+  {
+    "id": "S1.4.3-005",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/scorecard.ts:51-55",
+    "evidence_test": "scripts/e2e-scorecard.mjs: refused: baseline value is text / out of range / date not a date / 31 February / future date / empty or long source",
+    "notes": "Baseline value, date (not in the future) and source are required and tested, on the scorecard entity."
+  },
+  {
+    "id": "S1.4.3-006",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/scorecard.ts:56-65",
+    "evidence_test": "scripts/e2e-scorecard.mjs: refused: 12 month target missing / below / equal / wrong side when lower is better / 3 year target wrong side or text",
+    "notes": "Target must differ from the baseline in the stated direction (strictly above or below)."
+  },
+  {
+    "id": "S1.4.3-007",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/scorecard.ts:198 (merge on external_ref), :250 (save keeps ids), :383 (after launch); apps/web/app/v1/engagements/[id]/scorecard/import/route.ts; export/route.ts; supabase/migrations/20261019010000_j1b_privacy_scorecard.sql (external_ref, scorecard_kpi_reading, action.scorecard_kpi_id); supabase/migrations/20261019010100_j1b_action_kpi_link.sql (rpc_action_link_kpi)",
+    "evidence_test": "scripts/e2e-scorecard.mjs: external_ref, readings, idempotent import cells; after launch readings cells; scripts/e2e-privacy.mjs: scorecard readings and action links after launch (released client)",
+    "notes": "Import and export (JSON and CSV) carry objective and KPI external_ref (unique per engagement when set, import matches on it first and otherwise on title or name, so the same file twice changes nothing and a renamed row keeps its id), KPI readings (one per KPI per day, a repeat day replaces) and linked culture actions (action.scorecard_kpi_id; export lists id, objective, status and level, import links existing actions additively). While the engagement is in SETUP the structure can change; after launch the structure is locked but a file may still add readings and action links for KPIs it names by external_ref (409 SETUP_LOCKED otherwise). CSV adds four optional columns at the end: objective_ref, kpi_ref, readings (2026-03-31=24.5;2026-06-30=27), linked_actions (act_1;act_2). Saving no longer deletes and recreates rows, so readings and links survive a PUT. A client role sees a linked action only once its report is released (RLS). Checks pass against migration 20261019010000 and the rebuilt server, except the action link cells, which need migration 20261019010100 (rpc_action_link_kpi) applied: the service role cannot update public.action directly (the schema probe in e2e-privacy says so)."
+  },
+  {
+    "id": "S1-09",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/scorecard-from-setup.ts:17; apps/web/app/v1/engagements/[id]/scorecard/from-setup/route.ts; apps/web/app/engagements/[id]/scorecard/scorecard-client.tsx (Import from Sections C and D)",
+    "evidence_test": "scripts/e2e-scorecard.mjs: Import from Sections C and D cells (one objective per priority, orientation placement, fallback to the first priority, skipped KPIs reported, idempotent, refusals, button on the screen)",
+    "notes": "The Import from Sections C and D button builds one objective per Section B priority and places every Section C KPI by rule (see the header of lib/scorecard-from-setup.ts): a KPI that names an orientation goes under the first priority whose goal type needs that orientation (the engine's own goal type table); a KPI with no orientation, or an orientation no priority needs, goes under the first priority's objective. Targets come from Section D. A CURRENCY KPI (Section C holds no currency code) or one with no Section D 12 month target is left out and reported on screen. Merging is by title and name, so a second run changes nothing but also overwrites hand edits to a KPI of the same name. Checks pass against migration 20261019010000 and the rebuilt server, except the action link cells, which need migration 20261019010100 (rpc_action_link_kpi) applied: the service role cannot update public.action directly (the schema probe in e2e-privacy says so)."
+  },
+  {
+    "id": "L4",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/preflight.ts:35,54-58",
+    "evidence_test": "scripts/e2e-scorecard.mjs: no scorecard yet L4 passes from C and D; empty C, D, G and no scorecard L4 fails; scorecard stored with C, D, G empty L4 passes; launch passes",
+    "notes": "Once any objective or KPI is stored L4 counts them (every stored KPI has a baseline and 12 month target; a KPI need not be linked to an orientation). With no scorecard the old reading is kept so existing suites still pass. Question 4."
+  },
+  {
+    "id": "S5.4-024",
+    "status": "Partial",
+    "severity": "Important",
+    "evidence_code": "supabase/migrations/20261019010000_j1b_privacy_scorecard.sql (public.action.scorecard_kpi_id); apps/web/lib/scorecard.ts:383, 20261019010100_j1b_action_kpi_link.sql",
+    "evidence_test": "scripts/e2e-privacy.mjs: the action now carries the KPI id (Table 77 scorecard_kpi_id)",
+    "notes": "The link column from an action to a scorecard KPI exists and is set by scorecard import (and read back in the export). Not done, and outside this slice: PATCH /actions/{id} does not edit scorecard_kpi_id, and the rule 'an organisation level action must link a scorecard KPI' is not enforced at publish. Checks pass against migration 20261019010000 and the rebuilt server, except the action link cells, which need migration 20261019010100 (rpc_action_link_kpi) applied: the service role cannot update public.action directly (the schema probe in e2e-privacy says so)."
+  }
+]

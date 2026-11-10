@@ -1,0 +1,28 @@
+// Classification of the Appendix A and B probe failures, decided by reading the code (2026-10-17).
+// Keys are matrix ids; a check that passes needs no entry. Used by probe-rows.mjs.
+export const AB = {
+  "APPB-4": ["Partial", "Minor", "", "PUT exists; there is no GET route: the setup page reads sections on the server."],
+  "APPB-6": ["Missing", "Important", "", "No requirements endpoint; requirements are derived in lib/scoring.ts loadSetup and not stored or served (spec 1.7)."],
+  "APPB-7": ["Partial", "Minor", "", "Assessment is created at POST /v1/engagements/{id}/assessments (engagement in the path)."],
+  "APPB-11": ["Partial", "Minor", "", "Submit is PUT /v1/survey with the token in a header; no draft save and no /response segment."],
+  "APPB-17": ["Missing", "Important", "", "No findings list endpoint with filters; findings are read from the stored evaluation by the pages."],
+  "APPB-19": ["Partial", "Minor", "", "Report created at POST /v1/assessments/{id}/reports. Narrative endpoint: see D-NARRATIVE."],
+  "APPB-21": ["Partial", "Important", "", "PATCH /v1/actions/{id} exists; no manual POST /v1/actions, so FINDING_REQUIRED is never raised (actions come only from the engine plan)."],
+  "APPB-23": ["Missing", "Important", "", "No role dashboard endpoint; the Portfolio page assembles its own view through RLS."],
+  "APPB-24": ["Missing", "Important", "", "No scorecard read, write or import route (D-07); KPIs live in setup sections C and D."],
+  "APPB-25": ["Missing", "Minor", "", "No scorecard export."],
+  "APPB-26": ["Partial", "Minor", "", "Pulse is created at POST /v1/engagements/{id}/pulses."],
+  "APPB-27": ["Missing", "Important", "", "No trends endpoint; the Measure page reads the stored comparison. No trend by segment (backlog)."],
+  "APPA-demographic_attribute": ["Missing", "Non negotiable", "", "No demographic attribute table (AC-1.7): cohorts come from the org graph; no recorded analytical purpose per attribute."],
+  "APPA-strategic_requirement": ["Partial", "Important", "", "Requirements are derived on the fly by the engine and not stored or frozen at launch."],
+  "APPA-strategic_objective": ["Partial", "Minor", "", "Objectives and KPIs live in setup_record payloads (sections B, C, D), not in their own tables."],
+  "APPA-strategic_kpi": ["Partial", "Minor", "", "KPIs live in setup_record section C and D payloads; readings are in kpi_reading."],
+  "APPA-item_locale_variant": ["Differs by decision", "", "D-LANG", "English only for the first client; no locale variant table."],
+  "APPA-leader_text": ["Missing", "Important", "", "360 open text is not collected (reflection and rater questions)."],
+  "APPA-segment_profile": ["Partial", "Minor", "", "Segments are computed at read from the frozen set (floor checked, logged); no stored segment profile rows."],
+  "APPA-finding": ["Partial", "Minor", "", "Findings are stored inside the evaluation payload (public.evaluation), not as rows."],
+  "APPA-scenario_match": ["Partial", "Minor", "", "Matched scenarios are stored inside the evaluation payload."],
+  "APPA-narrative_draft": ["Differs by decision", "", "D-NARRATIVE", "No AI service; report text is rule based plus consultant sections in report.sections_json."],
+  "APPA-milestone": ["Missing", "Important", "", "No milestone table or entity on actions."],
+  "APPA-review_point": ["Partial", "Minor", "", "Review points are a column on action (review_points) with reviews in action_review."],
+};

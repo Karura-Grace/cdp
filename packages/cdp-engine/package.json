@@ -1,0 +1,35 @@
+{
+  "name": "@pac/cdp-engine",
+  "version": "2.0.0",
+  "description": "CDP Platform deterministic engine (instrument 1.1, rules 2.0): scoring, checks, planning, re-assessment. Pure functions, decimal arithmetic, no I/O.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "oracle:generate": "python3 oracle/dump.py",
+    "oracle:check": "vitest run test/oracle.test.ts"
+  },
+  "dependencies": {
+    "decimal.js": "^10.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@vitest/coverage-v8": "^2.1.9",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "allowScripts": {
+    "esbuild@0.21.5": true
+  }
+}

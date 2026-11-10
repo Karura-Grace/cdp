@@ -1,0 +1,200 @@
+[
+ {
+  "id": "S1-01",
+  "status": "Built",
+  "evidence_code": "apps/web/app/v1/engagements/[id]/calendar/route.ts (edits after launch, audited calendar.edited_after_launch); apps/web/app/v1/tenants/[id]/cover-colour/route.ts; apps/web/lib/tenant-fields.ts:cleanColour; apps/web/app/engagements/[id]/org/cover-colour-form.tsx; apps/web/app/organisations/org-client.tsx (Super Admin field); apps/web/lib/report-extras.ts:reportExtras; apps/web/lib/export/pdf.ts, pdf-full.ts, pptx.ts (cover band); supabase/migrations/20261019030000_launch_followups.sql (tenant.cover_colour)",
+  "evidence_test": "scripts/e2e-launch-checks.mjs: calendar after launch cells, cover colour cells; scripts/check-launch.mjs: cover colour cells",
+  "notes": "Holidays and review period as before. After launch they are still editable by the consultant as text only edits, audited, not touching the window or locked setup. Client cover colour: hex column on tenant, set by a consultant (engagement org page) or Super Admin (Organisations), shown as a band across the top of the PDF cover, full report cover and title slide. j1b: e2e cells written, not run here (needs the rebuild and migration 20261019030000_launch_followups.sql); pure checks in check-launch.mjs pass."
+ },
+ {
+  "id": "S1-03",
+  "status": "Built",
+  "evidence_code": "apps/web/lib/xlsx-csv.ts:26; apps/web/app/v1/engagements/[id]/org-graph/xlsx/route.ts:12; apps/web/lib/org-csv.ts:35 (file row numbers); apps/web/app/engagements/[id]/org/org-client.tsx (pick, import report)",
+  "evidence_test": "scripts/check-launch.mjs: xlsx cells (first sheet to CSV, blank rows kept, hyperlink and formula cells, dates, refusals, 3 MB limit); scripts/check-org-csv.mjs",
+  "notes": "exceljs 4.4.0 added to apps/web. The server turns the first sheet into CSV row for row, so every message names the row Excel shows. Only the first sheet is read. Run check-launch.mjs: passes."
+ },
+ {
+  "id": "S1-10",
+  "status": "Built",
+  "evidence_code": "apps/web/lib/setup-sections.ts:116 (Section I fields); apps/web/lib/section-i.mjs:43; apps/web/app/engagements/[id]/setup/launch-extras.tsx",
+  "evidence_test": "scripts/check-launch.mjs: Section I cells; scripts/e2e-launch-checks.mjs: Section I through the API; scripts/check-setup-sections.mjs",
+  "notes": "I1 cohorts, I2, I3 (en only, unchanged), I4 window with holidays and review overlap, I5 template and confirmation, I6 counts and hints, completion statement, reminder plan STANDARD or CUSTOM with consultant approval. Sending reminders belongs to the scheduler journey; the plan is stored, validated and previewed."
+ },
+ {
+  "id": "S1-11",
+  "status": "Built",
+  "evidence_code": "apps/web/app/v1/assessments/[id]/l360/windows/route.ts; apps/web/lib/rater-window.ts; apps/web/app/v1/assessments/[id]/l360/invitations/route.ts (issue only inside the window, expiry = close); apps/web/app/engagements/[id]/raters/page.tsx and raters-client.tsx; supabase/migrations/20261019030000_launch_followups.sql (table rater_window)",
+  "evidence_test": "scripts/e2e-launch-checks.mjs: rater window cells; scripts/check-launch.mjs: rater window cells",
+  "notes": "Rater window = own table rater_window(assessment_id, assignment_id, opens_on, closes_on), one row per leader per assessment, validated inside the assessment window and set by the consultant or Client Admin. Enforced when links are issued (a leader's raters get links only from the opening day, none after the close, each link expires at the end of the closing day, so a late answer meets the neutral 410). Not enforced in capture SQL: a link issued before a window was set or changed keeps its own expiry; see Questions. The window is not carried to a new assessment version. j1b: e2e cells written, not run here (needs the rebuild and migration 20261019030000_launch_followups.sql); pure checks in check-launch.mjs pass."
+ },
+ {
+  "id": "S1.4.2-I",
+  "status": "Built",
+  "evidence_code": "apps/web/lib/setup-sections.ts:116",
+  "evidence_test": "scripts/check-launch.mjs; scripts/e2e-launch-checks.mjs",
+  "notes": "I1 to I6 per 1.4.4; I3 unchanged (only the en item bank is published)."
+ },
+ {
+  "id": "S1.4.4-I1",
+  "status": "Built",
+  "evidence_code": "apps/web/lib/section-i.mjs (MAX_CONDITIONS, crossI, demographicErrors); apps/web/lib/cohorts.ts:projectCohort; apps/web/lib/setup-sections.ts (cohort conditions 1 to 5, demographics list); apps/web/lib/section-i-demographics.ts; apps/web/app/v1/engagements/[id]/setup/[section]/agree/route.ts (writes public.demographic_attribute when Section I is agreed)",
+  "evidence_test": "scripts/check-launch.mjs: I1 three and five conditions, demographics cells, cohort projection with three conditions; scripts/e2e-launch-checks.mjs: Section I three conditions, demographic attribute written on agree, update not duplicate",
+  "notes": "Up to five conditions, all of which must hold. The same axis twice is refused except Demographic with two different attributes. Demographic attributes are declared in Section I (name, closed value list separated by semicolons, sensitive flag, analytical purpose of at least 10 characters) and written to demographic_attribute when Section I is agreed, using the privacy page's own check (lib/privacy.ts checkCreate). Existing attributes are updated and a value people already hold cannot be dropped. j1b: e2e cells written, not run here (needs the rebuild and migration 20261019030000_launch_followups.sql); pure checks in check-launch.mjs pass."
+ },
+ {
+  "id": "S1.4.4-I2",
+  "status": "Built",
+  "evidence_code": "apps/web/lib/staff-message.ts:28; apps/web/lib/preflight.ts:94",
+  "evidence_test": "scripts/check-launch.mjs: I2 cells; scripts/e2e-launch-checks.mjs: I2 mismatch and match",
+  "notes": "The anonymity value picks the template wording; a template message that states the other commitment blocks launch (check I5). The strict approval gate now applies to every message."
+ },
+ {
+  "id": "S1.4.4-I4a",
+  "status": "Built",
+  "evidence_code": "apps/web/lib/preflight.ts:78 (holidays to E.preflight)",
+  "evidence_test": "scripts/e2e-launch-checks.mjs: exactly 10 working days passes, a holiday makes 9 and blocks launch",
+  "notes": ""
+ },
+ {
+  "id": "S1.4.4-I4b",
+  "status": "Built",
+  "evidence_code": "apps/web/lib/preflight.ts:46",
+  "evidence_test": "scripts/e2e-launch-checks.mjs: I4b cells (overlap fails L5, after and before pass), second engagement of the same tenant",
+  "notes": "e2e written, not run here."
+ },
+ {
+  "id": "S1.4.4-I4c",
+  "status": "Built",
+  "evidence_code": "apps/web/lib/calendar.ts:7; apps/web/lib/preflight.ts:90",
+  "evidence_test": "scripts/check-launch.mjs: overlap inclusive at both ends; scripts/e2e-launch-checks.mjs: five review period cells",
+  "notes": "Warning only, never blocks."
+ },
+ {
+  "id": "S1.4.4-I5",
+  "status": "Built",
+  "evidence_code": "apps/web/lib/preflight.ts (I5 strict gate, I5W scan); apps/web/lib/section-i.mjs:messageGaps; apps/web/app/v1/assessments/[id]/staff-message/route.ts; apps/web/lib/survey-text.ts; apps/web/app/engagements/[id]/setup/launch-extras.tsx; supabase/migrations/20261019030000_launch_followups.sql (assessment.staff_message_text)",
+  "evidence_test": "scripts/e2e-launch-checks.mjs: strict gate, I5W scan, staff message after launch cells; scripts/check-launch.mjs: I5 scan cells; scripts/e2e-launch.mjs (approves the templates for its run)",
+  "notes": "Strict gate: no launch until the owner has approved both templates, whether the message is a template, edited or empty (check I5, blocking). The staff message rule is the consultant tick plus a keyword scan (check I5W, warning only) for purpose, use of results, anonymity and next steps. After launch the consultant can change the wording as an audited text only edit stored on the assessment (staff_message_text); the locked Section I text is untouched and respondents see the new wording. Other e2e scripts that launch now need the templates approved (see Questions). j1b: e2e cells written, not run here (needs the rebuild and migration 20261019030000_launch_followups.sql); pure checks in check-launch.mjs pass."
+ },
+ {
+  "id": "S1.4.4-I6",
+  "status": "Built",
+  "evidence_code": "apps/web/lib/section-i.mjs:20; apps/web/lib/setup-sections.ts:127",
+  "evidence_test": "scripts/check-launch.mjs: I6 cells (counts tied to the choice, hints at 8 and 2)",
+  "notes": "Recommended minimum 8 interviews and 2 focus groups is a hint in the launch panel, held as a spec constant in section-i.mjs (not in the engine config)."
+ },
+ {
+  "id": "S1.4.4-CE",
+  "status": "Built",
+  "evidence_code": "apps/web/app/v1/assessments/[id]/launch-state/route.ts; apps/web/app/v1/assessments/[id]/completion-estimate/route.ts; supabase/migrations/20261018110000_launch_checks.sql:rpc_completion_stats; apps/web/lib/survey-text.ts; apps/web/app/engagements/[id]/completion/page.tsx and completion-client.tsx; apps/web/lib/engagement-tabs.ts (tab Completion time)",
+  "evidence_test": "scripts/e2e-launch-checks.mjs: CE cells (29 no prompt, 30 prompts, update, respondents see it, Section I unchanged); scripts/e2e-launch-checks.mjs: completion screen cells",
+  "notes": "The engine function completionStatementNeedsUpdate decides. The update is a text only change stored on the assessment (completion_estimate_text), audited; respondents see it on the invitation screen and in the email. The prompt appears on the consultant's setup page; a Client Admin has no page for it yet (Question 5). Needs the migration applied. j1b: Client Admin screen at /engagements/{id}/completion (new tab, Client Admin only, while the survey is open) shows the measured median and the update prompt and saves through the same route."
+ },
+ {
+  "id": "S1.4.4-RP",
+  "status": "Built",
+  "evidence_code": "apps/web/lib/section-i.mjs:43; apps/web/lib/reminders.ts:8",
+  "evidence_test": "scripts/check-launch.mjs: reminder plan and preview cells; scripts/e2e-launch-checks.mjs: custom plan approval, preview dates, holiday moves them",
+  "notes": "STANDARD or CUSTOM (up to 6 reminders, each with a type, a count and an audience), custom needs the approval tick. Sending is the scheduler journey (AC-2.5); only the visible 'reminders scheduled' preview exists here."
+ },
+ {
+  "id": "L5",
+  "status": "Built",
+  "evidence_code": "apps/web/lib/preflight.ts:78",
+  "evidence_test": "scripts/e2e-launch-checks.mjs: L5 cells; scripts/e2e-launch.mjs",
+  "notes": "Uses the tenant holidays; warns (HOL) when none are set."
+ },
+ {
+  "id": "L7",
+  "status": "Built",
+  "evidence_code": "apps/web/lib/launch-checks.ts:56; apps/web/lib/preflight.ts:61,83",
+  "evidence_test": "scripts/e2e-launch-checks.mjs: L7 cells",
+  "notes": "Before any link is issued the list is the one the roster invitation would produce (every ACTIVE person with a usable email); once links exist it is the invitation roster. Reported by employee reference. Warning only. See Question 3."
+ },
+ {
+  "id": "L8",
+  "status": "Built",
+  "evidence_code": "apps/web/lib/launch-checks.ts:80; apps/web/lib/preflight.ts:62,83",
+  "evidence_test": "scripts/e2e-launch-checks.mjs: L8 cells",
+  "notes": "Per leader in scope: nothing waiting for approval, at least 3 approved raters, 3 to 8 peers. Warning only."
+ },
+ {
+  "id": "S1.4.6-002",
+  "status": "Built",
+  "evidence_code": "supabase/migrations/20261018110000_launch_checks.sql:rpc_nominations_propose, rpc_nominations_decide; apps/web/app/v1/assessments/[id]/l360/proposals/route.ts; apps/web/lib/rater-defaults.ts:12; apps/web/app/engagements/[id]/raters/",
+  "evidence_test": "scripts/check-launch.mjs: defaults; scripts/e2e-launch-checks.mjs: propose and approve role cells (leader, line manager, Client Admin, consultant refused, other organisation, peers 3 to 8, reject)",
+  "notes": "Leader (a People Leader login linked to the person) proposes; the line manager (leader of the team the leader sits in) or the Client Admin approves. The existing consultant or Client Admin nomination path is unchanged, so e2e-360 still seeds NOMINATED rows. Min 3 non self raters stays in scoring (D-09). Needs the migration applied."
+ },
+ {
+  "id": "S1.5.4-003",
+  "status": "Built",
+  "evidence_code": "apps/web/lib/cohorts.ts:25; apps/web/lib/launch-checks.ts:27",
+  "evidence_test": "scripts/check-launch.mjs: cohort cells; scripts/e2e-launch-checks.mjs: I1 cohort cells",
+  "notes": "Counts ACTIVE persons matching. The spec row says warnings only; I1 itself says size below 5 is a blocking pre-flight failure unless rolled up, and that is what is built."
+ },
+ {
+  "id": "S1.6.1-ovr",
+  "status": "Built",
+  "evidence_code": "apps/web/lib/export/appendix.ts:4 (used by the report page, PDF and PPTX models)",
+  "evidence_test": "scripts/check-launch.mjs: appendix cells (every override with its reason, the version rows)",
+  "notes": "Override and snapshot at launch were already built; this adds the check that the appendix prints each override with its reason."
+ },
+ {
+  "id": "S1.6.2-lock",
+  "status": "Built",
+  "evidence_code": "apps/web/app/v1/assessments/[id]/new-version/route.ts; supabase/migrations/20261018110000_launch_checks.sql:rpc_assessment_new_version; apps/web/lib/export/appendix.ts:11; apps/web/app/v1/engagements/[id]/calendar/route.ts; apps/web/app/v1/assessments/[id]/staff-message/route.ts",
+  "evidence_test": "scripts/e2e-launch-checks.mjs: new version cells; scripts/check-launch.mjs: appendix version rows; scripts/e2e-launch-checks.mjs: calendar after launch, staff message after launch",
+  "notes": "Scoring relevant change: new version with reason, shown on the setup page and in the technical appendix. Text only edits after launch are still refused, except the completion time statement (stored outside the locked rows). The spec says text only edits are allowed and audited but does not say which fields are text only (Question 4). j1b: text only edits after launch are built for the calendar (holidays, review period) and the staff message wording, both audited, neither touching scoring fields. j1b: e2e cells written, not run here (needs the rebuild and migration 20261019030000_launch_followups.sql); pure checks in check-launch.mjs pass."
+ },
+ {
+  "id": "AC-1.2",
+  "status": "Built",
+  "evidence_code": "apps/web/lib/org-csv.ts:140; apps/web/app/engagements/[id]/org/org-client.tsx (import report, defect CSV file_row)",
+  "evidence_test": "scripts/check-launch.mjs: rows cells",
+  "notes": "Each defect is reported with the file and row it came from (blank rows counted, header is row 1) in the import report right after a save and in the downloaded defect list. After a page refresh the stored defects list unit keys and employee refs only. The invited half of V2 was added by another helper (org-graph.ts invitedForEngagement)."
+ },
+ {
+  "id": "AC-1.5",
+  "status": "Built",
+  "evidence_code": "apps/web/lib/preflight.ts:83",
+  "evidence_test": "scripts/e2e-launch.mjs: clean draft; scripts/e2e-launch-checks.mjs: L7, L8 warn and never block; I1, I5, L5 block with 422",
+  "notes": "e2e-launch.mjs expectation updated to 14 checks (L1 to L8, DPIA from the engine, I1, I4, HOL, I5, I5W), nothing left unassessed, and it approves the templates for its run."
+ },
+ {
+  "id": "AC-1.6",
+  "status": "Built",
+  "evidence_code": "apps/web/app/v1/assessments/[id]/new-version/route.ts",
+  "evidence_test": "scripts/e2e-launch-checks.mjs: setup refused while launched, new version unlocks, relaunch with a fresh snapshot, refused once responses exist",
+  "notes": "The database function from block 34 could not relaunch (engagement stayed in FIELDING, consent text not copied, launch snapshot blocked a second launch). Migration 20261018110000 fixes that. Needs the migration applied."
+ },
+ {
+  "id": "S1.4.5-001",
+  "status": "Partial",
+  "severity": "Low",
+  "evidence_code": "apps/web/lib/consent-template.mjs",
+  "evidence_test": "none new",
+  "notes": "Not changed. The spec lists 'right to withdraw' in the consent text but gives no wording, so none was invented. See Question 7."
+ },
+ {
+  "id": "S1.4.6-peers",
+  "status": "Built",
+  "evidence_code": "apps/web/app/v1/assessments/[id]/l360/nominations/route.ts (3 to 8 peers); supabase rpc_nominations_propose (at most 8) and rpc_nominations_decide (3 to 8 to approve)",
+  "evidence_test": "scripts/e2e-launch-checks.mjs: nominations route and proposals cells",
+  "notes": "Peers 3 to 8 now hold on the older consultant nominate route (peers already invited count; an empty list clears). The proposal route and the approval were already bound. j1b: e2e cells written, not run here (needs the rebuild and migration 20261019030000_launch_followups.sql); pure checks in check-launch.mjs pass.",
+  "requirement": "Rater peers: 3 to 8 per leader on every nomination route",
+  "spec_ref": "1.4.6",
+  "stage": "1",
+  "kind": "rule"
+ },
+ {
+  "id": "DPIA-engine",
+  "status": "Built",
+  "evidence_code": "packages/cdp-engine/src/capture.ts:preflight (check DPIA, input dpiaRecorded); apps/web/lib/preflight.ts",
+  "evidence_test": "packages/cdp-engine/test/acceptance.test.ts: AC-1.5 DPIA cell; scripts/e2e-launch-checks.mjs: DPIA cells; scripts/e2e-privacy.mjs",
+  "notes": "The spec (1.4.5, Table 25) does not number a DPIA check, so it is a separate engine check with id DPIA (kept so the privacy script still finds it), blocking. The Python oracle holds no pre-flight at all (no L1 to L8), so there is nothing to mirror there and python3 is not installed here, so oracle:generate was not run; the oracle cases do not cover pre-flight.",
+  "requirement": "DPIA recorded on the tenant is checked by the engine pre flight before launch",
+  "spec_ref": "1.4.5",
+  "stage": "1",
+  "kind": "rule"
+ }
+]

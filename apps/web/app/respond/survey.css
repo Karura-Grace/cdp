@@ -1,0 +1,48 @@
+/* Respondent screens (consent, questions, review, thank you; also the 360 form) in the website's language: paper page, white
+   panels, ink and orange, pill buttons, tracked capitals. Re-skins the shared survey classes (globals.css) under .sv only. */
+.sv{--paper:#FAF7F2;--ink:#131313;--grey:#706F6F;--orange:#EB5733;--orange-d:#C2401D;--line:#E6DFD4;--line2:#CFC6B9;--ink2:#4A4846;--gold:#EB5733;--navy:#131313;--navy2:#2b2b2b;
+  --card:#fff;--warm:#FAF7F2;--shadow:0 1px 2px rgba(19,19,19,.06),0 0 0 1px rgba(19,19,19,.04);--shadow2:0 10px 30px rgba(19,19,19,.08),0 1px 3px rgba(19,19,19,.06);
+  min-height:100dvh;background:var(--paper);color:var(--ink);font-family:var(--font-inter),'Roboto',system-ui,sans-serif;line-height:1.55;font-size:15px}
+.sv .wrap{max-width:860px;margin:0 auto;padding:28px clamp(14px,3vw,24px) 90px}
+.sv h1,.sv h2,.sv h3{font-family:inherit;letter-spacing:-.02em}
+.sv .card{border-radius:16px;border-color:var(--line);box-shadow:var(--shadow2);padding:clamp(18px,3vw,28px)}
+.sv .card h2{font-size:clamp(20px,2.4vw,24px);font-weight:700;margin-bottom:10px}
+.sv .muted{color:var(--grey)}
+.sv .btn{border-radius:999px;font-family:inherit;padding:13px 26px;min-height:48px;background:var(--ink);color:#fff}
+.sv .btn:hover{background:#2b2b2b;transform:none}
+.sv .btn.gold{background:var(--orange);color:var(--ink)}
+.sv .btn.gold:hover{background:#d94a28}
+.sv .btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line2)}
+.sv .btn.ghost:hover{background:#fff;border-color:var(--ink);color:var(--ink)}
+.sv .btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.sv .note{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--orange);border-radius:0 12px 12px 0}
+.sv .note.blue{background:var(--paper);border-color:var(--line);border-left-color:var(--ink)}
+.sv .progressbar{top:84px;border-radius:999px;border-color:var(--line);padding:10px 18px}
+.sv .progressbar .fill{background:var(--orange)}
+.sv .progressbar .track{background:#EFE9DF}
+.sv .scen{border-radius:16px;border-color:var(--line);box-shadow:var(--shadow)}
+.sv .scen .shead{background:var(--ink);color:var(--paper);padding:14px 18px}
+.sv .scen .shead .sq{color:#CFC9BE}
+.sv .orow{border-top-color:var(--line)}
+.sv .orow input,.sv input:not([type=checkbox]):not([type=radio]),.sv textarea,.sv select{border-radius:12px;border-color:var(--line2);font-family:inherit}
+.sv input:focus,.sv textarea:focus,.sv select:focus{border-color:var(--orange);box-shadow:0 0 0 3px rgba(235,87,51,.18)}
+.sv .pill.n{background:#F3EEE6;color:var(--ink2)}
+.sv .totrow{background:var(--paper)}
+.sv .totchip{border-radius:999px}
+.sv .lik label{border-radius:12px;border-color:var(--line2)}
+.sv .lik label:hover{border-color:var(--orange)}
+.sv .lik label:has(input:checked){background:var(--orange);border-color:var(--orange);color:var(--ink);box-shadow:none}
+.sv .lik label:has(input:focus-visible){outline-color:var(--ink)}
+.sv .likrow{border-bottom-color:var(--line)}
+.sv .tbl th{background:var(--paper)}
+@media (max-width:600px){.sv .progressbar{top:0}}
+.sv .orow input[inputmode]{width:84px;flex:none}
+@media (max-width:480px){.sv .orow input[inputmode]{width:100%;max-width:140px}}
+
+/* option C (Q-RD3, 28 Oct 2026): flat white cards with hairlines and the app's large radius; inputs and the progress bar follow */
+.sv{--line:#E9E2D6}
+.sv .card{border-radius:22px;box-shadow:none;border:1px solid var(--line)}
+.sv .scen{border-radius:22px;box-shadow:none;overflow:hidden}
+.sv .progressbar{box-shadow:none}
+.sv .note{border-radius:14px;border-left-width:1px;background:#F4EFE6}
+.sv .lik label{border-radius:14px}

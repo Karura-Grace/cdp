@@ -1,0 +1,13 @@
+export const COHORT_AXES: readonly string[];
+export const REMINDER_KINDS: readonly string[];
+export const REMINDER_AUDIENCE: readonly string[];
+export const RECOMMENDED_QUALITATIVE: { interviews: number; focus_groups: number };
+export function cohortValueError(axis: unknown, value: unknown): string | null;
+export function qualitativeErrors(p: Record<string, unknown>, complete: boolean): string[];
+export function qualitativeHints(p: Record<string, unknown>): string[];
+export function crossI(p: Record<string, unknown>, complete: boolean, out: string[]): void;
+export const MAX_CONDITIONS: number;
+export function splitValues(t: unknown): string[];
+export function demographicErrors(p: Record<string, unknown>, out: string[]): void;
+export const MESSAGE_TOPICS: readonly (readonly [string, string, RegExp])[];
+export function messageGaps(message: unknown): { topic: string; text: string }[];

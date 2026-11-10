@@ -1,0 +1,25 @@
+name: cdp-engine
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install scipy==1.17.1
+      - run: npm ci
+      - run: npx tsc --noEmit -p packages/cdp-engine
+      - run: npm test
+      - run: npm run build
+      # Oracle drift check: regenerating the cases from the Python reference must produce no diff.
+      - run: npm run oracle:generate -w @pac/cdp-engine && git diff --exit-code -- packages/cdp-engine/oracle/cases
+      - name: Terminology gate
+        env:
+          CDP_DENY_LIST: ${{ runner.temp }}/deny_list.txt
+          DENY_LIST_CONTENT: ${{ secrets.CDP_DENY_LIST }}
+        run: |
+          printf '%s' "$DENY_LIST_CONTENT" > "$CDP_DENY_LIST"
+          node packages/cdp-engine/scripts/terminology-gate.mjs .

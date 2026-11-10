@@ -1,0 +1,12 @@
+{
+  "name": "cdp-platform",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build:engine": "npm run build -w @pac/cdp-engine",
+    "dev": "npm run build:engine && npm run dev -w web",
+    "build": "npm run build:engine && npm run build -w web",
+    "test": "npm test -w @pac/cdp-engine"
+  }
+}

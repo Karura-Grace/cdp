@@ -1,0 +1,5 @@
+name,rank_order,is_executive
+Board,1,true
+Executive,2,true
+Manager,3,false
+Staff,4,false

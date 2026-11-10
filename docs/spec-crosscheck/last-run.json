@@ -1,0 +1,7182 @@
+{
+ "started": "2026-10-22T07:19:56.334Z",
+ "finished": "2026-10-22T08:04:29.098Z",
+ "base": "http://localhost:3100",
+ "results": [
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 1 setup AC-1.3 a section is agreed only with a workshop date and two executives",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 1 setup AC-1.2 a clean org graph has no defects",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 1 setup AC-1.2 every team must sit directly under a department; the root is not a team",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 1 setup AC-1.2 V1 two leaders on one team; V7 duplicate email; V6 small team; V4 unresolved person",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 1 setup AC-1.2 V3 reporting-chain cycle and a sole-member self-led team",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 1 setup AC-1.2 an override with a reason makes a blocking defect non-blocking",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 1 setup V5 executive cohort below 5 is a warning, not a block",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 1 setup AC-1.5 pre-flight passes; L1–L6 block; L7–L8 only warn",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 1 setup 10 working days excludes weekends and tenant holidays",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 1 setup F1 divergence and observable-behaviour warning",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 2 assessment AC-2.2 survey payload validation catches every bad allocation and scale",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 2 assessment 360 forms: self needs all 60; rater accepts NOT_OBSERVED",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 2 assessment progress counts scenario sets of 36",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 2 assessment AC-2.5 reminder plan: working day 3, working day 6, 24 h before close, final",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 2 assessment one extension by a consultant; a second needs the engagement lead",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 2 assessment D-11 completion-time prompt",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 2 assessment AC-2.7 cohorts below 5 invited are never shown; floors for verbatims and rater groups",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 2 assessment AC-2.6 completion states on the seeded dataset",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Engagement lifecycle (§0.6) each transition enforces its guard; unknown transitions are 409",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 3 segments and leaders AC-3.5 department heat-map: permitted cells carry metrics; suppression never shows a zero",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 3 segments and leaders AC-3.5 a small department and its complement are both suppressed (differencing)",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 3 segments and leaders segment queries below the floor throw (→ 409), never an empty payload",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 3 segments and leaders perception split reports the reason when a cohort is below 5 (UT-21)",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 3 segments and leaders leader–culture link: team below the floor falls back to the parent and says so",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 3 segments and leaders leadership population needs ≥ 5 valid results; counts by class, never by name",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 3 segments and leaders Leader Development Plan: growth, target and blind-spot actions, max 3",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 3 segments and leaders a valid 360 counts toward coverage and blends the TPS (provisional removed at ≥ 60%)",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 4 reporting segment and leader signals append findings and match SC-06 / SC-07 / SC-08 (aggregate only)",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 4 reporting SC-12 matches only when all checks HIT, strength ≥ 10 and no negative eOS",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 4 reporting AC-4.4 release refuses unaccepted AI text or a report not drawn from the pinned score",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 4 reporting AC-4.6 / AC-5.7 exports: released only; never raw data; leader outputs blocked from prohibited contexts",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 4 reporting AI screens: causal language, attribution, traceability (uncited sentences stripped, unknown cites blocked)",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 4 reporting terminology build gate reports file and line",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 5 workflow AC-5.4 every transition outside the table is 409 ILLEGAL_TRANSITION",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 5 workflow happy path DRAFT → CLOSED with role checks and mandatory fields",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 5 workflow AC-5.6 generated plans always carry their mandatory companions; a stripped priority is refused and named",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 5 workflow caps: ≤ 6 organisation actions per priority; ≤ 3 unit and ≤ 3 leader actions; tenant override",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 5 workflow RAG computed rules (§5.6.1)",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 5 workflow AC-5.5 escalation ladder: 7 / 14 / 21 / 28 and the undelivered visible signal reaches the CEO",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 5 workflow STRENGTHEN priorities get a real pathway, not the overplay narrative",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 6 re-assessment AC-6.2 pulse triggers at 0.5 / 15 / 8.0 and non-pulse triggers",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 6 re-assessment adjust-or-retire decision table (Table 103)",
+   "pass": true
+  },
+  {
+   "suite": "acceptance.test.ts",
+   "label": "Stage 6 re-assessment AC-6.6 rollover: setup back to DRAFT, closed actions dropped, system G5 entries recomputed",
+   "pass": true
+  },
+  {
+   "suite": "analytics.test.ts",
+   "label": "gap bands bands by absolute size at 4, over 8 and 16",
+   "pass": true
+  },
+  {
+   "suite": "analytics.test.ts",
+   "label": "cultural entropy is the mean absolute gap: (9 + 11 + 6 + 14) / 4 = 10.00, MODERATE",
+   "pass": true
+  },
+  {
+   "suite": "analytics.test.ts",
+   "label": "cultural entropy bands at 6, 12 and 20",
+   "pass": true
+  },
+  {
+   "suite": "analytics.test.ts",
+   "label": "tensions opposite directions add: ENGAGE +9 and PERFORM -6 give (9 + 6) x 0.8 = 12, capped at 10, HIGH",
+   "pass": true
+  },
+  {
+   "suite": "analytics.test.ts",
+   "label": "tensions same direction averages: +5 and +3 give (5 + 3) / 2 x 0.8 = 3.2, LOW",
+   "pass": true
+  },
+  {
+   "suite": "analytics.test.ts",
+   "label": "answer spread is null below two respondents",
+   "pass": true
+  },
+  {
+   "suite": "analytics.test.ts",
+   "label": "answer spread is the sample standard deviation across respondents: ENGAGE 20 and 30 give 7.07",
+   "pass": true
+  },
+  {
+   "suite": "analytics.test.ts",
+   "label": "Culture Risk Index weights gap 40, spread 30, misalignment 30, each scaled to 100",
+   "pass": true
+  },
+  {
+   "suite": "analytics.test.ts",
+   "label": "Culture Risk Index uses the mean perception gap when present, and caps each part at 100",
+   "pass": true
+  },
+  {
+   "suite": "analytics.test.ts",
+   "label": "Culture Risk Index is null without a spread",
+   "pass": true
+  },
+  {
+   "suite": "analytics.test.ts",
+   "label": "scores frozen before the analytics block reproduce the hash they were frozen with when analytics is off",
+   "pass": true
+  },
+  {
+   "suite": "analytics.test.ts",
+   "label": "values against reality compares D1 with the mean of D4 and D6",
+   "pass": true
+  },
+  {
+   "suite": "analytics.test.ts",
+   "label": "leader highlights needs the rater floor",
+   "pass": true
+  },
+  {
+   "suite": "analytics.test.ts",
+   "label": "leader highlights ranks items by rater mean and leaves out items fewer than three raters observed",
+   "pass": true
+  },
+  {
+   "suite": "analytics.test.ts",
+   "label": "payload version 3: Preferred per dimension, employee voice counts, readiness items version 2 reproduces the hash scores were frozen with in October 2026",
+   "pass": true
+  },
+  {
+   "suite": "analytics.test.ts",
+   "label": "payload version 3: Preferred per dimension, employee voice counts, readiness items version 3 adds the three blocks and counts add up",
+   "pass": true
+  },
+  {
+   "suite": "journey3.test.ts",
+   "label": "thresholds come from configuration holds the published values",
+   "pass": true
+  },
+  {
+   "suite": "journey3.test.ts",
+   "label": "eOS bands (S3.6-007, S3.5.9-004 to 006) bands on the integer at each edge",
+   "pass": true
+  },
+  {
+   "suite": "journey3.test.ts",
+   "label": "readiness bands (S3.6-016) bands the value rounded to 1 dp at each edge",
+   "pass": true
+  },
+  {
+   "suite": "journey3.test.ts",
+   "label": "SDI (S3.5.12-006, S3.6-011) is half the summed absolute difference, to 2 dp",
+   "pass": true
+  },
+  {
+   "suite": "journey3.test.ts",
+   "label": "SDI (S3.5.12-006, S3.6-011) reaches the 12.00 candidate line exactly",
+   "pass": true
+  },
+  {
+   "suite": "journey3.test.ts",
+   "label": "fit bands (S3.5.13-008, 009) bands at 85, 70 and 55",
+   "pass": true
+  },
+  {
+   "suite": "journey3.test.ts",
+   "label": "carrier classes, first match wins (S3.5.13-010, 013, 014) CRITICAL_BLOCKER: 5 below the organisation with an integrity or safety flag, or LRI under 2.50",
+   "pass": true
+  },
+  {
+   "suite": "journey3.test.ts",
+   "label": "carrier classes, first match wins (S3.5.13-010, 013, 014) CULTURE_BLOCKER, then LAGGING",
+   "pass": true
+  },
+  {
+   "suite": "journey3.test.ts",
+   "label": "carrier classes, first match wins (S3.5.13-010, 013, 014) CULTURE_CARRIER needs LRI of 3.50 or more and no hard flag; otherwise EMERGING_CARRIER",
+   "pass": true
+  },
+  {
+   "suite": "journey3.test.ts",
+   "label": "carrier classes, first match wins (S3.5.13-010, 013, 014) NEUTRAL inside the margin",
+   "pass": true
+  },
+  {
+   "suite": "journey3.test.ts",
+   "label": "carrier classes, first match wins (S3.5.13-010, 013, 014) covers every orientation key",
+   "pass": true
+  },
+  {
+   "suite": "journey3.test.ts",
+   "label": "eOS routing (spec Table 48, S3.6-008) routes each category, and Q2 follows the leadership target",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity fixture",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity fixture_leader",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_000",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_001",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_002",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_003",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_004",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_005",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_006",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_007",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_008",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_009",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_010",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_011",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_012",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_013",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_014",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_015",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_016",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_017",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_018",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_019",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_020",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_021",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_022",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_023",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_024",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_025",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_026",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_027",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_028",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_029",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_030",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_031",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_032",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_033",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_034",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_035",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_036",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_037",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_038",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_039",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_040",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_041",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_042",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_043",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_044",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_045",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_046",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_047",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_048",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_049",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_050",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_051",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_052",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_053",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_054",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_055",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_056",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_057",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_058",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_059",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_060",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_061",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_062",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_063",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_064",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_065",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_066",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_067",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_068",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_069",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_070",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_071",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_072",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_073",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_074",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_075",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_076",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_077",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_078",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_079",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_080",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_081",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_082",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_083",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_084",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_085",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_086",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_087",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_088",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_089",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_090",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_091",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_092",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_093",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_094",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_095",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_096",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_097",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_098",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_099",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_100",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_101",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_102",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_103",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_104",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_105",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_106",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_107",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_108",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_109",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_110",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_111",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_112",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_113",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_114",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_115",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_116",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_117",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_118",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_119",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity fixture_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity fixture_leader_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_000_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_001_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_002_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_003_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_004_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_005_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_006_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_007_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_008_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_009_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_010_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_011_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_012_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_013_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_014_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_015_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_016_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_017_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_018_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_019_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_020_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_021_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_022_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_023_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_024_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_025_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_026_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_027_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_028_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_029_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_030_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_031_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_032_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_033_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_034_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_035_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_036_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_037_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_038_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "oracle parity random_039_r21",
+   "pass": true
+  },
+  {
+   "suite": "oracle.test.ts",
+   "label": "Welch t-test matches scipy 60 cases to 1e-9",
+   "pass": true
+  },
+  {
+   "suite": "pulse.test.ts",
+   "label": "pulse answers and readings parses the three reference kinds and rejects others",
+   "pass": true
+  },
+  {
+   "suite": "pulse.test.ts",
+   "label": "pulse answers and readings validates shape, constant sum and scales",
+   "pass": true
+  },
+  {
+   "suite": "pulse.test.ts",
+   "label": "pulse answers and readings reads the baseline and the pulse on the same items and raises movement triggers",
+   "pass": true
+  },
+  {
+   "suite": "pulse.test.ts",
+   "label": "pulse answers and readings leaves out references nobody answered, so no baseline value is invented",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-01 constant-sum rejection: 30/30/30/20 → 422",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-02 constant-sum acceptance: 40/30/20/10",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-03 gaps +9, +11, −6, −14 sum to zero",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-04 gap 8.00 → BUILD",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-04 gap 7.99 → STRENGTHEN",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-04 gap 4.00 → STRENGTHEN",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-04 gap 3.99 → KEEP_AND_PROTECT",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-04 gap -3.99 → KEEP_AND_PROTECT",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-04 gap -4.00 → MODERATE",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-04 gap -8.00 → MODERATE",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-05 culture strength 34.00 → 9.0 MODERATE",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-06 congruence 4 of 6, 66.7%, MODERATELY_CONGRUENT, lenses 2 of 3",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-07 shared dominance PERFORM 30.40 / GOVERN 30.00",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-08 eOS category: 30 advocates, 25 neutrals, 45 critics → −15",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-09 eOS index 7.125 → 7.1",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-10 TPS 3.085 → 3.09 (decimal half-up; a binary float gives 3.08)",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-11 TPS 2.49 → HIGH_RISK",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-11 TPS 2.50 → ENABLEMENT_REQUIRED",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-11 TPS 3.49 → ENABLEMENT_REQUIRED",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-11 TPS 3.50 → TARGETED_SUPPORT",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-11 TPS 3.99 → TARGETED_SUPPORT",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-11 TPS 4.00 → STRONG_READINESS",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-12 weights sum to 1.00; any other vector is a configuration error",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-13 leadership alignment blend: 1.365 + 1.972 = 3.337 → 3.34",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-14 C1 INNOVATE > 28 at 14 (lowest) → 50.0% MISS via OVERRIDE_2",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-15 C4 SERVICE_B2C on 22 / 34 → 86.7% PARTIAL_HIT via OVERRIDE_1",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-16 C1 capping: PERFORM 45 → sub 100.0, HIT",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-17 C4 transition: 87.5% PARTIAL_HIT, OVERRIDE_2 never applied to BALANCED",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-18 C2: rank 3, 14.0, SUBSTANTIVE → MISS",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-19 C3 systemic: D4 and D6 dominant PERFORM (MODERATE)",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-20 perception 5.0 → NONE",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-20 perception 5.1 → WATCH",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-20 perception 7.0 → WATCH",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-20 perception 7.1 → SHADOW_CULTURE",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-21 perception floor: executive n = 4 → not computed, reason stated, no flag",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-22 priority cap at TPS 2.40: INNOVATE, ENGAGE selected; GOVERN deferred; P0 outside the cap",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-23 removing a BUILD's trade-off → 422 PLAN_INCOHERENT",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-24 diagonal stepping stone: PERFORM → ENGAGE via GOVERN (30 > 14)",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-25 adjacent pathway: PERFORM → INNOVATE outward, no stepping stone",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-26 publish over an open SHADOW gate → 409 BLOCKING_GATE_OPEN naming the pre-condition",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-27 primary floor: n = 4 → suppressed",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-28 combination floor: department n = 30, department × female n = 3 → combination suppressed, department returned",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-29 differencing: department 22, team A 18, team B 4 → both teams suppressed",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-30 360 group floor: peers n = 2 merge into ALL_OTHERS",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-31 LRI 1.26 + 0.96 + 0.58 + 0.51 = 3.31 → ENABLEMENT_REQUIRED",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-32 self–other gap 0.50 → ALIGNED",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-32 self–other gap 0.51 → WATCH",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-32 self–other gap 1.00 → WATCH",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-32 self–other gap 1.01 → BLIND_SPOT",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-33 integrity flag at E 3.95",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-34 fit index: leader 40/20/25/15 vs team 22/14/34/30 → 76.0 ALIGNED",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-35 CULTURE_BLOCKER: leader 15 vs org 22, default PERFORM (MODERATE), LRI 3.0",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-36 determinism: score 100 times → one hash (AC-3.2)",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-37 version pinning: payload carries instrument 1.1 / rules 2.0 and the frozen hash",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-38 AI numeric integrity: a number absent from the payload blocks the draft",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-39 AI terminology: a deny-listed term blocks the draft",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-40 release gate: empty “What this means” → 422",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-41 closure without evidence → 409 naming the evidence type",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-42 pulse: 12 items, 2 off the watch-list → refused on both counts",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-43 comparability: 1.x vs 2.x MAJOR (409); 1.0 vs 1.1 equivalent",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-44 retention: destruction 24 months after close, notices at 90 and 30 days",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-45 zero coverage: LA 3.40, TPS 3.09, PROVISIONAL, instrument term only",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-46 full coverage: LA = LRI_weighted 3.60",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-47 continuity at the 60% label: difference < 0.01",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-48 C2 intensity 4.9 → MARGINAL, verdict unchanged",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-48 C2 intensity 5.0 → SUBSTANTIVE, verdict unchanged",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-48 C2 intensity 14.9 → SUBSTANTIVE, verdict unchanged",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-48 C2 intensity 15.0 → ENTRENCHED, verdict unchanged",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-49 C2 shared dominance: rank 2 gap 0.8 → HIT; gap 1.0 → PARTIAL_HIT",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-50 requirement margins: 30/+5, 28/+3, 26/+1 JOINT, paired at single thresholds, 24/−1 BALANCED",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-51 C3 partial: D4 dominant ENGAGE (BUILD), D6 PERFORM (MODERATE)",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-52 Override 3: PLATFORM_DIGITAL, INNOVATE 30 but PERFORM 34 highest → 100.0%, capped PARTIAL_HIT",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-53 LAGGING: leader 15 vs org 22, default INNOVATE (BUILD), LRI 3.2",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-54 D7–D9 banding on the 1 dp value: 3.04 → band 2; 3.05 → band 3; 2.96 → band 2",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-55 360 observed minimum: 5 of 10 observed in A → excluded from A only",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-56 quality exclusion: SPEEDING + UNIFORM → INSUFFICIENT; UNIFORM + DUPLICATION alone retained",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D rules 2.1 (V-02, V-05): any two flags exclude; speeding below 40% of median; 3 observed items per section",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-57 C1 multiple requirements: RESULTS_GROWTH and INNOVATION → two findings, headline MISS",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-58 urgency tiers: INNOVATE STRATEGIC_MISS; ENGAGE BEHAVIOUR_GAP; GOVERN PROCESS_CONTRADICTION",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-59 plan skeleton: P0 with 3 items; INNOVATE, ENGAGE, GOVERN; trade-offs GOVERN, PERFORM; C3 levers on ENGAGE (AC-5.1)",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-60 illustrative leader: LRI 2.92, safety flag, F BLIND_SPOT, fit 91.44, NEUTRAL",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-61 trade-off verification: INNOVATE INTENDED (0.67); ENGAGE MIXED (0.33)",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Appendix D UT-62 action score: impact 5 × urgency 5 ÷ effort 3 = 8.33",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Fixture headline values (§3.7, §4.9, Appendix F) score object",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Fixture headline values (§3.7, §4.9, Appendix F) checks and scenarios",
+   "pass": true
+  },
+  {
+   "suite": "spec.test.ts",
+   "label": "Fixture headline values (§3.7, §4.9, Appendix F) leadership target from F1 tags; tie requires a consultant tie-break (AC-1.4)",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-table] Table 119 parsed",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-scoring.rounding_mode] rounding is half up",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-scoring.gap.build] default 8.00",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-scoring.gap.strengthen] default 4.00",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-scoring.dominance.shared_lt] default 1.00",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-scoring.strength.bands] default 5, 10, 15",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-scoring.congruence.bands] default 5, 3",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-scoring.likert.min_answered] default 9",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-scoring.eos.advocate_min / critic_max] 9 / 6",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-scoring.tps.weights] default 0.35, 0.30, 0.20, 0.15",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-scoring.tps.bands] default 2.50, 3.50, 4.00",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-scoring.tps.provisional_coverage_lt] default 0.60",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-scoring.lri.weights] default 0.35, 0.30, 0.20, 0.15",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-scoring.360.min_raters] default 3",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-scoring.360.min_observed] default 0.60",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-scoring.360.flags] E < 4.00; F < 3.00; H < 3.00",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-scoring.360.gap_tiers] default 0.50, 1.00",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-segments.floor] default 5",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-segments.qual_floor] default 8",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-segments.perception] default 5.00, 7.00",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-segments.sdi_candidate] default 12.00",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-segments.single_divergence] default 8.00",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-segments.readiness_divergence] default 0.50",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-segments.significance_alpha] default 0.05",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-leaders.fit_bands] default 85, 70, 55",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-leaders.carrier_margin] default 5.00",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-checks.alignment_bands] default 80, 60",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-checks.c2_intensity] default 5.00, 15.00",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-checks.requirements] goal type and business model tables in config",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-gates.readiness_le] default 3.0",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-plan.priority_caps] default 2, 3, 4",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-plan.action_caps] default 6, 3, 3",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-plan.visible_signal_days] default 30",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-tracking.escalation_days] default 7, 14, 21, 28",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-tracking.rag_flat_band] default 0.05",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-survey.min_window_working_days] default 10",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-survey.reminders] key present in the engine registry (default D3, D6, close − 24 h, final, ENGAGEMENT) missing",
+   "pass": false
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-survey.speeding] speeding is max(480 s, median / 3)",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-survey.completion_text] key present in the engine registry (default 35–45 minutes, ENGAGEMENT) missing",
+   "pass": false
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-pulse.max_items] default 10",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-pulse.triggers] default 0.5, 15, 8.0",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-retention.response_months] default 24",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-retention.aggregate_after_exit_months] default 24",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-quality.alpha_disclose_lt] default 0.70",
+   "pass": true
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-ai.enabled · ai.region] ai.enabled and ai.region present [true,null]",
+   "pass": false
+  },
+  {
+   "suite": "config.mjs",
+   "label": "[APPI-scoring.tps.weights] weights sum to 1.00",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-version] published instrument version is 1.1",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-T108] 18 scenarios in the spec and the platform",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S1] D1-S1 title matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S1] D1-S1 NOW prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S1] D1-S1 PREFERRED prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S2] D1-S2 title matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S2] D1-S2 NOW prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S2] D1-S2 PREFERRED prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S3] D1-S3 title matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S3] D1-S3 NOW prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S3] D1-S3 PREFERRED prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S1] D2-S1 title matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S1] D2-S1 NOW prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S1] D2-S1 PREFERRED prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S2] D2-S2 title matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S2] D2-S2 NOW prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S2] D2-S2 PREFERRED prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S3] D2-S3 title matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S3] D2-S3 NOW prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S3] D2-S3 PREFERRED prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S1] D3-S1 title matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S1] D3-S1 NOW prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S1] D3-S1 PREFERRED prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S2] D3-S2 title matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S2] D3-S2 NOW prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S2] D3-S2 PREFERRED prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S3] D3-S3 title matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S3] D3-S3 NOW prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S3] D3-S3 PREFERRED prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S1] D4-S1 title matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S1] D4-S1 NOW prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S1] D4-S1 PREFERRED prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S2] D4-S2 title matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S2] D4-S2 NOW prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S2] D4-S2 PREFERRED prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S3] D4-S3 title matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S3] D4-S3 NOW prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S3] D4-S3 PREFERRED prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S1] D5-S1 title matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S1] D5-S1 NOW prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S1] D5-S1 PREFERRED prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S2] D5-S2 title matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S2] D5-S2 NOW prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S2] D5-S2 PREFERRED prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S3] D5-S3 title matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S3] D5-S3 NOW prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S3] D5-S3 PREFERRED prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S1] D6-S1 title matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S1] D6-S1 NOW prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S1] D6-S1 PREFERRED prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S2] D6-S2 title matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S2] D6-S2 NOW prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S2] D6-S2 PREFERRED prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S3] D6-S3 title matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S3] D6-S3 NOW prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S3] D6-S3 PREFERRED prompt matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-T109] 72 statements in the spec and the platform",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S1-E] D1-S1-E (ENGAGE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S1-I] D1-S1-I (INNOVATE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S1-P] D1-S1-P (PERFORM) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S1-G] D1-S1-G (GOVERN) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S2-E] D1-S2-E (ENGAGE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S2-I] D1-S2-I (INNOVATE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S2-P] D1-S2-P (PERFORM) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S2-G] D1-S2-G (GOVERN) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S3-E] D1-S3-E (ENGAGE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S3-I] D1-S3-I (INNOVATE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S3-P] D1-S3-P (PERFORM) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D1-S3-G] D1-S3-G (GOVERN) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S1-E] D2-S1-E (ENGAGE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S1-I] D2-S1-I (INNOVATE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S1-P] D2-S1-P (PERFORM) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S1-G] D2-S1-G (GOVERN) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S2-E] D2-S2-E (ENGAGE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S2-I] D2-S2-I (INNOVATE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S2-P] D2-S2-P (PERFORM) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S2-G] D2-S2-G (GOVERN) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S3-E] D2-S3-E (ENGAGE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S3-I] D2-S3-I (INNOVATE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S3-P] D2-S3-P (PERFORM) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D2-S3-G] D2-S3-G (GOVERN) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S1-E] D3-S1-E (ENGAGE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S1-I] D3-S1-I (INNOVATE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S1-P] D3-S1-P (PERFORM) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S1-G] D3-S1-G (GOVERN) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S2-E] D3-S2-E (ENGAGE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S2-I] D3-S2-I (INNOVATE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S2-P] D3-S2-P (PERFORM) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S2-G] D3-S2-G (GOVERN) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S3-E] D3-S3-E (ENGAGE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S3-I] D3-S3-I (INNOVATE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S3-P] D3-S3-P (PERFORM) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D3-S3-G] D3-S3-G (GOVERN) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S1-E] D4-S1-E (ENGAGE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S1-I] D4-S1-I (INNOVATE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S1-P] D4-S1-P (PERFORM) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S1-G] D4-S1-G (GOVERN) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S2-E] D4-S2-E (ENGAGE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S2-I] D4-S2-I (INNOVATE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S2-P] D4-S2-P (PERFORM) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S2-G] D4-S2-G (GOVERN) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S3-E] D4-S3-E (ENGAGE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S3-I] D4-S3-I (INNOVATE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S3-P] D4-S3-P (PERFORM) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D4-S3-G] D4-S3-G (GOVERN) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S1-E] D5-S1-E (ENGAGE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S1-I] D5-S1-I (INNOVATE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S1-P] D5-S1-P (PERFORM) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S1-G] D5-S1-G (GOVERN) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S2-E] D5-S2-E (ENGAGE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S2-I] D5-S2-I (INNOVATE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S2-P] D5-S2-P (PERFORM) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S2-G] D5-S2-G (GOVERN) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S3-E] D5-S3-E (ENGAGE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S3-I] D5-S3-I (INNOVATE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S3-P] D5-S3-P (PERFORM) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D5-S3-G] D5-S3-G (GOVERN) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S1-E] D6-S1-E (ENGAGE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S1-I] D6-S1-I (INNOVATE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S1-P] D6-S1-P (PERFORM) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S1-G] D6-S1-G (GOVERN) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S2-E] D6-S2-E (ENGAGE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S2-I] D6-S2-I (INNOVATE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S2-P] D6-S2-P (PERFORM) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S2-G] D6-S2-G (GOVERN) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S3-E] D6-S3-E (ENGAGE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S3-I] D6-S3-I (INNOVATE) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S3-P] D6-S3-P (PERFORM) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D6-S3-G] D6-S3-G (GOVERN) matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-T110] 36 readiness items",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D7-01] D7-01 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D7-02] D7-02 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D7-03] D7-03 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D7-04] D7-04 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D7-05] D7-05 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D7-06] D7-06 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D7-07] D7-07 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D7-08] D7-08 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D7-09] D7-09 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D7-10] D7-10 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D7-11] D7-11 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D7-12] D7-12 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D8-01] D8-01 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D8-02] D8-02 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D8-03] D8-03 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D8-04] D8-04 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D8-05] D8-05 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D8-06] D8-06 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D8-07] D8-07 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D8-08] D8-08 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D8-09] D8-09 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D8-10] D8-10 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D8-11] D8-11 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D8-12] D8-12 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D9-01] D9-01 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D9-02] D9-02 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D9-03] D9-03 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D9-04] D9-04 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D9-05] D9-05 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D9-06] D9-06 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D9-07] D9-07 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D9-08] D9-08 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D9-09] D9-09 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D9-10] D9-10 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D9-11] D9-11 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-D9-12] D9-12 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-T111] 8 eOS items",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-EOS-Q1] EOS-Q1 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-EOS-Q2] EOS-Q2 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-EOS-Q3] EOS-Q3 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-EOS-Q4] EOS-Q4 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-EOS-Q5] EOS-Q5 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-EOS-Q6] EOS-Q6 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-EOS-Q7] EOS-Q7 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-EOS-Q8] EOS-Q8 matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-T111-ids] eOS item ids match the spec (EOS-Q1 form) platform uses EOS-1 to EOS-8",
+   "pass": false
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-QUAL-Q1] QUAL-Q1 text matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-QUAL-Q2] QUAL-Q2 text matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-QUAL-Q3] QUAL-Q3 text matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-T112-ids] qualitative item ids match the spec (QUAL-Q1 form) platform uses Q1 to Q3",
+   "pass": false
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-T113] 60 Leadership 360 items",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A01] L-A01 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A01] L-A01 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A02] L-A02 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A02] L-A02 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A03] L-A03 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A03] L-A03 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A04] L-A04 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A04] L-A04 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A05] L-A05 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A05] L-A05 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A06] L-A06 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A06] L-A06 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A07] L-A07 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A07] L-A07 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A08] L-A08 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A08] L-A08 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A09] L-A09 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A09] L-A09 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A10] L-A10 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-A10] L-A10 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B11] L-B11 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B11] L-B11 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B12] L-B12 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B12] L-B12 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B13] L-B13 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B13] L-B13 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B14] L-B14 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B14] L-B14 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B15] L-B15 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B15] L-B15 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B16] L-B16 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B16] L-B16 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B17] L-B17 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B17] L-B17 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B18] L-B18 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B18] L-B18 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B19] L-B19 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B19] L-B19 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B20] L-B20 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-B20] L-B20 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C21] L-C21 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C21] L-C21 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C22] L-C22 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C22] L-C22 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C23] L-C23 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C23] L-C23 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C24] L-C24 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C24] L-C24 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C25] L-C25 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C25] L-C25 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C26] L-C26 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C26] L-C26 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C27] L-C27 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C27] L-C27 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C28] L-C28 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C28] L-C28 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C29] L-C29 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C29] L-C29 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C30] L-C30 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-C30] L-C30 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D31] L-D31 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D31] L-D31 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D32] L-D32 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D32] L-D32 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D33] L-D33 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D33] L-D33 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D34] L-D34 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D34] L-D34 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D35] L-D35 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D35] L-D35 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D36] L-D36 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D36] L-D36 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D37] L-D37 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D37] L-D37 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D38] L-D38 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D38] L-D38 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D39] L-D39 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D39] L-D39 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D40] L-D40 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-D40] L-D40 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-E41] L-E41 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-E41] L-E41 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-E42] L-E42 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-E42] L-E42 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-E43] L-E43 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-E43] L-E43 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-E44] L-E44 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-E44] L-E44 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-E45] L-E45 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-E45] L-E45 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-F46] L-F46 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-F46] L-F46 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-F47] L-F47 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-F47] L-F47 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-F48] L-F48 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-F48] L-F48 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-F49] L-F49 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-F49] L-F49 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-F50] L-F50 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-F50] L-F50 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-G51] L-G51 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-G51] L-G51 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-G52] L-G52 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-G52] L-G52 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-G53] L-G53 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-G53] L-G53 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-G54] L-G54 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-G54] L-G54 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-G55] L-G55 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-G55] L-G55 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-H56] L-H56 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-H56] L-H56 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-H57] L-H57 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-H57] L-H57 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-H58] L-H58 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-H58] L-H58 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-H59] L-H59 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-H59] L-H59 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-H60] L-H60 self form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "item-bank.mjs",
+   "label": "[APPC-L-H60] L-H60 rater form matches exactly",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-VALIDATION_FAILED] raised in the code (100 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-VALIDATION_FAILED] raised with HTTP 422",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-VALIDATION_FAILED] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-CONSTANT_SUM_VIOLATION] raised in the code (6 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-CONSTANT_SUM_VIOLATION] raised with HTTP 422",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-CONSTANT_SUM_VIOLATION] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-SCALE_OUT_OF_RANGE] raised in the code (9 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-SCALE_OUT_OF_RANGE] raised with HTTP 422",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-SCALE_OUT_OF_RANGE] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-PREFLIGHT_FAILED] raised in the code (2 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-PREFLIGHT_FAILED] raised with HTTP 422",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-PREFLIGHT_FAILED] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-SETUP_LOCKED] raised in the code (15 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-SETUP_LOCKED] raised with HTTP 409",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-SETUP_LOCKED] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-WORKSHOP_RECORD_MISSING] raised in the code (2 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-WORKSHOP_RECORD_MISSING] raised with HTTP 422",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-WORKSHOP_RECORD_MISSING] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-SETUP_TIE_UNRESOLVED] raised in the code (4 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-SETUP_TIE_UNRESOLVED] raised with HTTP 422",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-SETUP_TIE_UNRESOLVED] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-SETUP_SEQUENCE_VIOLATION] raised in the code (3 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-SETUP_SEQUENCE_VIOLATION] raised with HTTP 409",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-SETUP_SEQUENCE_VIOLATION] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-TOKEN_INVALID] raised in the code (15 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-TOKEN_INVALID] raised with HTTP 410",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-TOKEN_INVALID] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-ALREADY_SUBMITTED] raised in the code (7 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-ALREADY_SUBMITTED] raised with HTTP 409 status not found next to the code",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-ALREADY_SUBMITTED] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-DATA_NOT_FROZEN] raised in the code (11 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-DATA_NOT_FROZEN] raised with HTTP 409",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-DATA_NOT_FROZEN] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-BELOW_REPORTING_THRESHOLD] raised in the code (5 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-BELOW_REPORTING_THRESHOLD] raised with HTTP 409",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-BELOW_REPORTING_THRESHOLD] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-VERSION_INCOMPARABLE] raised in the code (1 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-VERSION_INCOMPARABLE] raised with HTTP 409",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-VERSION_INCOMPARABLE] asserted by a test no test mentions it",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-RELEASE_INCOMPLETE] raised in the code (3 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-RELEASE_INCOMPLETE] raised with HTTP 422",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-RELEASE_INCOMPLETE] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-AI_INTEGRITY_BLOCKED] raised in the code (0 files) not found",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-AI_INTEGRITY_BLOCKED] raised with HTTP 422 status not found next to the code",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-AI_INTEGRITY_BLOCKED] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-FINDING_REQUIRED] raised in the code (0 files) not found",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-FINDING_REQUIRED] raised with HTTP 422 status not found next to the code",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-FINDING_REQUIRED] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-PLAN_INCOHERENT] raised in the code (2 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-PLAN_INCOHERENT] raised with HTTP 422",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-PLAN_INCOHERENT] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-MANDATORY_COMPANION_MISSING] raised in the code (1 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-MANDATORY_COMPANION_MISSING] raised with HTTP 422 status not found next to the code",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-MANDATORY_COMPANION_MISSING] asserted by a test no test mentions it",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-ILLEGAL_TRANSITION] raised in the code (43 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-ILLEGAL_TRANSITION] raised with HTTP 409",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-ILLEGAL_TRANSITION] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-BLOCKING_GATE_OPEN] raised in the code (3 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-BLOCKING_GATE_OPEN] raised with HTTP 409",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-BLOCKING_GATE_OPEN] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-EVIDENCE_REQUIRED] raised in the code (3 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-EVIDENCE_REQUIRED] raised with HTTP 409",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-EVIDENCE_REQUIRED] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-PULSE_INVALID] raised in the code (1 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-PULSE_INVALID] raised with HTTP 422",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-PULSE_INVALID] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-EXPORT_FORBIDDEN] raised in the code (1 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-EXPORT_FORBIDDEN] raised with HTTP 403",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-EXPORT_FORBIDDEN] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-FORBIDDEN] raised in the code (48 files)",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-FORBIDDEN] raised with HTTP 403",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPJ-FORBIDDEN] asserted by a test",
+   "pass": true
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPK-engagement.state_changed] emitted to event_outbox not emitted anywhere",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPK-setup.section_agreed] emitted to event_outbox not emitted anywhere",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPK-assessment.launched] emitted to event_outbox only written to the audit log (20261003150000_launch.sql, 20261003180000_org_graph.sql)",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPK-invitation.reminder_due] emitted to event_outbox not emitted anywhere",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPK-response.submitted] emitted to event_outbox not emitted anywhere",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPK-assessment.frozen] emitted to event_outbox not emitted anywhere",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPK-score.frozen] emitted to event_outbox not emitted anywhere",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPK-findings.evaluated] emitted to event_outbox not emitted anywhere",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPK-report.released] emitted to event_outbox only written to the audit log (20261002123359_scoring_report.sql)",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPK-priority_zero.created] emitted to event_outbox not emitted anywhere",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPK-action.transitioned] emitted to event_outbox not emitted anywhere",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPK-action.overdue] emitted to event_outbox not emitted anywhere",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPK-visible_signal.missed] emitted to event_outbox not emitted anywhere",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPK-leader.flag_raised] emitted to event_outbox not emitted anywhere",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPK-pulse.completed] emitted to event_outbox not emitted anywhere",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPK-trigger.raised] emitted to event_outbox only written to the audit log (20261013090000_measure_trend.sql)",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPK-retention.notice_due] emitted to event_outbox not emitted anywhere",
+   "pass": false
+  },
+  {
+   "suite": "errors-events.mjs",
+   "label": "[APPK-retention.destroyed] emitted to event_outbox only written to the audit log (route.ts)",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-table] Table 107 has 27 rows",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-1] POST /v1/tenants (Create tenant)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-2] POST /v1/tenants/{}/engagements (Create engagement)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-3] PUT /v1/engagements/{}/org-graph (Bulk upsert org graph)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-4] GET /v1/engagements/{}/setup/{} (Read setup section) no route file with this method and path",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-4] PUT /v1/engagements/{}/setup/{} (Write setup section)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-5] POST /v1/engagements/{}/setup/{}/agree (Agree a section)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-6] GET /v1/engagements/{}/requirements (Derived requirements) no route file with this method and path",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-7] POST /v1/assessments (Create assessment) at a different path: /v1/engagements/{}/assessments DIFFERS: route exists at /v1/engagements/{}/assessments",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-8] POST /v1/assessments/{}/preflight (Run pre-flight)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-9] POST /v1/assessments/{}/launch (Launch)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-10] GET /v1/survey (Respondent instrument)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-11] PUT /v1/survey/response (Save draft or submit) at a different path: PUT /v1/survey DIFFERS: route exists at PUT /v1/survey",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-12] POST /v1/assessments/{}/freeze (Freeze dataset)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-13] POST /v1/assessments/{}/score (Run scoring)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-14] POST /v1/assessments/{}/score/freeze (Freeze score)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-15] GET /v1/assessments/{}/segments (Segment metrics)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-16] POST /v1/assessments/{}/evaluate (Run rules engine)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-17] GET /v1/assessments/{}/findings (List findings) no route file with this method and path",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-18] POST /v1/assessments/{}/plan (Generate priorities and draft actions)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-19] POST /v1/reports (Create report) at a different path: POST /v1/assessments/{}/reports DIFFERS: route exists at POST /v1/assessments/{}/reports",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-19] POST /v1/reports/{}/narrative (AI narrative) no route file with this method and path",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-19] POST /v1/reports/{}/release (Release)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-20] GET /v1/reports/{}/export (Export released report)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-21] POST /v1/actions (Create action) no route file with this method and path",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-21] PATCH /v1/actions/{} (Update or transition action)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-22] POST /v1/actions/{}/kpi-readings (KPI reading)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-22] POST /v1/actions/{}/evidence (Evidence)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-23] GET /v1/dashboards/{} (Role dashboard) no route file with this method and path",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-24] GET /v1/engagements/{}/scorecard (Scorecard read)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-24] PUT /v1/engagements/{}/scorecard (Scorecard write)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-24] POST /v1/engagements/{}/scorecard/import (Scorecard import)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-25] GET /v1/engagements/{}/scorecard/export (Scorecard export)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-26] POST /v1/pulses (Create pulse) at a different path: POST /v1/engagements/{}/pulses DIFFERS: route exists at POST /v1/engagements/{}/pulses",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPB-27] GET /v1/trends (Cross-cycle trend) no route file with this method and path",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-tenant] table tenant exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-engagement] table engagement exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-org_unit] table org_unit exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-location] table location exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-grade_band] table grade_band exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-person_of_record] table person_of_record exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-leader_assignment] table leader_assignment exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-demographic_attribute] table demographic_attribute exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-setup_record] table setup_record exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-strategic_requirement] table strategic_requirement exists table missing",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-strategic_objective] table strategic_objective exists no table of this name",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-strategic_kpi] table strategic_kpi exists no table of this name",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-instrument_version] table instrument_version exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-rules_version] table rules_version exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-item] table item exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-scenario] table scenario exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-scenario_statement] table scenario_statement exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-item_locale_variant] table item_locale_variant exists no table of this name",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-assessment] table assessment exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-invitation] table invitation exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-consent_record] table consent_record exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-response] table response exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-response_allocation] table response_allocation exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-response_item] table response_item exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-response_text] table response_text exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-leader_360] table leader_360 exists (as leader_result)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-self_rating] table self_rating exists (as response_360)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-rater_response] table rater_response exists (as response_360)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-rater_rating] table rater_rating exists (as response_360_item)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-leader_text] table leader_text exists no table of this name",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-score_object] table score_object exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-segment_profile] table segment_profile exists no table of this name",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-finding] table finding exists no table of this name",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-scenario_match] table scenario_match exists no table of this name",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-report] table report exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-narrative_draft] table narrative_draft exists no table of this name",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-priority] table priority exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-action] table action exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-milestone] table milestone exists no table of this name",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-review_point] table review_point exists no table of this name",
+   "pass": false
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-kpi_reading] table kpi_reading exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-evidence] table evidence exists (as action_evidence)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-development_plan] table development_plan exists (as development_item)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-development_action] table development_action exists (as development_item)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-pulse] table pulse exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-pulse_response] table pulse_response exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-trigger] table trigger exists (as reassessment_trigger)",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-org_change] table org_change exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-comparison] table comparison exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-audit_log] table audit_log exists",
+   "pass": true
+  },
+  {
+   "suite": "api-data.mjs",
+   "label": "[APPA-segment_query_log] table segment_query_log exists",
+   "pass": true
+  },
+  {
+   "suite": "production.mjs",
+   "label": "[PROD-home] home page is up",
+   "pass": true
+  },
+  {
+   "suite": "production.mjs",
+   "label": "[PROD-home] home page carries the ways in (survey, 360, sign in)",
+   "pass": true
+  },
+  {
+   "suite": "production.mjs",
+   "label": "[APPI-rules-version] live rules version is 2.0 and instrument 1.1",
+   "pass": true
+  },
+  {
+   "suite": "production.mjs",
+   "label": "[0.5-auth] staff pages need sign in (redirect to /login)",
+   "pass": true
+  },
+  {
+   "suite": "production.mjs",
+   "label": "[APPJ-problem] API errors are RFC 7807 problem documents",
+   "pass": true
+  },
+  {
+   "suite": "production.mjs",
+   "label": "[0.5-auth] unauthenticated API call is refused",
+   "pass": true
+  },
+  {
+   "suite": "production.mjs",
+   "label": "[APPJ-TOKEN_INVALID] an unknown survey token gives 410 TOKEN_INVALID",
+   "pass": true
+  },
+  {
+   "suite": "production.mjs",
+   "label": "[APPJ-TOKEN_INVALID] an unknown 360 token gives 410",
+   "pass": true
+  },
+  {
+   "suite": "production.mjs",
+   "label": "[2.6-token] survey page asks robots not to index it",
+   "pass": true
+  },
+  {
+   "suite": "production.mjs",
+   "label": "[2.6-token] survey page sends no referrer (the token stays in the hash)",
+   "pass": true
+  },
+  {
+   "suite": "production.mjs",
+   "label": "[APPJ-EXPORT] export without sign in is refused",
+   "pass": true
+  },
+  {
+   "suite": "production.mjs",
+   "label": "[0.4-security] HTTPS strict transport security header",
+   "pass": true
+  },
+  {
+   "suite": "production.mjs",
+   "label": "[0.4-security] frames are refused (X-Frame-Options or frame-ancestors)",
+   "pass": true
+  },
+  {
+   "suite": "production.mjs",
+   "label": "[0.4-security] content type sniffing off",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "signed-out /dashboard redirects to /login",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "signed-out report redirects to /login",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "login page renders",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "Portfolio tells the consultant the step and what to do",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "preview shows all six culture dimensions, three readiness blocks, eOS and the open questions",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "a signed out visitor is sent to sign in",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "admin: released report renders",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "report shows consultant summary + findings + chart",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "admin: the report plots the Culture Map (four squares, both dots, the scale note, a table for screen readers) and no radar",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "admin: no draft editor on a released report",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "exec: released report renders",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "exec: the report plots the Culture Map (four squares, both dots, the scale note, a table for screen readers) and no radar",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "exec: no draft editor on a released report",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "lead: released report renders",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "lead: the report plots the Culture Map (four squares, both dots, the scale note, a table for screen readers) and no radar",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "lead: no draft editor on a released report",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "consultant: released report renders",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "consultant: the report plots the Culture Map (four squares, both dots, the scale note, a table for screen readers) and no radar",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "consultant: no draft editor on a released report",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "other tenant: released report is 404",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "super admin: released report is 404",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "admin dashboard lists the report",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "other tenant dashboard does not show the fixture report",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "cookie POST without CSRF header is refused",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "consultant sees the draft with the editor",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "admin: draft is 404",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "exec: draft is 404",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "lead: draft is 404",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "client admin cannot release via the browser path",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "release refused with empty sections",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "sections saved via cookie session",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "consultant releases via cookie session 422",
+   "pass": false
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "exec now sees the released report 404",
+   "pass": false
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "people lead still cannot see the leadership-team report",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ui.mjs",
+   "label": "sign-out redirects",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "signed out Overview redirects to /login",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "Portfolio links each engagement to its console",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "consultant Overview renders",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "consultant sees tab Overview",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "consultant sees tab Organisation",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "consultant sees tab Setup and launch",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "consultant sees tab Leadership 360",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "consultant sees tab Results by group",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "consultant sees tab Action plan",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "consultant sees tab Measure",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "Overview tab marked current",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "Setup and launch page carries the tab bar with itself current",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "Organisation page carries the tab bar with itself current",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "Action plan page carries the tab bar with itself current",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "Results by group page carries the tab bar with itself current",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "Leadership 360 page carries the tab bar with itself current",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "Measure page carries the tab bar with itself current",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "client admin Overview renders",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "client admin sees Setup and launch (drafts A to D, J1 decision 18 Oct) but no group results tab",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "client admin sees Organisation and, once released, the plan",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "people leader sees My team, not Measure or Organisation",
+   "pass": true
+  },
+  {
+   "suite": "e2e-console.mjs",
+   "label": "someone from another organisation is sent away",
+   "pass": true
+  },
+  {
+   "suite": "e2e-logo.mjs",
+   "label": "signed out is refused",
+   "pass": true
+  },
+  {
+   "suite": "e2e-logo.mjs",
+   "label": "an executive may not set the logo",
+   "pass": true
+  },
+  {
+   "suite": "e2e-logo.mjs",
+   "label": "a client admin of another organisation may not",
+   "pass": true
+  },
+  {
+   "suite": "e2e-logo.mjs",
+   "label": "a GIF is refused",
+   "pass": true
+  },
+  {
+   "suite": "e2e-logo.mjs",
+   "label": "a file that is not a PNG is refused",
+   "pass": true
+  },
+  {
+   "suite": "e2e-logo.mjs",
+   "label": "a logo over 200 KB is refused",
+   "pass": true
+  },
+  {
+   "suite": "e2e-logo.mjs",
+   "label": "the client admin sets the logo",
+   "pass": true
+  },
+  {
+   "suite": "e2e-logo.mjs",
+   "label": "the assigned PAC consultant sets the logo",
+   "pass": true
+  },
+  {
+   "suite": "e2e-logo.mjs",
+   "label": "the logo is stored with its type",
+   "pass": true
+  },
+  {
+   "suite": "e2e-logo.mjs",
+   "label": "setting the logo is audit logged",
+   "pass": true
+  },
+  {
+   "suite": "e2e-logo.mjs",
+   "label": "the PowerPoint carries the client logo and the presenter line",
+   "pass": true
+  },
+  {
+   "suite": "e2e-logo.mjs",
+   "label": "the report page shows the client logo",
+   "pass": true
+  },
+  {
+   "suite": "e2e-logo.mjs",
+   "label": "the consultant clears the logo",
+   "pass": true
+  },
+  {
+   "suite": "e2e-logo.mjs",
+   "label": "the logo is gone",
+   "pass": true
+  },
+  {
+   "suite": "e2e-users.mjs",
+   "label": "no session -> 401",
+   "pass": true
+  },
+  {
+   "suite": "e2e-users.mjs",
+   "label": "executive cannot list users (403)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-users.mjs",
+   "label": "people leader cannot list users (403)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-users.mjs",
+   "label": "consultant cannot list users (403)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-users.mjs",
+   "label": "client admin sees only their own tenant, no PAC or Super Admin rows",
+   "pass": true
+  },
+  {
+   "suite": "e2e-segments.mjs",
+   "label": "department heatmap 200",
+   "pass": true
+  },
+  {
+   "suite": "e2e-segments.mjs",
+   "label": "every department (5 or more answers) is reported",
+   "pass": true
+  },
+  {
+   "suite": "e2e-segments.mjs",
+   "label": "grade heatmap 200 with every grade reported",
+   "pass": true
+  },
+  {
+   "suite": "e2e-segments.mjs",
+   "label": "the two small tenure bands are hidden with a roll-up, the rest reported",
+   "pass": true
+  },
+  {
+   "suite": "e2e-segments.mjs",
+   "label": "parent below floor -> 409 BELOW_REPORTING_THRESHOLD",
+   "pass": true
+  },
+  {
+   "suite": "e2e-segments.mjs",
+   "label": "unknown axis -> 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-segments.mjs",
+   "label": "executive axis 200, values read Executive or Staff",
+   "pass": true
+  },
+  {
+   "suite": "e2e-segments.mjs",
+   "label": "division is an accepted cut (200)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-segments.mjs",
+   "label": "location is an accepted cut (200)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-segments.mjs",
+   "label": "parent axis equal to axis -> 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-segments.mjs",
+   "label": "client admin cannot query segments",
+   "pass": true
+  },
+  {
+   "suite": "e2e-segments.mjs",
+   "label": "7 allowed or refused queries logged (4 earlier ones, executive, division, location)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-segments.mjs",
+   "label": "query log refuses delete",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "consultant reads the stored comparison",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "admin reads the stored comparison",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "exec reads the stored comparison",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "lead reads the stored comparison",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "another organisation's client admin sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "another organisation cannot read org changes",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "deltas carry engine numbers for all four orientations",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "movement is towards Engage and Innovate in the demo",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "a stored comparison cannot be changed",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "storing the same comparison again is accepted and adds nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "still exactly one stored comparison",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "the baseline cycle has nothing to compare with: 409",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "a client admin cannot store a comparison",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "an executive cannot record an organisational change",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "an unknown type is 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "the client admin records an organisational change",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "an organisational change cannot be deleted",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "a client admin cannot raise triggers",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "the consultant checks triggers",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "a trigger is raised only once",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "the consultant can raise a trigger for the test",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "open triggers exist",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "a client admin cannot decide a trigger",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "a dismissal without a reason is 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "the consultant dismisses it with a reason",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "a decided trigger cannot be decided again: 409",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "a trigger's own details cannot be edited",
+   "pass": true
+  },
+  {
+   "suite": "e2e-measure.mjs",
+   "label": "every step wrote an audit row",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "no session: 401 on create assessment",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "client admin: POST eng_598b5ff5b9c940e1/assessments is 403",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "client admin: PUT eng_598b5ff5b9c940e1/setup/B is 403",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "client admin: POST eng_598b5ff5b9c940e1/setup/B/agree is 403",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "setup page redirects a client admin",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "dashboard offers 'Set up the assessment'",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "setup page opens for the consultant (create form)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "bad date refused (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "window that closes before it opens refused (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "assessment created",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "a second assessment is refused (409)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "assessment is DRAFT with the published versions and a draft consent text pinned",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "client admin: PUT consent-text is 403",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "client admin: POST consent-text/approve is 403",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "client admin: PUT transfer-basis is 403",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "client admin: POST invitations is 403",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "client admin: POST launch is 403",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "empty setup fails L2, L3, L4, L5 (Section I not agreed), L6",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "launch refused (422 PREFLIGHT_FAILED)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "the org graph is loaded (64 teams, the fixture's sizes)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "three executive person ids are on the record",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "a typed name is refused as a participant (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "section Z refused (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "array payload refused (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "bad workshop date refused (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "agree before save refused (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "bad enum refused on save (422 with errors[])",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "four priorities refused (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "attrition 140 refused (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "planned model equal to current refused (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "unknown fields are dropped, not stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "save returns what is still missing (nothing for a complete B) and the priority refs",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "a half-empty draft saves and lists what is missing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "agreeing an incomplete section: 422 naming the gap",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "agree without a workshop date: 422 WORKSHOP_RECORD_MISSING",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "agree with one executive: 422 WORKSHOP_RECORD_MISSING",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "agree with a workshop date in the future: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "agree with a date and three executives",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "agreeing again changes nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "editing an agreed section returns it to DRAFT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "D saved before C: refused, its KPIs do not exist (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "C saves",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "D: a target on the wrong side of the baseline saves but is not complete",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "D with a bad target is not agreed (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "C agrees",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "D agrees",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "saving C sends an agreed D back to draft",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "E without Executive and HR entries: 409 SETUP_SEQUENCE_VIOLATION",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "a value statement in F1 saves with a wording warning",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "Section F with an unresolved tie is not agreed (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "Section F agrees once the tie is broken",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "Section F with four behaviours is not complete (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "F stores f1_tags derived from the behaviours",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "without the Executive ticks on A to D, EXT blocks",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "all sections agreed: L2, L3 and L4 now pass (KPIs derived from C and D)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "with the org graph loaded, L1 and L2 pass (two executive person ids on every section)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "what still blocks is L6 (consent text not approved, no transfer basis)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "the drafted consent text carries the template statements",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "empty title refused (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "a draft consent text is edited in place",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "approve",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "approval records who and when",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "approving again changes nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "an approved text cannot be edited in the database (CONSENT_TEXT_LOCKED)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "editing an approved text makes version 2 and pins it as a draft",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "version 1 is unchanged and still APPROVED",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "the unapproved new version blocks L6 again",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "a too-short reference is refused (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "L6 still blocks: no transfer basis",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "transfer basis recorded",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "a short window blocks launch on L5",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "0 links refused (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "501 links refused (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "two links issued, 128-bit hex",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "a link does not open before launch (410)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "only the count is visible; tokens are not stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "dashboard offers 'Review setup and launch'",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "setup page shows the launch checks and the Launch button",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "launch from the endpoint succeeds",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "launch took the snapshot: 64 leaders in scope with the fixture's headcounts (63 of 10, one of 140)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "engagement is FIELDING",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "after launch: section edit refused (409)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "after launch: consent edit refused (409)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "after launch: transfer basis refused (409)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "after launch: no second assessment (409)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "after launch: a link opens the survey with the approved consent text",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "dashboard no longer offers setup (only Survey links) and moves on to the survey step",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "setup page shows Launched",
+   "pass": true
+  },
+  {
+   "suite": "e2e-setup.mjs",
+   "label": "every step is audited with an actor",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no session: 401 on PUT org-graph",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no session: 401 on GET org-graph",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no session: 401 on PUT leaders",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no session: 401 on PUT overrides",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "super admin cannot write the graph (403)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "executive cannot write the graph (403)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "people leader cannot write the graph (403)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "coach cannot write the graph (403)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "unassigned consultant cannot write the graph (403)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "other tenant's client admin cannot write the graph (403)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a client admin cannot override a rule (403)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "nothing was written by the refused calls",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a missing leaders list is refused",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a list that is not a list is refused",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "duplicate unit key: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "duplicate unit key: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "duplicate employee_ref: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "duplicate employee_ref: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "duplicate grade name: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "duplicate grade name: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "two grades with one rank: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "two grades with one rank: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "rank order 0: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "rank order 0: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "duplicate location: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "duplicate location: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "unit type SQUAD: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "unit type SQUAD: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "unknown parent: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "unknown parent: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a unit that is its own parent: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a unit that is its own parent: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "employment status RETIRED: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "employment status RETIRED: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "an empty employee_ref: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "an empty employee_ref: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a unit key over 60 characters: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a unit key over 60 characters: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a cycle in the units (no root left): 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a cycle in the units (no root left): nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "two roots: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "two roots: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a team directly under a division: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a team directly under a division: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a team under a team: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a team under a team: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a leader who is not on the people list: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a leader who is not on the people list: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a leader of a unit that does not exist: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a leader of a unit that does not exist: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a leader of a department: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a leader of a department: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a leader assignment ending before it starts: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a leader assignment ending before it starts: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a bad leader date: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a bad leader date: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the same leader row twice: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the same leader row twice: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "two leaders on one team from the same day: 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "two leaders on one team from the same day: nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a leader assignment that touches the next on the same day (inclusive end): 422",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a leader assignment that touches the next on the same day (inclusive end): nothing stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "more than 5000 units is refused",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a valid graph is saved by the consultant",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "only the executive-cohort warning V5 is reported, and it does not block",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a re-upload that swaps grade ranks is accepted",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "people matched by employee_ref keep their ids",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a person missing from the upload is removed",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a new person is added",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the edit is stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a leader assignment matched by (person, team, start) keeps its id and takes the new end date",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the rank swap was stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "unknown unit, grade and location are notes, not a refusal",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "they are stored empty and V4 lists the people with no team or grade (location is not needed on one site)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V1: a team with no leader is listed and blocks",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V1: a team with no leader is listed and blocks: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V1: a leader whose assignment ended before the window start leaves the team without one",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V1: a leader whose assignment ended before the window start leaves the team without one: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V1: a leader who starts after the window start leaves the team without one",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V1: a leader who starts after the window start leaves the team without one: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V1: a successor takes over the day after (no gap, no overlap): the team has a leader",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V1: a successor takes over the day after (no gap, no overlap): the team has a leader: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V2: a leader on leave blocks",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V2: a leader on leave blocks: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V2: an exited leader blocks",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V2: an exited leader blocks: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V3: a team whose only member is its leader (also V6)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V3: a team whose only member is its leader (also V6): GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V3: two leaders sitting in each other's teams form a reporting cycle",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V3: two leaders sitting in each other's teams form a reporting cycle: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V4: a person with no grade blocks",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V4: a person with no grade blocks: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V4: a person with no team blocks",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V4: a person with no team blocks: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V4: a person placed in a department, not a team, blocks",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V4: a person placed in a department, not a team, blocks: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V4: on one site a missing location is fine",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V4: on one site a missing location is fine: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V4: with several sites a missing location blocks",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V4: with several sites a missing location blocks: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V4: an exited person is not asked for a team",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V4: an exited person is not asked for a team: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V5: three executives is a warning that does not block",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V5: three executives is a warning that does not block: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V5: five executives clears the warning",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V5: five executives clears the warning: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V5: no executive grade at all is a warning too",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V5: no executive grade at all is a warning too: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V6: a team of four blocks",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V6: a team of four blocks: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V6: marked roll up to parent, the same team does not block",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V6: marked roll up to parent, the same team does not block: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V6: people on leave do not count towards the five",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V6: people on leave do not count towards the five: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V7: a duplicate email, compared without regard to case",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V7: a duplicate email, compared without regard to case: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V7: a malformed email",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V7: a malformed email: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V7: an exited person's duplicate email still counts",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "V7: an exited person's duplicate email still counts: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a clean graph has no blocking defect",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a clean graph has no blocking defect: GET reports the same defects as the PUT",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the defect messages name the rule in words",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "leaders must be a list (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a leader who is not on record is refused (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a division is not a team (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "an overlapping second leader is refused with both names (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a clean hand-over is saved and V1 holds",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "leaders not sent are removed, and V1 then lists the team",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the client admin can map leaders too",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the database refuses overlapping leaders by itself (exclusion constraint)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the database refuses a leader on a unit that is not a team",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the database refuses a leader who is not on record",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the write functions re-check the actor (an unassigned consultant is refused)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS location: sa reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS location: con reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS location: ca reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS location: exec reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS location: pl sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS location: coach sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS location: stray sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS location: other sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS grade_band: sa reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS grade_band: con reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS grade_band: ca reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS grade_band: exec reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS grade_band: pl sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS grade_band: coach sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS grade_band: stray sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS grade_band: other sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS org_unit: sa reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS org_unit: con reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS org_unit: ca reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS org_unit: exec reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS org_unit: pl sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS org_unit: coach sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS org_unit: stray sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS org_unit: other sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS leader_assignment: sa reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS leader_assignment: con reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS leader_assignment: ca reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS leader_assignment: exec reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS leader_assignment: pl sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS leader_assignment: coach sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS leader_assignment: stray sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS leader_assignment: other sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS person_of_record: sa sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS person_of_record: con reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS person_of_record: ca reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS person_of_record: exec sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS person_of_record: pl sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS person_of_record: coach sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS person_of_record: stray sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS person_of_record: other sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS org_override: sa sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS org_override: con reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS org_override: ca reads",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS org_override: exec sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS org_override: pl sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS org_override: coach sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS org_override: stray sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "RLS org_override: other sees nothing",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "con can read the tenant's graph version",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "ca can read the tenant's graph version",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no role writes: con cannot insert a unit",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no role writes: con cannot update a unit",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no role writes: con cannot delete people",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no role writes: con cannot add a leader",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no role writes: ca cannot insert a unit",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no role writes: ca cannot update a unit",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no role writes: ca cannot delete people",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no role writes: ca cannot add a leader",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no role writes: sa cannot insert a unit",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no role writes: sa cannot update a unit",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no role writes: sa cannot delete people",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no role writes: sa cannot add a leader",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no role writes: exec cannot insert a unit",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no role writes: exec cannot update a unit",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no role writes: exec cannot delete people",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "no role writes: exec cannot add a leader",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "even the service role cannot write the tables directly (only the functions can)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "nor can it write a launch snapshot",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the unit name was not changed",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "rpc_org_graph_replace cannot be called with a user token",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "rpc_leaders_replace cannot be called with a user token",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "rpc_org_override_set cannot be called with a user token",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "rpc_launch_assessment cannot be called with a user token",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "none of that changed the graph",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "client admin reads graph, emails and counts",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "an executive reads the structure but no people (RLS)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a super admin reads the structure but no people",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a people leader gets nothing yet (403)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a coach gets nothing (403)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "another tenant's client admin gets nothing (403)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "people CSV for the client admin",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the exported CSV parses back to the same people (round trip)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "grades CSV round-trips through the parser",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "locations CSV round-trips through the parser",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "units CSV round-trips through the parser",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "leaders CSV round-trips through the parser",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "an executive cannot download people (403)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "an executive can download the structure",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "an unknown kind is refused (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a formula in a stored email is neutralised in the CSV",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the page opens for the client admin with the validation and import cards",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the page lists the rules",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the page opens for the consultant",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "an executive sees the page read only and no email addresses",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a super admin sees the page read only and no email addresses",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a people leader is sent away",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "another tenant's client admin is sent away",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the client admin's dashboard links to the page for an engagement in setup",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the consultant's setup page links to it",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "while another engagement of the tenant is fielding, edits are refused (409)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the page says so and is read only",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the seeded draft engagement passes pre-flight, L1 included, with L7 and L8 computed (nothing left unassessed)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the V5 warning is carried in the pre-flight result without blocking",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the draft tenant's graph can be replaced",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a blocking defect fails L1",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "launch is refused with 422 PREFLIGHT_FAILED naming L1",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "nothing changed (still DRAFT, no snapshot)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a client admin cannot override (403)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a two character reason is refused (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a 501 character reason is refused (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a missing reason is refused (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the V5 warning cannot be overridden (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the structure rule cannot be overridden (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "an unknown rule cannot be overridden (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a consultant not assigned to the engagement cannot (403)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a consultant overrides V6 with a reason",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the override turns the block into a pass for L1",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the defect is still reported, non-blocking, with the reason in its message",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "GET shows the override",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the override can be removed",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "and L1 fails again",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "an override covers its own rule only: a new V7 defect blocks again",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "launch with a stale graph version is refused (GRAPH_CHANGED)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "launch with a different window start is refused (GRAPH_CHANGED)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "launch by an unassigned consultant is refused",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "none of those launched it",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "launch succeeds with the override",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "one snapshot was taken, by the consultant, at the window start and graph version used",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "headcount_led in the snapshot equals an independent SQL count of active people in each led team",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the snapshot holds the override and its reason, and the defects as they stood",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the snapshot holds no names or emails",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "every scope entry names its assignment",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "a snapshot can be neither changed nor deleted",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "not even in SQL (APPEND_ONLY)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "after launch the graph is locked (409 SETUP_LOCKED)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "after launch the leaders are locked (409)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "after launch the overrides are locked (409)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "and for the client admin too (409)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the graph is unchanged by those attempts",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "the page says the graph is fixed after launch",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "an engagement of another tenant is still editable",
+   "pass": true
+  },
+  {
+   "suite": "e2e-org.mjs",
+   "label": "graph, leader and override changes and the launch are audited with an actor",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "no session: 401",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "client admin cannot run pre-flight (403)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "client admin cannot launch (403)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "the launch function is not callable with a user token",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "clean draft passes pre-flight; L7 and L8 are computed (warnings only), nothing left unassessed",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "window under 10 working days: pre-flight fails L5",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "window under 10 working days: launch refused (422 PREFLIGHT_FAILED)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "window under 10 working days: nothing changed (still DRAFT, no section locked)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "no recorded transfer basis: pre-flight fails L6",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "no recorded transfer basis: launch refused (422 PREFLIGHT_FAILED)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "no recorded transfer basis: nothing changed (still DRAFT, no section locked)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "no consent text: pre-flight fails L6",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "no consent text: launch refused (422 PREFLIGHT_FAILED)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "no consent text: nothing changed (still DRAFT, no section locked)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "section C not agreed: pre-flight fails L2",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "section C not agreed: launch refused (422 PREFLIGHT_FAILED)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "section C not agreed: nothing changed (still DRAFT, no section locked)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "section D has no workshop date: pre-flight fails L2",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "section D has no workshop date: launch refused (422 PREFLIGHT_FAILED)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "section D has no workshop date: nothing changed (still DRAFT, no section locked)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "launch succeeds once every blocking check passes",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "assessment LAUNCHED, all 9 sections locked",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "engagement is FIELDING",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "launch is audited with the actor",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "a second launch changes nothing (200, changed false)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "window is pinned after launch (ASSESSMENT_PINNED)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "setup is locked after launch (SETUP_LOCKED)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "a link issued after launch opens the survey with its consent text",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "one named link per active person on the roster",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "each named link carries department, grade and tenure band",
+   "pass": true
+  },
+  {
+   "suite": "e2e-launch.mjs",
+   "label": "issuing for the roster again skips everyone already invited",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "seeded 6 links",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "survey GET returns the consent text, no decision yet",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "submit before consent refused (409 ILLEGAL_TRANSITION)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "nothing stored by the refused submit",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "bad decision refused (422)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "consent with a bad token is the neutral 410",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "decline recorded",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "declined link cannot submit",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "survey GET reports the decline",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "a declined respondent can change their mind (one row per link)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "repeating AGREE adds no row",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "six responses submitted",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "counts: 6 agree, 0 decline, 6 submitted",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "after submit: 6 consent rows, none linked to an invitation, none with a time finer than the day",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "consent after submit is the neutral 410",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "consent_record rows cannot be rewritten after unlink (IMMUTABLE_ROW)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "consent_record rows cannot be deleted (IMMUTABLE_ROW)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "no role but definer functions can read consent_record; anon and authenticated cannot read consent_text",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "an assessment without an approved consent text cannot launch (CONSENT_TEXT_REQUIRED)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "the response monitor gives counts by cohort only (no person, no token, no response)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "no cohort in the monitor shows fewer than five invited",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "the monitor needs a session (401)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "freeze refused while the window is open (409 ILLEGAL_TRANSITION)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "dashboard says the survey is open",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "dashboard offers 'Freeze the data' after close",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "client admin cannot freeze",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "consultant freezes the data",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "the freeze manifest records versions, counts, extensions and the hash (S2.7-001)",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "freeze is idempotent",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "survey link is dead after freeze",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "dashboard offers 'Run scoring'",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "score stored; hash equals the engine run locally on the same responses",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "dashboard offers 'Freeze the score'",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "score frozen",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "dashboard offers 'Run findings'",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "findings stored",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "dashboard offers report creation",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "report drafted",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "client admin sees nothing yet",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "sections accepted",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "report released",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "client admin now reads the report",
+   "pass": true
+  },
+  {
+   "suite": "e2e-live.mjs",
+   "label": "engagement is REPORTING",
+   "pass": true
+  },
+  {
+   "suite": "e2e-scoring-key.mjs",
+   "label": "SCORING_KEY is set",
+   "pass": true
+  },
+  {
+   "suite": "e2e-scoring-key.mjs",
+   "label": "the key's role is scoring_reader and it has an expiry",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ac41.mjs",
+   "label": "C1 is a MISS at 50.0% alignment",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ac41.mjs",
+   "label": "C2 is a MISS at rank 3, 14.00 points, SUBSTANTIVE",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ac41.mjs",
+   "label": "C3 is a SYSTEMIC MISS with identity risk",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ac41.mjs",
+   "label": "C4 is a PARTIAL HIT at 86.7%",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ac41.mjs",
+   "label": "the checks summary agrees",
+   "pass": true
+  },
+  {
+   "suite": "e2e-ac41.mjs",
+   "label": "the stored evaluation equals the engine's expected evaluation",
+   "pass": true
+  },
+  {
+   "suite": "inspect-ac24.mjs",
+   "label": "1. no table in capture is readable or writable by anon, authenticated, service_role or PUBLIC 14 tables; 0 role grants, 0 public grants",
+   "pass": true
+  },
+  {
+   "suite": "inspect-ac24.mjs",
+   "label": "2. no response table has a person, invitation, token, e-mail or name column []",
+   "pass": true
+  },
+  {
+   "suite": "inspect-ac24.mjs",
+   "label": "3. no foreign key from a response table to an invitation or a person []",
+   "pass": true
+  },
+  {
+   "suite": "inspect-ac24.mjs",
+   "label": "4. no submitted invitation (survey, 360 or pulse) still holds a person or a demographic snapshot holding a link: 0/0/0; submitted checked: 1464/1197/20",
+   "pass": true
+  },
+  {
+   "suite": "inspect-ac24.mjs",
+   "label": "5. no table outside capture carries a response id, invitation id or token hash (except the void log response id) []",
+   "pass": true
+  },
+  {
+   "suite": "inspect-ac24.mjs",
+   "label": "6. no audit log row contains a survey token 0 rows",
+   "pass": true
+  },
+  {
+   "suite": "inspect-ac24.mjs",
+   "label": "7. no function in capture can be run by anon or authenticated []",
+   "pass": true
+  },
+  {
+   "suite": "inspect-ac24.mjs",
+   "label": "8. no saved draft outlives its submission or the freeze 0 drafts",
+   "pass": true
+  }
+ ]
+}

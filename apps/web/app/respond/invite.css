@@ -1,0 +1,44 @@
+/* Survey invitation landing, in the new design (paper, ink, orange, Inter). Scoped under .inv. */
+.inv{--paper:#FAF7F2;--ink:#131313;--grey:#706F6F;--orange:#EB5733;--orange-d:#C2401D;--line:#E6DFD4;
+  min-height:100dvh;background:var(--paper);color:var(--ink);font-family:var(--font-inter),'Roboto',system-ui,sans-serif;line-height:1.55}
+.inv *{box-sizing:border-box}
+.inv-top{border-bottom:1px solid var(--line);height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 clamp(16px,4vw,48px)}
+.inv-logo{font-weight:800;font-size:28px;letter-spacing:-.03em;line-height:1}.inv-logo span{color:var(--orange)}
+.inv-lock{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#363432}
+.inv-hero{background:var(--ink);color:var(--paper);padding:40px clamp(16px,4vw,48px) 96px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px}
+.inv-pill{display:inline-flex;align-items:center;height:26px;padding:0 12px;border-radius:999px;border:1px solid var(--orange);background:rgba(235,87,51,.12);font-size:12px;font-weight:700}
+.inv-hero h1{font-size:clamp(28px,4vw,44px);font-weight:700;letter-spacing:-.025em;line-height:1.1;margin:0}
+.inv-hero p{color:#D6D1C8;max-width:420px;margin:0}.inv-hero b{color:var(--orange)}
+.inv-panel{position:relative;max-width:1040px;margin:-56px auto 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:clamp(20px,3vw,32px);display:flex;flex-direction:column;gap:24px;box-shadow:0 10px 30px rgba(19,19,19,.08),0 1px 3px rgba(19,19,19,.06)}
+.inv-shell{padding:0 clamp(12px,3vw,24px)}
+.inv-org{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.inv-eyebrow{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);margin:0}
+.inv-org h2{font-size:clamp(22px,2.6vw,30px);font-weight:700;letter-spacing:-.02em;margin:6px 0 0}
+.inv-mark{width:48px;height:48px;border-radius:10px;background:#F3EEE6;border:1px solid #CFC6B9;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;color:#B23A17;flex:none}
+.inv-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:18px;border-top:1px solid var(--line);padding-top:22px}
+.inv-fact{display:flex;gap:14px;align-items:flex-start}
+.inv-fact i{width:40px;height:40px;border-radius:99px;background:#F3EEE6;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;flex:none;color:#B23A17}
+.inv-fact b{display:block;font-size:15px}.inv-fact span{font-size:14px;color:var(--grey)}
+.inv-anon{border:1px solid var(--ink);border-radius:12px;padding:18px 20px;display:flex;gap:14px;align-items:flex-start}
+.inv-anon b{display:block;font-size:16px;margin-bottom:4px}.inv-anon p{margin:0;font-size:14.5px;color:#363432}
+.inv-msg{font-size:14.5px;color:#363432;margin:0 0 18px;padding:0 0 4px;border-bottom:1px solid #e6e2dc}.inv-msg p:last-child{margin-bottom:8px}
+.inv-go{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;border:0;border-radius:12px;background:var(--orange);color:#131313;font:inherit;font-size:17px;font-weight:700;cursor:pointer;transition:background-color .15s,transform .1s}
+.inv-go:hover{background:#d94a28}.inv-go:active{transform:scale(.99)}
+.inv-go:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.inv-next{text-align:center;font-size:13px;color:var(--grey);margin:0}
+.inv-help{max-width:1040px;margin:0 auto;padding:36px clamp(12px,3vw,24px) 56px;display:grid;gap:12px}
+.inv-help a,.inv-help div{display:block;padding:14px 18px;border:1px solid #CFC6B9;border-radius:12px;background:#fff;text-decoration:none;color:inherit}
+.inv-help b{display:block}.inv-help span{font-size:14px;color:var(--grey)}
+.inv-foot{border-top:1px solid var(--line);padding:22px clamp(16px,4vw,48px);font-size:13px;color:var(--grey)}
+@media (prefers-reduced-motion:reduce){.inv *{transition:none!important}}
+.inv h1,.inv h2{font-family:inherit}.inv-anon svg{flex:none;margin-top:2px}
+
+/* option C (Q-RD3, 28 Oct 2026): the CDP mark as the app's ink tile, flat panels with the large radius, pill call to action */
+.inv{--line:#E9E2D6}
+.inv-logo{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:14px;background:var(--ink);color:#fff;font-size:14px;letter-spacing:.02em}
+.inv-logo span{display:none}
+.inv-panel{border-radius:22px;box-shadow:none}
+.inv-anon{border-radius:16px}
+.inv-go{border-radius:999px}
+.inv-help a{border-radius:16px}
+.inv-mark{border-radius:14px}

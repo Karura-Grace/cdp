@@ -1,0 +1,79 @@
+:root{
+--color-brand:#EA5732;
+--color-ink:#131313;
+--color-muted:#727070;
+--color-paper:#FAF7F2;
+--color-surface:#FBE9E3;
+--color-accent-dark:#8F3A24;
+--color-white:#FFFFFF;
+--data-engage:#2E86C1;
+--data-innovate:#6C3483;
+--data-perform:#C0392B;
+--data-govern:#58A55C;
+--data-tint-engage:#B6D5E9;
+--data-tint-innovate:#CCB8D4;
+--data-tint-perform:#E9BAB5;
+--data-tint-govern:#C5E0C6;
+--verdict-hit:#2F6F40;--verdict-hit-on:#FFFFFF;
+--verdict-partial:#C77C0E;--verdict-partial-on:#131313;
+--verdict-miss:#A93226;--verdict-miss-on:#FFFFFF;
+--chart-gridline:#DDDDDD;--chart-axis:#131313;--chart-reference:#131313;
+--font-ui:"Inter","Roboto","Open Sans",sans-serif;--font-prose:Georgia,Gelasio,serif;
+--space-1:2pt;
+--space-2:4pt;
+--space-3:8pt;
+--space-4:12pt;
+--space-5:16pt;
+--space-6:24pt;
+--space-7:32pt;
+--space-8:48pt;
+--radius-1:4pt;--radius-pill:9999pt;
+--border-hair:0.5pt;
+--border-rule:0.75pt;
+--border-series:1pt;
+--border-strong:1.5pt;
+}
+@page{size:595.28pt 841.89pt;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--color-muted)}
+body{padding:24pt 0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+@media print{html{background:none}body{padding:0}.page{margin:0!important}.no-print{display:none!important}}
+.page{position:relative;width:595.28pt;height:841.89pt;overflow:hidden;background:var(--color-paper);margin:0 auto 24pt;page-break-after:always;break-after:page;color:var(--color-ink)}
+.abs{position:absolute}
+.tnum{font-variant-numeric:tabular-nums;font-feature-settings:'tnum' 1}
+.icon{display:inline-block;vertical-align:-1.5pt;flex:none}
+.t-display{font-family:var(--font-ui);font-weight:700;font-style:normal;font-size:36pt;line-height:40pt;font-variant-numeric:tabular-nums}
+.t-toc-title{font-family:var(--font-ui);font-weight:700;font-style:normal;font-size:32pt;line-height:36pt;font-variant-numeric:tabular-nums}
+.t-chapter-number{font-family:var(--font-ui);font-weight:700;font-style:normal;font-size:16pt;line-height:16pt;font-variant-numeric:tabular-nums}
+.t-chapter-title{font-family:var(--font-ui);font-weight:700;font-style:normal;font-size:12pt;line-height:14pt;text-transform:uppercase;letter-spacing:0.6pt;font-variant-numeric:tabular-nums}
+.t-h1{font-family:var(--font-ui);font-weight:700;font-style:normal;font-size:14pt;line-height:18pt;font-variant-numeric:tabular-nums}
+.t-h2{font-family:var(--font-ui);font-weight:600;font-style:normal;font-size:11pt;line-height:14pt;font-variant-numeric:tabular-nums}
+.t-headline{font-family:var(--font-ui);font-weight:600;font-style:normal;font-size:14pt;line-height:19pt;font-variant-numeric:tabular-nums}
+.t-body{font-family:var(--font-prose);font-weight:400;font-style:normal;font-size:10pt;line-height:14pt}
+.t-body-strong{font-family:var(--font-prose);font-weight:700;font-style:normal;font-size:10pt;line-height:14pt}
+.t-panel-title{font-family:var(--font-ui);font-weight:700;font-style:normal;font-size:8pt;line-height:10pt;text-transform:uppercase;letter-spacing:0.5pt;font-variant-numeric:tabular-nums}
+.t-table-head{font-family:var(--font-ui);font-weight:600;font-style:normal;font-size:8pt;line-height:10pt;font-variant-numeric:tabular-nums}
+.t-table{font-family:var(--font-ui);font-weight:400;font-style:normal;font-size:8.5pt;line-height:11pt;font-variant-numeric:tabular-nums}
+.t-kpi-value{font-family:var(--font-ui);font-weight:700;font-style:normal;font-size:24pt;line-height:26pt;font-variant-numeric:tabular-nums}
+.t-kpi-label{font-family:var(--font-ui);font-weight:600;font-style:normal;font-size:8pt;line-height:10pt;text-transform:uppercase;letter-spacing:0.5pt;font-variant-numeric:tabular-nums}
+.t-chart{font-family:var(--font-ui);font-weight:400;font-style:normal;font-size:7pt;line-height:9pt;font-variant-numeric:tabular-nums}
+.t-caption{font-family:var(--font-prose);font-weight:400;font-style:italic;font-size:8.5pt;line-height:12pt}
+.t-running{font-family:var(--font-ui);font-weight:400;font-style:normal;font-size:7.5pt;line-height:10pt;font-variant-numeric:tabular-nums}
+.t-pagenum{font-family:var(--font-ui);font-weight:700;font-size:9pt;line-height:10pt;font-variant-numeric:tabular-nums}
+.c-ink{color:var(--color-ink)}.c-muted{color:var(--color-muted)}.c-white{color:var(--color-white)}.c-brand{color:var(--color-brand)}
+.panel{background:var(--color-white);border-radius:var(--radius-1)}
+.card{background:var(--color-white);border-top:var(--border-strong) solid var(--color-brand);border-radius:0 0 var(--radius-1) var(--radius-1)}
+.callout{background:var(--color-surface);border-top:var(--border-strong) solid var(--color-brand);border-radius:0 0 var(--radius-1) var(--radius-1)}
+p+p{margin-top:6pt}
+table.t{border-collapse:collapse;width:100%;table-layout:fixed}
+table.t th{background:var(--color-ink);color:var(--color-white);text-align:left;padding:4pt 12pt;vertical-align:top}
+table.t td{padding:4pt 12pt;vertical-align:top;border-top:var(--border-hair) solid var(--chart-gridline)}
+table.t thead tr{background:var(--color-ink)}table.t th{background:none!important}table.t tbody tr:nth-child(odd){background:var(--color-white)}table.t tbody tr:nth-child(even){background:var(--color-surface)}
+table.t tbody tr:first-child td{border-top:0}
+table.t tbody tr:last-child td{border-bottom:var(--border-rule) solid var(--color-ink)}
+table.t td.first{font-weight:600}table.t .r{text-align:right}
+.toc-row{display:flex;align-items:baseline;gap:4pt}.toc-row .lead{flex:1;align-self:baseline;height:1pt;background-image:radial-gradient(circle,var(--color-muted) 0.45pt,transparent 0.55pt);background-size:3pt 1pt;background-repeat:repeat-x;background-position:right center}
+.anno{outline:var(--border-hair) dashed var(--color-muted);color:var(--color-muted);font:400 7pt/9pt var(--font-ui)}
+.anno-line{border-top:var(--border-hair) dashed var(--color-muted)}
+svg.ch text{font-family:var(--font-ui);font-variant-numeric:tabular-nums;fill:var(--color-ink)}svg.ch .b{font-weight:600}svg.ch .c{font-family:var(--font-prose);font-style:italic;font-variant-numeric:normal}
+.hl-num{font-variant-numeric:tabular-nums}.flow{display:flex;flex-direction:column;gap:16pt}.pair{display:grid;grid-template-columns:241.64pt 241.64pt;column-gap:16pt}.rel{position:relative}

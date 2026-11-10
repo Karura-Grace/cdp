@@ -1,0 +1,667 @@
+{
+ "scen": [
+  {
+   "dim": "D1",
+   "s": 1,
+   "title": "Organisational Character",
+   "persp": "NOW",
+   "prompt": "How would you describe the fundamental character of this organisation today?",
+   "statements": {
+    "ENGAGE": "This organisation is fundamentally a people-centred community. Deep relationships, mutual care, and shared purpose define daily experience. People invest in one another as whole human beings, not merely as role-holders or performance units.",
+    "INNOVATE": "This organisation is fundamentally an ideas engine. Bold experimentation, creative disruption, and the freedom to challenge convention define who we are. We move fast and prize originality over conformity at every level.",
+    "PERFORM": "This organisation is fundamentally a performance machine. Ambitious goals, relentless execution, and measurable outcomes define us. We compete hard, celebrate achievement loudly, and hold ourselves to exacting standards.",
+    "GOVERN": "This organisation is fundamentally a system of order. Clear structures, defined processes, and consistent standards define how we work. We value precision, reliability, and systematic discipline above improvisation."
+   }
+  },
+  {
+   "dim": "D1",
+   "s": 2,
+   "title": "New Employee Experience",
+   "persp": "NOW",
+   "prompt": "What do new employees consistently notice and remark upon within their first few weeks?",
+   "statements": {
+    "ENGAGE": "New employees immediately notice the warmth and genuine inclusion. Colleagues go out of their way to welcome them, offer proactive support, and make them feel part of something that transcends any single role or task.",
+    "INNOVATE": "New employees immediately notice the energy and creative freedom. They are quickly encouraged to question existing approaches, propose ideas boldly, and take ownership of challenges without waiting for permission.",
+    "PERFORM": "New employees immediately notice the pace and the performance expectations. They quickly understand that results matter, targets are taken seriously, and strong delivery is expected and closely observed from the very first week.",
+    "GOVERN": "New employees immediately notice the structure and operational clarity. There are established ways of doing things, clear reporting lines, and thoroughly documented expectations for every level and function across the organisation."
+   }
+  },
+  {
+   "dim": "D1",
+   "s": 3,
+   "title": "Response to Adversity",
+   "persp": "NOW",
+   "prompt": "How does this organisation characteristically respond when things go significantly wrong?",
+   "statements": {
+    "ENGAGE": "When things go seriously wrong, we rally together as a community. People offer genuine support, share the burden collectively, and focus on protecting team morale while communicating openly and looking after each other through difficulty.",
+    "INNOVATE": "When things go seriously wrong, we treat it as essential learning. We diagnose rapidly, experiment with recovery approaches, and view failure as data that makes us smarter, not as a signal to blame, retreat, or become more risk-averse.",
+    "PERFORM": "When things go seriously wrong, we focus intensely on getting back on track. We define the performance gap, set clear recovery targets, and expect everyone to work urgently and accountably until performance standards are restored.",
+    "GOVERN": "When things go seriously wrong, we follow the established protocol. We activate risk management procedures, document accurately what occurred, and ensure that proper escalation and accountability channels are adhered to without exception."
+   }
+  },
+  {
+   "dim": "D2",
+   "s": 1,
+   "title": "Primary Leadership Orientation",
+   "persp": "NOW",
+   "prompt": "How would you best describe the dominant approach that leaders take in this organisation?",
+   "statements": {
+    "ENGAGE": "Leaders are primarily coaches and mentors. They prioritise development conversations, team cohesion, and creating environments where people feel genuinely seen, valued, and supported in their professional and personal growth.",
+    "INNOVATE": "Leaders are primarily visionaries and champions of change. They set ambitious directions, encourage unconventional thinking, and give people genuine autonomy to experiment and find solutions that have never been tried before.",
+    "PERFORM": "Leaders are primarily drivers and scorekeepers. They establish challenging targets, track performance rigorously, and hold people firmly to clear standards of measurable output, delivery, and commercial contribution.",
+    "GOVERN": "Leaders are primarily architects and stewards of process. They design efficient operating systems, maintain quality and consistency across operations, and preserve clear accountability structures throughout the organisation."
+   }
+  },
+  {
+   "dim": "D2",
+   "s": 2,
+   "title": "How Leaders Invest Their Time",
+   "persp": "NOW",
+   "prompt": "How do leaders in this organisation characteristically spend their discretionary time and focused attention?",
+   "statements": {
+    "ENGAGE": "Leaders invest significant time in coaching conversations, structured listening sessions, team cohesion activities, and ensuring that the human dimensions of work are not neglected or subordinated to performance pressure alone.",
+    "INNOVATE": "Leaders invest significant time scanning emerging trends, incubating new initiatives, removing barriers to experimentation, and personally sponsoring projects that challenge existing assumptions and inherited approaches.",
+    "PERFORM": "Leaders invest significant time reviewing performance data, calibrating against targets, eliminating execution bottlenecks, and actively pushing for consistently higher performance standards and outcomes across all functions.",
+    "GOVERN": "Leaders invest significant time in systems improvement, process design, compliance management, and ensuring that operational quality and established standards are consistently upheld and improved across all areas."
+   }
+  },
+  {
+   "dim": "D2",
+   "s": 3,
+   "title": "What Leaders Are Recognised For",
+   "persp": "NOW",
+   "prompt": "What kinds of leadership contributions are most valued, celebrated, and emulated in this organisation?",
+   "statements": {
+    "ENGAGE": "Leaders are most celebrated for developing others, building deeply motivated and cohesive teams, handling difficult human situations with genuine wisdom and care, and creating authentic belonging within their areas of responsibility.",
+    "INNOVATE": "Leaders are most celebrated for inspiring new thinking, launching bold initiatives ahead of market demands, championing change before it is explicitly required, and consistently unlocking the creative potential of the people around them.",
+    "PERFORM": "Leaders are most celebrated for delivering outstanding results, consistently exceeding targets, building elite-performing teams, and generating measurable commercial or operational wins that materially advance the organisation's position.",
+    "GOVERN": "Leaders are most celebrated for building reliable and efficient systems, preventing costly problems before they arise, and maintaining consistent quality and compliance standards rigorously across their areas of responsibility."
+   }
+  },
+  {
+   "dim": "D3",
+   "s": 1,
+   "title": "Core Management Philosophy",
+   "persp": "NOW",
+   "prompt": "How would you characterise the dominant philosophy used to manage and direct people in this organisation?",
+   "statements": {
+    "ENGAGE": "Employees are managed through relationship and meaningful participation. Managers prioritise collaborative decision-making, seek genuine team consensus, and ensure that all members have voice in matters that directly affect their daily work.",
+    "INNOVATE": "Employees are managed through autonomy and creative challenge. Managers provide generous space for independent thinking, tolerate productive failure as a natural element of learning, and actively reward intellectual initiative and experimentation.",
+    "PERFORM": "Employees are managed through clear targets and firm accountability. Managers set demanding performance expectations, track progress against measurable goals rigorously, and hold people to consistently high standards of delivery.",
+    "GOVERN": "Employees are managed through defined roles and established procedures. Managers ensure people understand their responsibilities clearly, adhere to documented protocols consistently, and perform within their designated remit reliably."
+   }
+  },
+  {
+   "dim": "D3",
+   "s": 2,
+   "title": "Development and Growth Approach",
+   "persp": "NOW",
+   "prompt": "How does this organisation primarily develop, grow, and invest in the capabilities of its people?",
+   "statements": {
+    "ENGAGE": "Development is relationship-led. The most valued growth experiences are mentoring relationships, peer learning circles, team-based stretch projects, and the opportunity to develop alongside trusted, respected, and more experienced colleagues.",
+    "INNOVATE": "Development is discovery-led. The most valued experiences include stretch assignments beyond comfort zones, cross-functional exposure, experimentation with new approaches, and regular access to cutting-edge external thinking and innovation.",
+    "PERFORM": "Development is results-led. The most valued experiences are high-stakes projects with real accountability, performance coaching under meaningful pressure, visible delivery moments, and fast-track advancement for consistently strong performers.",
+    "GOVERN": "Development is competency-led. The most valued experiences are structured technical training programmes, professional certification, methodical skill-building against defined competency frameworks, and clear progression milestones with specified criteria."
+   }
+  },
+  {
+   "dim": "D3",
+   "s": 3,
+   "title": "Performance Conversation Style",
+   "persp": "NOW",
+   "prompt": "How are performance conversations and feedback primarily conducted within this organisation?",
+   "statements": {
+    "ENGAGE": "Performance conversations are primarily supportive and developmental in tone. Feedback is delivered within a context of genuine care for the person, and performance challenges are met with coaching support and encouragement rather than pressure or sanction.",
+    "INNOVATE": "Performance conversations are primarily exploratory and future-oriented. The primary focus is on learning from experience, adapting approaches, and identifying the next bold challenge to pursue, rather than dwelling at length on past shortfalls.",
+    "PERFORM": "Performance conversations are primarily candid and accountability-driven. Honest feedback is delivered directly and without excessive softening, underperformance is named clearly, and improvement expectations are specific, measurable, and time-bound.",
+    "GOVERN": "Performance conversations are primarily structured and standards-based. Reviews follow a consistent and documented format, are benchmarked against defined competency frameworks, and result in recorded development plans with measurable milestones."
+   }
+  },
+  {
+   "dim": "D4",
+   "s": 1,
+   "title": "Primary Bonding Mechanism",
+   "persp": "NOW",
+   "prompt": "What most fundamentally holds this organisation together and creates a coherent collective identity?",
+   "statements": {
+    "ENGAGE": "What holds this organisation together is the quality of our relationships. Loyalty, mutual respect, and genuine care for each other create bonds that survive difficult periods, leadership transitions, and sustained external pressure.",
+    "INNOVATE": "What holds this organisation together is our shared hunger for what is possible. A collective excitement about the new, the untried, and the transformative creates enduring unity and common purpose across all functions and hierarchical levels.",
+    "PERFORM": "What holds this organisation together is our shared competitive drive. A collective commitment to winning, outperforming others, and delivering ambitious results creates a unifying force and common identity across all divisions.",
+    "GOVERN": "What holds this organisation together is adherence to shared systems and standards. Common processes, clearly defined policies, and consistent expectations create a unifying operational framework that guides and aligns collective behaviour."
+   }
+  },
+  {
+   "dim": "D4",
+   "s": 2,
+   "title": "What Makes People Stay",
+   "persp": "NOW",
+   "prompt": "What is the primary reason that people decide to remain in this organisation over the long term?",
+   "statements": {
+    "ENGAGE": "People remain primarily because of the depth of relationships and genuine sense of belonging they experience here. The quality of their human connections (with colleagues, managers, and teams) is the decisive factor in their decision to stay.",
+    "INNOVATE": "People remain primarily because of the intellectual stimulation and growth the organisation continuously provides. The opportunity to work on genuinely novel problems, learn continuously, and pioneer meaningful solutions is the decisive retention factor.",
+    "PERFORM": "People remain primarily because of the high-performance culture and the compelling career trajectory it enables. The chance to achieve at a high level, advance rapidly, and be recognised for exceptional contribution keeps strong performers committed over time.",
+    "GOVERN": "People remain primarily because of the stability, security, and predictability the organisation dependably provides. Clear expectations, reliable processes, and predictable career progression create a sense of institutional safety that sustains long-term loyalty."
+   }
+  },
+  {
+   "dim": "D4",
+   "s": 3,
+   "title": "Identity Through Change",
+   "persp": "NOW",
+   "prompt": "How does this organisation maintain a coherent sense of identity when going through significant change?",
+   "statements": {
+    "ENGAGE": "During significant change, the organisation anchors to its people-first values. Preserving trust, ensuring that no one is left behind, and maintaining relational continuity are the non-negotiable constants through any period of disruption or transformation.",
+    "INNOVATE": "During significant change, the organisation maintains identity through its appetite for reinvention. Change is not experienced as a threat but as a natural expression of who we are; agility and continuous adaptation are our defining cultural constants.",
+    "PERFORM": "During significant change, the organisation maintains identity through its performance orientation. The goal-driven culture and competitive spirit remain consistent and recognisable regardless of what is structurally changing around and beneath them.",
+    "GOVERN": "During significant change, the organisation maintains identity through structural discipline. Established processes provide institutional continuity, and well-documented protocols ensure operational consistency and predictability despite external disruption."
+   }
+  },
+  {
+   "dim": "D5",
+   "s": 1,
+   "title": "Primary Strategic Orientation",
+   "persp": "NOW",
+   "prompt": "What is the most prominent orientation guiding how this organisation approaches strategy?",
+   "statements": {
+    "ENGAGE": "Our strategy is oriented primarily toward human capital excellence. We believe that investing deeply in people (their skills, wellbeing, engagement, and development) is the most reliable and sustainable route to long-term organisational performance.",
+    "INNOVATE": "Our strategy is oriented primarily toward future opportunity and emerging capability. We invest ahead of where the market is moving, acquire leading capabilities early, and consistently prioritise positioning for what comes next over optimising what already exists.",
+    "PERFORM": "Our strategy is oriented primarily toward market leadership and sustained commercial excellence. We invest in capabilities that strengthen our competitive position, grow our revenue base, and deliver consistently superior returns to stakeholders.",
+    "GOVERN": "Our strategy is oriented primarily toward operational excellence and scalable efficiency. We invest in process improvement, quality management systems, enterprise risk reduction, and the infrastructure required to grow without compromising standards."
+   }
+  },
+  {
+   "dim": "D5",
+   "s": 2,
+   "title": "Budget and Resource Allocation Logic",
+   "persp": "NOW",
+   "prompt": "When resources are allocated in this organisation, what consistently and reliably receives strategic priority?",
+   "statements": {
+    "ENGAGE": "People programmes receive consistent strategic priority. Learning and development budgets, employee experience investments, wellbeing programmes, and engagement initiatives are treated as core strategic expenditures, not discretionary or deferrable costs.",
+    "INNOVATE": "Innovation and growth programmes receive consistent strategic priority. Research and development, new capability investment, technology pilots, and market exploration are protected, including during periods of financial constraint and competitive pressure.",
+    "PERFORM": "Revenue-generating and commercial activities receive consistent strategic priority. Sales capability, marketing investment, customer acquisition, and performance management infrastructure are the primary beneficiaries of resource decisions.",
+    "GOVERN": "Systems infrastructure and compliance receive consistent strategic priority. Technology investment, process re-engineering, audit readiness, quality management, and institutional risk infrastructure are treated as non-negotiable operational foundations."
+   }
+  },
+  {
+   "dim": "D5",
+   "s": 3,
+   "title": "Long-Term Investment Philosophy",
+   "persp": "NOW",
+   "prompt": "What investment logic most characteristically reflects how this organisation thinks about the next five years?",
+   "statements": {
+    "ENGAGE": "Over a five-year horizon, we prioritise culture-building, employer brand strength, and talent pipeline development. We believe that an organisation with genuinely outstanding people practices will consistently outperform across any market or economic condition.",
+    "INNOVATE": "Over a five-year horizon, we prioritise positioning at the frontier of our industry. Early investments in emerging technology, unconventional business models, and frontier approaches are how we intend to create and sustain durable competitive leadership.",
+    "PERFORM": "Over a five-year horizon, we prioritise sustained commercial outperformance and market expansion. We set progressively demanding performance targets and build the execution capabilities required to consistently deliver against them at scale.",
+    "GOVERN": "Over a five-year horizon, we prioritise building reliable, scalable operating systems and institutional resilience. We invest in the infrastructure, standards, and process discipline required to deliver consistent excellence as the organisation scales."
+   }
+  },
+  {
+   "dim": "D6",
+   "s": 1,
+   "title": "Organisational Success Definition",
+   "persp": "NOW",
+   "prompt": "How does this organisation primarily define and articulate what success means for it?",
+   "statements": {
+    "ENGAGE": "Success means that our people genuinely thrive. A highly engaged workforce, low voluntary turnover, outstanding employee experience scores, and leaders who invest consistently in developing others are the defining measures of our success as an organisation.",
+    "INNOVATE": "Success means that we lead our industry in originality and adaptive capability. Being consistently first with genuinely novel solutions, achieving recognition as pioneers and thought leaders, and building an innovation reputation that attracts exceptional talent define our success.",
+    "PERFORM": "Success means that we win commercially and outpace competition. Revenue growth, market share gains, consistent outperformance of competitors, and delivering superior returns to our stakeholders are the primary definitions of what success means here.",
+    "GOVERN": "Success means that we operate with systemic excellence. Consistent quality at scale, zero material compliance failures, efficient and reliable process execution, and dependable delivery within agreed cost and timeline parameters define success for us."
+   }
+  },
+  {
+   "dim": "D6",
+   "s": 2,
+   "title": "What Gets Celebrated",
+   "persp": "NOW",
+   "prompt": "What types of achievements and behaviours are most enthusiastically recognised and celebrated here?",
+   "statements": {
+    "ENGAGE": "Genuine teamwork, remarkable acts of care, and outstanding cross-functional collaboration are celebrated most enthusiastically. Recognition focuses equally on collective achievement and individual contribution, and stories of human connection carry significant cultural status.",
+    "INNOVATE": "Breakthrough thinking, bold experiments, and the intellectual courage to attempt something genuinely new are celebrated most enthusiastically, regardless of whether every experiment ultimately succeeds or falls short of initial ambitions.",
+    "PERFORM": "Exceptional commercial results, ambitious targets exceeded, and elite individual and team performance are celebrated most enthusiastically. Numbers, competitive rankings, and tangible organisational wins carry enduring and significant cultural status.",
+    "GOVERN": "Flawless execution, consistently excellent quality, clean audit and compliance outcomes, and the sustained discipline to maintain high standards under operational pressure are what this organisation celebrates most enthusiastically and publicly."
+   }
+  },
+  {
+   "dim": "D6",
+   "s": 3,
+   "title": "Performance Measurement Philosophy",
+   "persp": "NOW",
+   "prompt": "What types of metrics and measures most fundamentally reflect how this organisation tracks its performance?",
+   "statements": {
+    "ENGAGE": "We track success by the health and vitality of our people and their working relationships. Employee engagement scores, voluntary retention rates, team health indices, developmental feedback quality, and wellbeing indicators are the measures that carry the most weight here.",
+    "INNOVATE": "We track success by the vibrancy of our innovation pipeline and our rate of institutional learning. Speed of new initiative generation, successful pilot conversions, adoption velocity of new approaches, and experimentation frequency are the metrics we prioritise.",
+    "PERFORM": "We track success through rigorous commercial and operational KPIs. Revenue targets, margin ratios, market share data, customer acquisition metrics, and competitive positioning indicators are the primary performance measures we report upon and act on.",
+    "GOVERN": "We track success through quality, compliance, and operational efficiency metrics. Error rates, compliance scores, service-level adherence rates, process efficiency ratios, and audit outcomes are the foundational measures of our effectiveness as an organisation."
+   }
+  },
+  {
+   "dim": "D1",
+   "s": 1,
+   "title": "Organisational Character",
+   "persp": "PREFERRED",
+   "prompt": "PREFERRED perspective: What fundamental character must this organisation have five years from now?",
+   "statements": {
+    "ENGAGE": "This organisation is fundamentally a people-centred community. Deep relationships, mutual care, and shared purpose define daily experience. People invest in one another as whole human beings, not merely as role-holders or performance units.",
+    "INNOVATE": "This organisation is fundamentally an ideas engine. Bold experimentation, creative disruption, and the freedom to challenge convention define who we are. We move fast and prize originality over conformity at every level.",
+    "PERFORM": "This organisation is fundamentally a performance machine. Ambitious goals, relentless execution, and measurable outcomes define us. We compete hard, celebrate achievement loudly, and hold ourselves to exacting standards.",
+    "GOVERN": "This organisation is fundamentally a system of order. Clear structures, defined processes, and consistent standards define how we work. We value precision, reliability, and systematic discipline above improvisation."
+   }
+  },
+  {
+   "dim": "D1",
+   "s": 2,
+   "title": "New Employee Experience",
+   "persp": "PREFERRED",
+   "prompt": "PREFERRED perspective: What should new employees notice and remark upon within their first few weeks in the future organisation?",
+   "statements": {
+    "ENGAGE": "New employees immediately notice the warmth and genuine inclusion. Colleagues go out of their way to welcome them, offer proactive support, and make them feel part of something that transcends any single role or task.",
+    "INNOVATE": "New employees immediately notice the energy and creative freedom. They are quickly encouraged to question existing approaches, propose ideas boldly, and take ownership of challenges without waiting for permission.",
+    "PERFORM": "New employees immediately notice the pace and the performance expectations. They quickly understand that results matter, targets are taken seriously, and strong delivery is expected and closely observed from the very first week.",
+    "GOVERN": "New employees immediately notice the structure and operational clarity. There are established ways of doing things, clear reporting lines, and thoroughly documented expectations for every level and function across the organisation."
+   }
+  },
+  {
+   "dim": "D1",
+   "s": 3,
+   "title": "Response to Adversity",
+   "persp": "PREFERRED",
+   "prompt": "PREFERRED perspective: How should this organisation respond when things go significantly wrong in the future?",
+   "statements": {
+    "ENGAGE": "When things go seriously wrong, we rally together as a community. People offer genuine support, share the burden collectively, and focus on protecting team morale while communicating openly and looking after each other through difficulty.",
+    "INNOVATE": "When things go seriously wrong, we treat it as essential learning. We diagnose rapidly, experiment with recovery approaches, and view failure as data that makes us smarter, not as a signal to blame, retreat, or become more risk-averse.",
+    "PERFORM": "When things go seriously wrong, we focus intensely on getting back on track. We define the performance gap, set clear recovery targets, and expect everyone to work urgently and accountably until performance standards are restored.",
+    "GOVERN": "When things go seriously wrong, we follow the established protocol. We activate risk management procedures, document accurately what occurred, and ensure that proper escalation and accountability channels are adhered to without exception."
+   }
+  },
+  {
+   "dim": "D2",
+   "s": 1,
+   "title": "Primary Leadership Orientation",
+   "persp": "PREFERRED",
+   "prompt": "PREFERRED perspective: What dominant approach should leaders take in this organisation five years from now?",
+   "statements": {
+    "ENGAGE": "Leaders are primarily coaches and mentors. They prioritise development conversations, team cohesion, and creating environments where people feel genuinely seen, valued, and supported in their professional and personal growth.",
+    "INNOVATE": "Leaders are primarily visionaries and champions of change. They set ambitious directions, encourage unconventional thinking, and give people genuine autonomy to experiment and find solutions that have never been tried before.",
+    "PERFORM": "Leaders are primarily drivers and scorekeepers. They establish challenging targets, track performance rigorously, and hold people firmly to clear standards of measurable output, delivery, and commercial contribution.",
+    "GOVERN": "Leaders are primarily architects and stewards of process. They design efficient operating systems, maintain quality and consistency across operations, and preserve clear accountability structures throughout the organisation."
+   }
+  },
+  {
+   "dim": "D2",
+   "s": 2,
+   "title": "How Leaders Invest Their Time",
+   "persp": "PREFERRED",
+   "prompt": "PREFERRED perspective: How should leaders spend their discretionary time and focused attention in the future organisation?",
+   "statements": {
+    "ENGAGE": "Leaders invest significant time in coaching conversations, structured listening sessions, team cohesion activities, and ensuring that the human dimensions of work are not neglected or subordinated to performance pressure alone.",
+    "INNOVATE": "Leaders invest significant time scanning emerging trends, incubating new initiatives, removing barriers to experimentation, and personally sponsoring projects that challenge existing assumptions and inherited approaches.",
+    "PERFORM": "Leaders invest significant time reviewing performance data, calibrating against targets, eliminating execution bottlenecks, and actively pushing for consistently higher performance standards and outcomes across all functions.",
+    "GOVERN": "Leaders invest significant time in systems improvement, process design, compliance management, and ensuring that operational quality and established standards are consistently upheld and improved across all areas."
+   }
+  },
+  {
+   "dim": "D2",
+   "s": 3,
+   "title": "What Leaders Are Recognised For",
+   "persp": "PREFERRED",
+   "prompt": "PREFERRED perspective: What kinds of leadership contributions should be most valued, celebrated, and emulated in the future?",
+   "statements": {
+    "ENGAGE": "Leaders are most celebrated for developing others, building deeply motivated and cohesive teams, handling difficult human situations with genuine wisdom and care, and creating authentic belonging within their areas of responsibility.",
+    "INNOVATE": "Leaders are most celebrated for inspiring new thinking, launching bold initiatives ahead of market demands, championing change before it is explicitly required, and consistently unlocking the creative potential of the people around them.",
+    "PERFORM": "Leaders are most celebrated for delivering outstanding results, consistently exceeding targets, building elite-performing teams, and generating measurable commercial or operational wins that materially advance the organisation's position.",
+    "GOVERN": "Leaders are most celebrated for building reliable and efficient systems, preventing costly problems before they arise, and maintaining consistent quality and compliance standards rigorously across their areas of responsibility."
+   }
+  },
+  {
+   "dim": "D3",
+   "s": 1,
+   "title": "Core Management Philosophy",
+   "persp": "PREFERRED",
+   "prompt": "PREFERRED perspective: What philosophy should dominate how people are managed and directed five years from now?",
+   "statements": {
+    "ENGAGE": "Employees are managed through relationship and meaningful participation. Managers prioritise collaborative decision-making, seek genuine team consensus, and ensure that all members have voice in matters that directly affect their daily work.",
+    "INNOVATE": "Employees are managed through autonomy and creative challenge. Managers provide generous space for independent thinking, tolerate productive failure as a natural element of learning, and actively reward intellectual initiative and experimentation.",
+    "PERFORM": "Employees are managed through clear targets and firm accountability. Managers set demanding performance expectations, track progress against measurable goals rigorously, and hold people to consistently high standards of delivery.",
+    "GOVERN": "Employees are managed through defined roles and established procedures. Managers ensure people understand their responsibilities clearly, adhere to documented protocols consistently, and perform within their designated remit reliably."
+   }
+  },
+  {
+   "dim": "D3",
+   "s": 2,
+   "title": "Development and Growth Approach",
+   "persp": "PREFERRED",
+   "prompt": "PREFERRED perspective: How should this organisation develop, grow, and invest in the capabilities of its people in the future?",
+   "statements": {
+    "ENGAGE": "Development is relationship-led. The most valued growth experiences are mentoring relationships, peer learning circles, team-based stretch projects, and the opportunity to develop alongside trusted, respected, and more experienced colleagues.",
+    "INNOVATE": "Development is discovery-led. The most valued experiences include stretch assignments beyond comfort zones, cross-functional exposure, experimentation with new approaches, and regular access to cutting-edge external thinking and innovation.",
+    "PERFORM": "Development is results-led. The most valued experiences are high-stakes projects with real accountability, performance coaching under meaningful pressure, visible delivery moments, and fast-track advancement for consistently strong performers.",
+    "GOVERN": "Development is competency-led. The most valued experiences are structured technical training programmes, professional certification, methodical skill-building against defined competency frameworks, and clear progression milestones with specified criteria."
+   }
+  },
+  {
+   "dim": "D3",
+   "s": 3,
+   "title": "Performance Conversation Style",
+   "persp": "PREFERRED",
+   "prompt": "PREFERRED perspective: How should performance conversations and feedback be conducted in the future organisation?",
+   "statements": {
+    "ENGAGE": "Performance conversations are primarily supportive and developmental in tone. Feedback is delivered within a context of genuine care for the person, and performance challenges are met with coaching support and encouragement rather than pressure or sanction.",
+    "INNOVATE": "Performance conversations are primarily exploratory and future-oriented. The primary focus is on learning from experience, adapting approaches, and identifying the next bold challenge to pursue, rather than dwelling at length on past shortfalls.",
+    "PERFORM": "Performance conversations are primarily candid and accountability-driven. Honest feedback is delivered directly and without excessive softening, underperformance is named clearly, and improvement expectations are specific, measurable, and time-bound.",
+    "GOVERN": "Performance conversations are primarily structured and standards-based. Reviews follow a consistent and documented format, are benchmarked against defined competency frameworks, and result in recorded development plans with measurable milestones."
+   }
+  },
+  {
+   "dim": "D4",
+   "s": 1,
+   "title": "Primary Bonding Mechanism",
+   "persp": "PREFERRED",
+   "prompt": "PREFERRED perspective: What should most fundamentally hold this organisation together and create a coherent collective identity in the future?",
+   "statements": {
+    "ENGAGE": "What holds this organisation together is the quality of our relationships. Loyalty, mutual respect, and genuine care for each other create bonds that survive difficult periods, leadership transitions, and sustained external pressure.",
+    "INNOVATE": "What holds this organisation together is our shared hunger for what is possible. A collective excitement about the new, the untried, and the transformative creates enduring unity and common purpose across all functions and hierarchical levels.",
+    "PERFORM": "What holds this organisation together is our shared competitive drive. A collective commitment to winning, outperforming others, and delivering ambitious results creates a unifying force and common identity across all divisions.",
+    "GOVERN": "What holds this organisation together is adherence to shared systems and standards. Common processes, clearly defined policies, and consistent expectations create a unifying operational framework that guides and aligns collective behaviour."
+   }
+  },
+  {
+   "dim": "D4",
+   "s": 2,
+   "title": "What Makes People Stay",
+   "persp": "PREFERRED",
+   "prompt": "PREFERRED perspective: What should be the primary reason people decide to remain in this organisation over the long term?",
+   "statements": {
+    "ENGAGE": "People remain primarily because of the depth of relationships and genuine sense of belonging they experience here. The quality of their human connections (with colleagues, managers, and teams) is the decisive factor in their decision to stay.",
+    "INNOVATE": "People remain primarily because of the intellectual stimulation and growth the organisation continuously provides. The opportunity to work on genuinely novel problems, learn continuously, and pioneer meaningful solutions is the decisive retention factor.",
+    "PERFORM": "People remain primarily because of the high-performance culture and the compelling career trajectory it enables. The chance to achieve at a high level, advance rapidly, and be recognised for exceptional contribution keeps strong performers committed over time.",
+    "GOVERN": "People remain primarily because of the stability, security, and predictability the organisation dependably provides. Clear expectations, reliable processes, and predictable career progression create a sense of institutional safety that sustains long-term loyalty."
+   }
+  },
+  {
+   "dim": "D4",
+   "s": 3,
+   "title": "Identity Through Change",
+   "persp": "PREFERRED",
+   "prompt": "PREFERRED perspective: How should this organisation maintain a coherent sense of identity through significant change in the future?",
+   "statements": {
+    "ENGAGE": "During significant change, the organisation anchors to its people-first values. Preserving trust, ensuring that no one is left behind, and maintaining relational continuity are the non-negotiable constants through any period of disruption or transformation.",
+    "INNOVATE": "During significant change, the organisation maintains identity through its appetite for reinvention. Change is not experienced as a threat but as a natural expression of who we are; agility and continuous adaptation are our defining cultural constants.",
+    "PERFORM": "During significant change, the organisation maintains identity through its performance orientation. The goal-driven culture and competitive spirit remain consistent and recognisable regardless of what is structurally changing around and beneath them.",
+    "GOVERN": "During significant change, the organisation maintains identity through structural discipline. Established processes provide institutional continuity, and well-documented protocols ensure operational consistency and predictability despite external disruption."
+   }
+  },
+  {
+   "dim": "D5",
+   "s": 1,
+   "title": "Primary Strategic Orientation",
+   "persp": "PREFERRED",
+   "prompt": "PREFERRED perspective: What orientation should be most prominent in how this organisation approaches strategy five years from now?",
+   "statements": {
+    "ENGAGE": "Our strategy is oriented primarily toward human capital excellence. We believe that investing deeply in people (their skills, wellbeing, engagement, and development) is the most reliable and sustainable route to long-term organisational performance.",
+    "INNOVATE": "Our strategy is oriented primarily toward future opportunity and emerging capability. We invest ahead of where the market is moving, acquire leading capabilities early, and consistently prioritise positioning for what comes next over optimising what already exists.",
+    "PERFORM": "Our strategy is oriented primarily toward market leadership and sustained commercial excellence. We invest in capabilities that strengthen our competitive position, grow our revenue base, and deliver consistently superior returns to stakeholders.",
+    "GOVERN": "Our strategy is oriented primarily toward operational excellence and scalable efficiency. We invest in process improvement, quality management systems, enterprise risk reduction, and the infrastructure required to grow without compromising standards."
+   }
+  },
+  {
+   "dim": "D5",
+   "s": 2,
+   "title": "Budget and Resource Allocation Logic",
+   "persp": "PREFERRED",
+   "prompt": "PREFERRED perspective: When resources are allocated in the future, what should consistently and reliably receive strategic priority?",
+   "statements": {
+    "ENGAGE": "People programmes receive consistent strategic priority. Learning and development budgets, employee experience investments, wellbeing programmes, and engagement initiatives are treated as core strategic expenditures, not discretionary or deferrable costs.",
+    "INNOVATE": "Innovation and growth programmes receive consistent strategic priority. Research and development, new capability investment, technology pilots, and market exploration are protected, including during periods of financial constraint and competitive pressure.",
+    "PERFORM": "Revenue-generating and commercial activities receive consistent strategic priority. Sales capability, marketing investment, customer acquisition, and performance management infrastructure are the primary beneficiaries of resource decisions.",
+    "GOVERN": "Systems infrastructure and compliance receive consistent strategic priority. Technology investment, process re-engineering, audit readiness, quality management, and institutional risk infrastructure are treated as non-negotiable operational foundations."
+   }
+  },
+  {
+   "dim": "D5",
+   "s": 3,
+   "title": "Long-Term Investment Philosophy",
+   "persp": "PREFERRED",
+   "prompt": "PREFERRED perspective: What investment logic should characterise how this organisation thinks about the next five years?",
+   "statements": {
+    "ENGAGE": "Over a five-year horizon, we prioritise culture-building, employer brand strength, and talent pipeline development. We believe that an organisation with genuinely outstanding people practices will consistently outperform across any market or economic condition.",
+    "INNOVATE": "Over a five-year horizon, we prioritise positioning at the frontier of our industry. Early investments in emerging technology, unconventional business models, and frontier approaches are how we intend to create and sustain durable competitive leadership.",
+    "PERFORM": "Over a five-year horizon, we prioritise sustained commercial outperformance and market expansion. We set progressively demanding performance targets and build the execution capabilities required to consistently deliver against them at scale.",
+    "GOVERN": "Over a five-year horizon, we prioritise building reliable, scalable operating systems and institutional resilience. We invest in the infrastructure, standards, and process discipline required to deliver consistent excellence as the organisation scales."
+   }
+  },
+  {
+   "dim": "D6",
+   "s": 1,
+   "title": "Organisational Success Definition",
+   "persp": "PREFERRED",
+   "prompt": "PREFERRED perspective: How should this organisation define and articulate what success means for it in the future?",
+   "statements": {
+    "ENGAGE": "Success means that our people genuinely thrive. A highly engaged workforce, low voluntary turnover, outstanding employee experience scores, and leaders who invest consistently in developing others are the defining measures of our success as an organisation.",
+    "INNOVATE": "Success means that we lead our industry in originality and adaptive capability. Being consistently first with genuinely novel solutions, achieving recognition as pioneers and thought leaders, and building an innovation reputation that attracts exceptional talent define our success.",
+    "PERFORM": "Success means that we win commercially and outpace competition. Revenue growth, market share gains, consistent outperformance of competitors, and delivering superior returns to our stakeholders are the primary definitions of what success means here.",
+    "GOVERN": "Success means that we operate with systemic excellence. Consistent quality at scale, zero material compliance failures, efficient and reliable process execution, and dependable delivery within agreed cost and timeline parameters define success for us."
+   }
+  },
+  {
+   "dim": "D6",
+   "s": 2,
+   "title": "What Gets Celebrated",
+   "persp": "PREFERRED",
+   "prompt": "PREFERRED perspective: What types of achievements and behaviours should be most enthusiastically recognised and celebrated in the future?",
+   "statements": {
+    "ENGAGE": "Genuine teamwork, remarkable acts of care, and outstanding cross-functional collaboration are celebrated most enthusiastically. Recognition focuses equally on collective achievement and individual contribution, and stories of human connection carry significant cultural status.",
+    "INNOVATE": "Breakthrough thinking, bold experiments, and the intellectual courage to attempt something genuinely new are celebrated most enthusiastically, regardless of whether every experiment ultimately succeeds or falls short of initial ambitions.",
+    "PERFORM": "Exceptional commercial results, ambitious targets exceeded, and elite individual and team performance are celebrated most enthusiastically. Numbers, competitive rankings, and tangible organisational wins carry enduring and significant cultural status.",
+    "GOVERN": "Flawless execution, consistently excellent quality, clean audit and compliance outcomes, and the sustained discipline to maintain high standards under operational pressure are what this organisation celebrates most enthusiastically and publicly."
+   }
+  },
+  {
+   "dim": "D6",
+   "s": 3,
+   "title": "Performance Measurement Philosophy",
+   "persp": "PREFERRED",
+   "prompt": "PREFERRED perspective: What types of metrics and measures should most fundamentally reflect how this organisation tracks performance five years from now?",
+   "statements": {
+    "ENGAGE": "We track success by the health and vitality of our people and their working relationships. Employee engagement scores, voluntary retention rates, team health indices, developmental feedback quality, and wellbeing indicators are the measures that carry the most weight here.",
+    "INNOVATE": "We track success by the vibrancy of our innovation pipeline and our rate of institutional learning. Speed of new initiative generation, successful pilot conversions, adoption velocity of new approaches, and experimentation frequency are the metrics we prioritise.",
+    "PERFORM": "We track success through rigorous commercial and operational KPIs. Revenue targets, margin ratios, market share data, customer acquisition metrics, and competitive positioning indicators are the primary performance measures we report upon and act on.",
+    "GOVERN": "We track success through quality, compliance, and operational efficiency metrics. Error rates, compliance scores, service-level adherence rates, process efficiency ratios, and audit outcomes are the foundational measures of our effectiveness as an organisation."
+   }
+  }
+ ],
+ "likert": {
+  "D7": [
+   "Our organisation actively encourages adoption of new digital tools and technologies to improve how work is designed and executed.",
+   "When new technology is introduced, most employees approach it with genuine curiosity and openness rather than resistance and avoidance.",
+   "Senior leaders visibly model the use of digital tools and data-driven approaches in their own daily ways of working and communicating.",
+   "Important business decisions are regularly and meaningfully informed by data analytics and digital insights, not solely by experience, intuition, or hierarchy.",
+   "Meaningful and ongoing investment is made in digital skills development at all organisational levels, not only for technically designated staff.",
+   "Employees feel genuinely confident suggesting technology-based improvements to existing processes and workflows without fear of their ideas being dismissed.",
+   "This organisation has a clear, communicated, and actionable digital strategy that employees at all levels understand and can connect to their daily responsibilities.",
+   "Digital transformation initiatives are actively sponsored and visibly championed at the executive level, not simply delegated to and managed within the IT function.",
+   "Before full organisational deployment, new digital approaches are regularly piloted at a smaller scale, creating structured space for learning, iteration, and improvement.",
+   "Failure in a digital experiment is consistently treated as a valuable learning opportunity and a sign of healthy risk-taking rather than a cause for blame or punitive accountability.",
+   "Cross-functional collaboration on digital projects happens naturally, proactively, and with minimal bureaucratic friction in this organisation.",
+   "Our workforce collectively possesses the digital literacy required to perform effectively in current roles and to adapt with reasonable ease to tomorrow's evolving digital requirements."
+  ],
+  "D8": [
+   "In this organisation, it is genuinely safe to take a reasonable professional or interpersonal risk, even when the outcome of that risk is genuinely uncertain.",
+   "People in this organisation can raise problems, surface concerns, and speak uncomfortable truths without realistic fear of negative consequences for their standing or career.",
+   "When mistakes occur in this organisation, they are approached as opportunities for collective learning and systemic improvement rather than as occasions for individual blame or shame.",
+   "Asking colleagues or managers for assistance (regardless of seniority or reporting-line relationships) is seen here as a sign of mature collaboration, not as personal weakness.",
+   "People here feel genuinely comfortable challenging decisions, plans, perspectives, or assumptions, including those expressed or endorsed by senior and executive leaders.",
+   "Diverse, dissenting, and unconventional viewpoints are actively sought out, carefully considered, and meaningfully incorporated when important organisational decisions are being made.",
+   "I can bring my authentic perspective and full identity to work in this organisation without needing to mask, suppress, or edit who I am or how I genuinely think.",
+   "Concerns about ethical issues, unfair treatment, unsafe practices, or value conflicts can be raised in this organisation without realistic fear of retaliation, marginalisation, or exclusion.",
+   "When a person sincerely disagrees with a decision that has been made, they are able to express that disagreement openly and directly without it damaging their professional standing or relationships.",
+   "This organisation's culture does not pressure people to perform certainty, project false confidence, or pretend they fully understand things they do not actually understand.",
+   "People in positions of authority in this organisation actively, visibly, and consistently invite challenge, productive dissent, and critical questioning rather than implicitly discouraging it.",
+   "Failures, setbacks, and near-miss incidents are discussed openly and constructively in this organisation so that collective learning occurs and avoidable mistakes are not repeated."
+  ],
+  "D9": [
+   "Leadership communicates clearly, consistently, and with genuine transparency about the purpose, rationale, and expected impacts of significant organisational changes.",
+   "Employees feel genuinely heard, acknowledged, and meaningfully considered when they raise concerns, questions, or reservations about planned changes and strategic directions.",
+   "There is a compelling, specific, and widely understood organisational vision for where this organisation is heading and the reasoning behind that direction.",
+   "Adequate and well-planned resources (including time, budget, and appropriately skilled people) are allocated to support major change and transformation initiatives.",
+   "Middle managers in this organisation actively champion, personally embody, and consistently role-model the changes that senior leadership is formally requesting.",
+   "When this organisation has undertaken significant transformation or change efforts in the past, it has generally followed through with sufficient discipline, sustained commitment, and visible results.",
+   "Effective feedback mechanisms exist that allow employees at all levels to share their honest views on how change is actually unfolding, and to have confidence those views are genuinely considered.",
+   "This organisation actively recognises, rewards, and publicly celebrates behaviours and outcomes that demonstrably align with its stated strategic direction and desired cultural values.",
+   "This organisation is able to sustain meaningful change momentum over a 12 to 24 month period without significant energy loss, widespread confusion, or visible reversion to previous patterns.",
+   "Employees at all levels understand concretely and specifically what new behaviours, priorities, and ways of working are expected of them during significant transformation efforts.",
+   "This organisation systematically and deliberately learns from past change efforts (both successes and instructive failures) and actively applies those lessons to subsequent transformation initiatives.",
+   "The pace, sequencing, and communication of change in this organisation feels coherent and manageable rather than chaotic, exhausting, poorly planned, or inadequately supported."
+  ]
+ },
+ "eos": [
+  "How likely would you be to recommend this organisation as a genuinely great place to work to a trusted friend or valued colleague?",
+  "How would you rate the overall quality and effectiveness of leadership at all levels in this organisation?",
+  "How would you rate this organisation's commitment to genuine innovation, creative risk-taking, and trying new approaches?",
+  "How satisfied are you with the quality and accessibility of professional development and career growth opportunities available to you?",
+  "How would you rate the transparency, openness, and quality of communication from organisational leadership?",
+  "How would you rate this organisation's tangible support for healthy work-life integration and genuine employee wellbeing?",
+  "How inclusive, fair, and equitable is this workplace in its treatment of people from all backgrounds, identities, and perspectives?",
+  "How effectively does this organisation's strategy and direction translate into clarity, meaning, and purpose in your day-to-day work?"
+ ],
+ "qual": [
+  {
+   "code": "Q1",
+   "title": "Culture Strengths",
+   "text": "What are the greatest STRENGTHS of this organisation's culture? What specific aspects of how things are done here make you proud to be part of this organisation? Please give concrete examples wherever possible."
+  },
+  {
+   "code": "Q2",
+   "title": "Culture Challenges",
+   "text": "What are the most significant CHALLENGES in how things are done here? What specific cultural patterns, behaviours, or organisational norms frustrate you most? What gets in the way of the organisation being at its best?"
+  },
+  {
+   "code": "Q3",
+   "title": "The One Change",
+   "text": "If you could change ONE thing about how this organisation operates (one cultural pattern, behavioural norm, structural feature, or leadership practice), what would it be, and why would that single change have the greatest impact?"
+  }
+ ],
+ "self360": [
+  "I invest significant time in mentoring and developing my direct reports.",
+  "I prioritise team cohesion and consensus-building over individual speed.",
+  "I actively work to resolve interpersonal conflicts and preserve a supportive team environment.",
+  "I treat my team members with empathy and value them as members of the organisation.",
+  "I include everyone fairly and make sure all voices in my team are heard, regardless of role or background.",
+  "I recognise and celebrate team achievements, effort, and individual contributions.",
+  "I actively invest in the long-term career growth and well-being of each team member.",
+  "I seek input from my team before making decisions that materially affect them.",
+  "I make myself available to listen to both professional and personal concerns.",
+  "I build trust through consistent follow-through on the commitments I make to my team.",
+  "I encourage my team to take calculated risks, even when some attempts may fail.",
+  "I continuously scan the market for emerging trends, technologies, and customer needs.",
+  "I prefer flexible, non-linear approaches to solving complex business problems.",
+  "I thrive in ambiguity and can pivot quickly when conditions change.",
+  "I champion new product ideas, distribution models, and service innovations.",
+  "I challenge “the way we have always done it” thinking within my team.",
+  "I allocate time, budget, and resources for experimentation and pilots.",
+  "I articulate a compelling future vision for my function that energises the team.",
+  "I stay informed about new technology, digital transformation, and disruption in the sector.",
+  "I treat setbacks and failed experiments as opportunities to learn and iterate.",
+  "I define success primarily by meeting or exceeding KPIs, targets, and financial goals.",
+  "I push my team to outperform our competitors in the market.",
+  "I am comfortable being demanding to ensure deliverables are completed on time and to standard.",
+  "I stay close to customers and the market, tracking customer feedback, competitor moves and performance benchmarks.",
+  "I set stretch goals that raise the performance bar for my unit.",
+  "I hold my team rigorously accountable for results and the consequences of missed targets.",
+  "I make tough decisions quickly when performance is lagging.",
+  "I prioritise speed to market when launching new products, services, or campaigns.",
+  "I communicate a clear sense of urgency and competitive intensity in my team.",
+  "I translate wins into visible momentum that drives the next target.",
+  "I ensure every process in my area follows established SOPs and regulatory requirements.",
+  "I believe clear reporting lines, roles, and structure are essential to success.",
+  "I focus on technical accuracy and minimising errors in core operations, transactions, and client documentation.",
+  "I prefer predictable, proven outcomes over experimental approaches for core operations.",
+  "I track internal metrics, dashboards, and performance reports with discipline.",
+  "I document decisions, processes, and lessons learned for institutional memory.",
+  "I enforce adherence to internal controls, audit standards, and company policy.",
+  "I plan meticulously and manage resources within approved budgets.",
+  "I standardise workflows to ensure consistent service quality across teams.",
+  "I minimise operational risk through careful, methodical execution.",
+  "I conduct my work with transparency, honesty, and the highest ethical standards.",
+  "I ensure customers, clients or beneficiaries are treated fairly and receive services that genuinely meet their needs.",
+  "I consistently model the organisation’s core values in my decisions and behaviour.",
+  "I address unethical behaviour in my team promptly and firmly, regardless of performance record.",
+  "I safeguard confidential information and proactively manage conduct, compliance and reputational risk.",
+  "I communicate expectations, change, and strategic direction clearly to my team.",
+  "I actively invite challenge and dissenting views and respond without defensiveness or penalty.",
+  "I listen actively and demonstrate that I have understood the other party’s position before responding.",
+  "I give timely, specific, and constructive feedback, both positive and developmental.",
+  "I openly admit my own mistakes and treat others’ mistakes as opportunities to learn rather than to blame.",
+  "I align my team’s priorities with the organisation’s strategy and explain how each person’s work contributes to it.",
+  "I demonstrate a strong grasp of the organisation’s business or operating model: its key revenue or funding drivers, cost structure, and the metrics that matter most.",
+  "I anticipate how market, regulatory, economic, technological and social changes will affect the organisation.",
+  "I make data-informed decisions rather than relying solely on intuition or hierarchy.",
+  "I actively sponsor the adoption of digital tools and new ways of working in my team, rather than leaving it to the IT function.",
+  "I explain concretely what new behaviours, priorities and ways of working are expected during change.",
+  "I secure adequate time, budget and skilled people before launching major change.",
+  "I sustain momentum and follow through on change initiatives until results are visible.",
+  "I systematically apply lessons from past change efforts, both successes and failures, to new initiatives.",
+  "I balance short-term delivery pressure with long-term investment in people, capability and strategy."
+ ],
+ "rater360": [
+  "This leader invests significant time in mentoring and developing direct reports.",
+  "This leader prioritises team cohesion and consensus-building over individual speed.",
+  "This leader actively works to resolve interpersonal conflicts and preserve a supportive team environment.",
+  "This leader treats team members with empathy and values them as members of the organisation.",
+  "This leader includes everyone fairly and makes sure all voices in the team are heard, regardless of role or background.",
+  "This leader recognises and celebrates team achievements, effort, and individual contributions.",
+  "This leader actively invests in the long-term career growth and well-being of each team member.",
+  "This leader seeks input from the team before making decisions that materially affect them.",
+  "This leader makes themselves available to listen to both professional and personal concerns.",
+  "This leader builds trust through consistent follow-through on commitments made to the team.",
+  "This leader encourages the team to take calculated risks, even when some attempts may fail.",
+  "This leader continuously scans the market for emerging trends, technologies, and customer needs.",
+  "This leader prefers flexible, non-linear approaches to solving complex business problems.",
+  "This leader thrives in ambiguity and pivots quickly when conditions change.",
+  "This leader champions new product ideas, distribution models, and service innovations.",
+  "This leader challenges “the way we have always done it” thinking within the team.",
+  "This leader allocates time, budget, and resources for experimentation and pilots.",
+  "This leader articulates a compelling future vision that energises the team.",
+  "This leader stays informed about new technology, digital transformation, and disruption in the sector.",
+  "This leader treats setbacks and failed experiments as opportunities to learn and iterate.",
+  "This leader defines success primarily by meeting or exceeding KPIs, targets, and financial goals.",
+  "This leader pushes the team to outperform competitors in the market.",
+  "This leader is comfortable being demanding to ensure deliverables are completed on time and to standard.",
+  "This leader stays close to customers and the market, tracking customer feedback, competitor moves and performance benchmarks.",
+  "This leader sets stretch goals that raise the performance bar for the unit.",
+  "This leader holds the team rigorously accountable for results and the consequences of missed targets.",
+  "This leader makes tough decisions quickly when performance is lagging.",
+  "This leader prioritises speed to market when launching new products, services, or campaigns.",
+  "This leader communicates a clear sense of urgency and competitive intensity in the team.",
+  "This leader translates wins into visible momentum that drives the next target.",
+  "This leader ensures every process in their area follows established SOPs and regulatory requirements.",
+  "This leader believes clear reporting lines, roles, and structure are essential to success.",
+  "This leader focuses on technical accuracy and minimising errors in core operations, transactions, and client documentation.",
+  "This leader prefers predictable, proven outcomes over experimental approaches for core operations.",
+  "This leader tracks internal metrics, dashboards, and performance reports with discipline.",
+  "This leader documents decisions, processes, and lessons learned for institutional memory.",
+  "This leader enforces adherence to internal controls, audit standards, and company policy.",
+  "This leader plans meticulously and manages resources within approved budgets.",
+  "This leader standardises workflows to ensure consistent service quality across teams.",
+  "This leader minimises operational risk through careful, methodical execution.",
+  "This leader conducts their work with transparency, honesty, and the highest ethical standards.",
+  "This leader ensures customers, clients or beneficiaries are treated fairly and receive services that genuinely meet their needs.",
+  "This leader consistently models the organisation’s core values in their decisions and behaviour.",
+  "This leader addresses unethical behaviour in the team promptly and firmly, regardless of performance record.",
+  "This leader safeguards confidential information and proactively manages conduct, compliance and reputational risk.",
+  "This leader communicates expectations, change, and strategic direction clearly to the team.",
+  "This leader actively invites challenge and dissenting views and responds without defensiveness or penalty.",
+  "This leader listens actively and demonstrates understanding of the other party’s position before responding.",
+  "This leader gives timely, specific, and constructive feedback, both positive and developmental.",
+  "This leader openly admits their own mistakes and treats others’ mistakes as opportunities to learn rather than to blame.",
+  "This leader aligns the team’s priorities with the organisation’s strategy and explains how each person’s work contributes to it.",
+  "This leader demonstrates a strong grasp of the organisation’s business or operating model: its key revenue or funding drivers, cost structure, and the metrics that matter most.",
+  "This leader anticipates how market, regulatory, economic, technological and social changes will affect the organisation.",
+  "This leader makes data-informed decisions rather than relying solely on intuition or hierarchy.",
+  "This leader actively sponsors the adoption of digital tools and new ways of working in the team, rather than leaving it to the IT function.",
+  "This leader explains concretely what new behaviours, priorities and ways of working are expected during change.",
+  "This leader secures adequate time, budget and skilled people before launching major change.",
+  "This leader sustains momentum and follows through on change initiatives until results are visible.",
+  "This leader systematically applies lessons from past change efforts, both successes and failures, to new initiatives.",
+  "This leader balances short-term delivery pressure with long-term investment in people, capability and strategy."
+ ]
+}

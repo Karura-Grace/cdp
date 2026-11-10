@@ -1,0 +1,118 @@
+/* Report, segments and 360 sections (.cds-*). Used only inside the staff shell, so they take its tokens (staff.css). */
+.cds .tiny{font-size:11.5px}
+.cds-card{background:#fff;border:1px solid var(--line);box-shadow:0 6px 22px rgba(30,40,60,.07)}
+.cds-sec{scroll-margin-top:80px}
+.cds-sec>h2{font-family:inherit;font-weight:700;margin-bottom:3px;display:flex;align-items:center}
+.cds-sub{color:var(--grey)}
+.cds-pill{display:inline-block;font-weight:800;letter-spacing:.4px;border-radius:999px;text-transform:uppercase}
+.cds-pill.orange{background:#fdeee9;color:var(--orange-d)}.cds-pill.grey{background:#eef0f2;color:#6b7480}.cds-pill.green{background:#e4f3ee;color:#0e8a72}
+.cds-explain{background:#f5f7fa;border-left:3px solid var(--orange);border-radius:8px;color:#42505f}
+.cds [dir=rtl] .cds-explain,[dir=rtl] .cds-explain{border-left:0;border-right:3px solid var(--orange)}
+.cds-kpis{display:grid}
+.cds-kpi{background:#fff;border:1px solid var(--line);box-shadow:0 6px 22px rgba(30,40,60,.07);text-align:center}
+.cds-kpi .k-l{color:var(--grey);font-weight:600}
+.cds-kpi .k-v{font-family:inherit;font-weight:800;line-height:1}
+.cds-kpi .k-n{font-weight:700}
+.cds-headline{display:flex;align-items:flex-start;background:linear-gradient(120deg,#fff,#fff7f4);border-color:#f6ded4}
+.cds-two{display:grid;grid-template-columns:1.15fr .85fr}
+@media(max-width:880px){.cds-two{grid-template-columns:1fr}}
+.cds-chart{position:relative}
+.cds-gaprow{display:grid;grid-template-columns:118px 1fr 54px;gap:10px;align-items:center;border-bottom:1px solid var(--line)}
+.cds-gaprow:last-of-type{border-bottom:0}
+.cds-track{background:#eef0f2;border-radius:6px;height:10px;overflow:hidden}
+.cds-track>div{height:10px;border-radius:6px}
+.cds-gtag{text-align:right;font-weight:800;font-family:inherit;font-size:14px}
+.cds-gauges{display:grid;grid-template-columns:repeat(3,1fr)}
+@media(max-width:720px){.cds-gauges{grid-template-columns:1fr}}
+.cds-gauge{text-align:center}
+.cds-gwrap{position:relative}
+.cds-gval{position:absolute;left:0;right:0;text-align:center;font-family:inherit;font-weight:800}
+.cds-glabel{font-weight:700;margin-top:2px;font-family:inherit}
+.cds-check{padding:12px 0;border-bottom:1px solid var(--line)}.cds-check:last-child{border:0}
+.cds-check .top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.cds-toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.cds .btn{background:var(--orange);color:#fff;border:0;border-radius:10px;padding:9px 16px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;font-size:13.5px}
+.cds .btn.gold{background:var(--orange)}
+
+/* ---- density pass: tighter, senior-dashboard rhythm ---- */
+.cds{font-size:14px}
+.cds-card{padding:15px 17px;margin-bottom:13px;border-radius:14px}
+.cds-sec{margin-bottom:18px}
+.cds-sec>h2{font-size:16.5px;gap:8px}
+.cds-sub{font-size:12.5px;margin-bottom:9px}
+.cds-pill{font-size:10px;padding:2px 8px}
+.cds-kpis{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.cds-kpi{padding:12px 14px;border-radius:13px}
+.cds-kpi .k-l{font-size:11.5px}
+.cds-kpi .k-v{font-size:22px;margin:3px 0 1px}
+.cds-kpi .k-n{font-size:11px}
+.cds-headline{gap:13px;padding:15px 17px}
+.cds-headline p{font-size:15px!important}
+.cds-explain{font-size:12.5px;padding:9px 12px;margin-top:10px;line-height:1.45}
+.cds-chart{height:250px}
+.cds-two{gap:13px}
+.cds-gaprow{padding:6px 0}
+.cds-gauges{gap:12px}
+.cds-gwrap{height:126px}
+.cds-gval{bottom:22px;font-size:20px}
+.cds-glabel{font-size:13.5px}
+.cds-check{padding:10px 0}
+.cds h3{font-size:14.5px}
+/* interactive upgrades */
+.cds-kpi{transition:transform .15s,box-shadow .15s}
+.cds-kpi:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(30,40,60,.14)}
+.cds-seg{display:inline-flex;background:#eef0f2;border-radius:999px;padding:4px;gap:2px;margin-bottom:10px}
+.cds-seg button{border:0;background:transparent;font-family:inherit;font-size:12px;font-weight:700;color:var(--grey);padding:6px 15px;border-radius:999px;cursor:pointer;transition:all .15s}
+.cds-seg button.on{background:#fff;color:var(--orange-d);box-shadow:0 2px 6px rgba(30,40,60,.12)}
+
+/* hover fix over the live site: keep the pointer over the lifted tile */
+.cds-kpi{position:relative}
+.cds-kpi::after{content:"";position:absolute;left:0;right:0;top:100%;height:8px}
+/* new design */
+.cds-sec{scroll-margin-top:24px}
+.cds-sec>h2{font-size:19px;font-weight:700}
+.cds-card,.cds-kpi{border-color:var(--line);box-shadow:var(--e1);border-radius:14px}
+.cds-kpi:hover{box-shadow:var(--e2);transform:none}
+.cds-headline{background:linear-gradient(120deg,#fff,#FFF6F1);border-color:#F3D9CC}
+.cds-explain{background:var(--paper);border-left-color:var(--orange);color:#3d3d3d}
+.cds-seg{background:var(--paper-2)}
+.stf .cds .btn,.stf .cds-toolbar .btn{background:var(--ink);border-radius:10px}
+
+/* Culture map: the four squares as a data plot (components/culture-map.tsx) */
+.cmap{margin:0;display:flex;flex-direction:column;gap:10px;width:100%}
+.cmap svg{display:block;width:100%;max-width:520px;margin-inline:auto;height:auto;overflow:visible}
+.cmap-name{font:700 11px var(--font-poppins),sans-serif;letter-spacing:.14em}
+.cmap-axis{font:700 11px var(--font-poppins),sans-serif;letter-spacing:.16em;fill:#706F6F}
+.cmap-ring rect{stroke:#706F6F;stroke-opacity:.22;stroke-dasharray:2 3}
+.cmap-tick{font:600 8.5px var(--font-poppins),sans-serif;fill:#706F6F}
+.cmap-cross{stroke:#706F6F;stroke-opacity:.35;fill:none}
+.cmap-arrow{stroke:#EB5733;stroke-width:3;stroke-linecap:round}
+.cmap-chip{font:700 8.5px var(--font-poppins),sans-serif;letter-spacing:.08em}
+.cmap-dot{cursor:pointer;outline:none}
+.cmap-dot:focus-visible circle{stroke:#EB5733;stroke-width:3}
+.cmap-cap{display:flex;flex-direction:column;gap:4px;text-align:center;font-size:12px;color:#51606f}
+.cmap-tip{min-height:16px;font-size:11.5px;color:#8494a3}
+.cmap .sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* ---- option C (Q-RD3, 28 Oct 2026): the same cards, tiles, chips and strips as the report page; last rules win ---- */
+.cds-card,.cds-kpi{border:1px solid var(--hair,#E9E2D6);box-shadow:none;border-radius:22px}
+.cds-card{padding:18px 20px;margin-bottom:18px}
+.cds-kpi{padding:16px 18px;text-align:left}
+.cds-kpi:hover{box-shadow:none;transform:none}
+.cds-kpi .k-l{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.cds-kpi .k-v{font-size:clamp(26px,3vw,34px);letter-spacing:-.03em;margin:8px 0 4px}
+.cds-kpis{gap:14px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.cds-sec>h2{font-size:22px;font-weight:800;letter-spacing:-.02em}
+.cds-headline{background:#fff7f3;border-color:#f0c9bb}
+.cds-explain{background:#F4EFE6;border-left:0;border-radius:14px;padding:12px 16px;color:#3d3d3d}
+[dir=rtl] .cds-explain{border-right:0}
+.cds-pill{height:24px;display:inline-flex;align-items:center;padding:0 10px;font-size:11px;letter-spacing:.06em}
+.cds-pill.grey{background:#F4EFE6;color:#5a5750}.cds-pill.green{background:#e6f1e8;color:#2F6F40}
+.cds-seg{background:#F4EFE6}
+.cds-seg button.on{color:var(--ink);box-shadow:0 0 0 1px var(--hair,#E9E2D6)}
+.stf .cds .btn,.stf .cds-toolbar .btn{background:var(--ink);border-radius:999px;padding:9px 18px}
+.cds-track{background:#EFE9DD}
+.cds-check{border-bottom-color:var(--hair,#E9E2D6)}
+.cds-two{gap:18px}.cds-two>.pt-chart{min-width:0}
+.scard>.pt-exp{margin:0 0 14px}
+.cds-card>h2{font-size:16px;font-weight:800;letter-spacing:-.01em;margin:0 0 2px}

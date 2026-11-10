@@ -1,0 +1,814 @@
+[
+ {
+  "file": "n01-ch0-4.csv",
+  "id": "N1.1-011",
+  "status": "Built",
+  "problems": [
+   "label not found in oracle.test.ts: \"evaluation deep\""
+  ]
+ },
+ {
+  "file": "n01-ch0-4.csv",
+  "id": "N1.2-003",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-setup-perspectives.mjs: \"facilitator checks\""
+  ]
+ },
+ {
+  "file": "n01-ch0-4.csv",
+  "id": "N1.2.1-DEMO",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-privacy.mjs: \"demographics cells\""
+  ]
+ },
+ {
+  "file": "n01-ch0-4.csv",
+  "id": "N1.2.2-H",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-setup-perspectives.mjs: \"h1 over\""
+  ]
+ },
+ {
+  "file": "n01-ch0-4.csv",
+  "id": "N1.3.1-OVR1",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-360.mjs: \"consultant cannot\""
+  ]
+ },
+ {
+  "file": "n01-ch0-4.csv",
+  "id": "N1.4.5-DPO",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-privacy.mjs: \"dpia cells\""
+  ]
+ },
+ {
+  "file": "n01-ch0-4.csv",
+  "id": "N1.4.5-RIGHTS",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-privacy.mjs: \"rights cells\""
+  ]
+ },
+ {
+  "file": "n01-ch0-4.csv",
+  "id": "N1.4.5-XBORDER",
+  "status": "Built",
+  "problems": [
+   "test reference names no file: unchanged"
+  ]
+ },
+ {
+  "file": "n01-ch0-4.csv",
+  "id": "N2.2-TIME",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-launch-checks.mjs: \"ce cells\""
+  ]
+ },
+ {
+  "file": "n01-ch0-4.csv",
+  "id": "N2.11.1-CS",
+  "status": "Built",
+  "problems": [
+   "line 87 beyond end of apps/web/app/v1/survey/route.ts"
+  ]
+ },
+ {
+  "file": "n01-ch0-4.csv",
+  "id": "N4.7-NOEXPOSE",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-360.mjs: \"consultant cannot\""
+  ]
+ },
+ {
+  "file": "n03-ch10.csv",
+  "id": "N10.1-001",
+  "status": "Built",
+  "problems": [
+   "test file not found: scripts/api-data.mjs"
+  ]
+ },
+ {
+  "file": "n03-ch10.csv",
+  "id": "N10.1-T03",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-org.mjs: \"org import\""
+  ]
+ },
+ {
+  "file": "n03-ch10.csv",
+  "id": "N10.1-T15",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-live.mjs: \"submit paths\""
+  ]
+ },
+ {
+  "file": "n03-ch10.csv",
+  "id": "N10.1-T28",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-segments.mjs: \"audit log\""
+  ]
+ },
+ {
+  "file": "n03-ch10.csv",
+  "id": "N10.2-001",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-lifecycle.mjs: \"tenant create\""
+  ]
+ },
+ {
+  "file": "n03-ch10.csv",
+  "id": "N10.3-S06",
+  "status": "Built",
+  "problems": [
+   "label not found in spec.test.ts: \"fixture eos\""
+  ]
+ },
+ {
+  "file": "n03-ch10.csv",
+  "id": "N10.3-A02",
+  "status": "Built",
+  "problems": [
+   "label not found in spec.test.ts: \"happy path\""
+  ]
+ },
+ {
+  "file": "n03-ch10.csv",
+  "id": "N10.3-A05",
+  "status": "Built",
+  "problems": [
+   "test reference names no file: oracle/cases/fixture.json action watchlist matches"
+  ]
+ },
+ {
+  "file": "n03-ch10.csv",
+  "id": "N10.3-A07",
+  "status": "Built",
+  "problems": [
+   "test reference names no file: oracle/cases/fixture.json review_points"
+  ]
+ },
+ {
+  "file": "n03-ch10.csv",
+  "id": "N10.4-009",
+  "status": "Built",
+  "problems": [
+   "label not found in acceptance.test.ts: \"same 360\""
+  ]
+ },
+ {
+  "file": "n03-ch10.csv",
+  "id": "N10.4-017",
+  "status": "Built",
+  "problems": [
+   "label not found in packages/cdp-engine/test/analytics.test.ts: \"oracle test\""
+  ]
+ },
+ {
+  "file": "n03-ch10.csv",
+  "id": "N10.6-P4a",
+  "status": "Built",
+  "problems": [
+   "label not found in packages/cdp-engine/test/spec.test.ts: \"143 147\""
+  ]
+ },
+ {
+  "file": "n03-ch10.csv",
+  "id": "N10.8-01",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-live.mjs: \"submit paths\""
+  ]
+ },
+ {
+  "file": "n03-ch10.csv",
+  "id": "N10.8-17",
+  "status": "Built",
+  "problems": [
+   "no evidence_test"
+  ]
+ },
+ {
+  "file": "n03-ch10.csv",
+  "id": "N10.9-D06",
+  "status": "Built",
+  "problems": [
+   "label not found in packages/cdp-engine/test/oracle.test.ts: \"29 welchp\""
+  ]
+ },
+ {
+  "file": "n03-ch10.csv",
+  "id": "N10.9-D09",
+  "status": "Built",
+  "problems": [
+   "label not found in packages/cdp-engine/test/spec.test.ts: \"73 225\""
+  ]
+ },
+ {
+  "file": "n03-ch10.csv",
+  "id": "N10.9-D10",
+  "status": "Built",
+  "problems": [
+   "label not found in packages/cdp-engine/test/spec.test.ts: \"94 235\""
+  ]
+ },
+ {
+  "file": "n04-partB.csv",
+  "id": "N11.11-001",
+  "status": "Built",
+  "problems": [
+   "label not found in packages/cdp-engine/test/spec.test.ts: \"gaps and\""
+  ]
+ },
+ {
+  "file": "n04-partB.csv",
+  "id": "N11.11-002",
+  "status": "Built",
+  "problems": [
+   "label not found in packages/cdp-engine/test/spec.test.ts: \"line 331\""
+  ]
+ },
+ {
+  "file": "n04-partB.csv",
+  "id": "N11.12.1-004",
+  "status": "Built",
+  "problems": [
+   "no evidence_test"
+  ]
+ },
+ {
+  "file": "n04-partB.csv",
+  "id": "N11.12.1-006",
+  "status": "Built",
+  "problems": [
+   "no evidence_test"
+  ]
+ },
+ {
+  "file": "n04-partB.csv",
+  "id": "N11.12.1-007",
+  "status": "Built",
+  "problems": [
+   "no evidence_test"
+  ]
+ },
+ {
+  "file": "n04-partB.csv",
+  "id": "N11.12.1-011",
+  "status": "Built",
+  "problems": [
+   "no evidence_test"
+  ]
+ },
+ {
+  "file": "n04-partB.csv",
+  "id": "N11.12.2-007",
+  "status": "Built",
+  "problems": [
+   "no evidence_test"
+  ]
+ },
+ {
+  "file": "n04-partB.csv",
+  "id": "N11.12.2-009",
+  "status": "Built",
+  "problems": [
+   "no evidence_test"
+  ]
+ },
+ {
+  "file": "n04-partB.csv",
+  "id": "N11.12.2-010",
+  "status": "Built",
+  "problems": [
+   "no evidence_test"
+  ]
+ },
+ {
+  "file": "n04-partB.csv",
+  "id": "N12.3.3-002",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-plan.mjs: \"companion rules\""
+  ]
+ },
+ {
+  "file": "n04-partB.csv",
+  "id": "N12.3.3-005",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-plan.mjs: \"companion rules\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "S0.3-001",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-setup.mjs: \"with no\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "S0.4-006",
+  "status": "Built",
+  "problems": [
+   "label not found in packages/cdp-engine/test/oracle.test.ts: \"122 cases\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "T7-tenant.PAC",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-org.mjs: \"con can\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "T7-tenant.CA",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-org.mjs: \"ca can\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "T7-org.SA",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-org.mjs: \"rls org\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "T7-org.CO",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-org.mjs: \"rls org\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "T7-rows.PAC",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-360.mjs: \"consultant cannot\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "T7-scores.SA",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-release.mjs: \"released root\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "T7-scores.CA",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-release.mjs: \"released admin\"",
+   "label not found in scripts/e2e-release.mjs: \"released admin\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "T7-scores.EX",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-release.mjs: \"released exec\"",
+   "label not found in scripts/e2e-release.mjs: \"released exec\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "T7-orgrep.SA",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-release.mjs: \"released root\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "T7-orgrep.PAC",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-ui.mjs: \"consultant released\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "T7-orgrep.CA",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-ui.mjs: \"admin released\"",
+   "label not found in scripts/e2e-release.mjs: \"released admin\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "T7-orgrep.EX",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-ui.mjs: \"exec released\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "T7-orgrep.PL",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-ui.mjs: \"lead released\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "S0.5-009",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-360.mjs: \"consultant cannot\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "S0.8-NN2",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-360.mjs: \"consultant cannot\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "S0.8-NN5",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/e2e-ui.mjs: \"admin released\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "S0.8-NN7",
+  "status": "Built",
+  "problems": [
+   "label not found in packages/cdp-engine/test/acceptance.test.ts: \"blocking gate\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "S0.8-NN8",
+  "status": "Built",
+  "problems": [
+   "label not found in packages/cdp-engine/test/acceptance.test.ts: \"222 checkexport\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "APPG-23",
+  "status": "Built",
+  "problems": [
+   "label not found in packages/cdp-engine/test/spec.test.ts: \"urgencytier tests\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "APPG-25",
+  "status": "Built",
+  "problems": [
+   "label not found in packages/cdp-engine/test/acceptance.test.ts: \"escalation visiblesignalmissed\""
+  ]
+ },
+ {
+  "file": "p01-ch0-G-H.csv",
+  "id": "APPH-D-06",
+  "status": "Built",
+  "problems": [
+   "label not found in packages/cdp-engine/test/acceptance.test.ts: \"299 pulsetriggers\""
+  ]
+ },
+ {
+  "file": "p02-ch1.csv",
+  "id": "S1.4.2-009",
+  "status": "Built",
+  "problems": [
+   "label not found in e2e-setup.mjs: \"a agrees\""
+  ]
+ },
+ {
+  "file": "p02-ch1.csv",
+  "id": "S1.4.2-F2",
+  "status": "Built",
+  "problems": [
+   "label not found in e2e-setup.mjs: \"f saved\""
+  ]
+ },
+ {
+  "file": "p02-ch1.csv",
+  "id": "S1.4.5-010",
+  "status": "Built",
+  "problems": [
+   "test reference names no file: e2e-export: draft export refused (EXPORT_FORBIDDEN 403)",
+   "test reference names no file: people lead cannot export the board summary"
+  ]
+ },
+ {
+  "file": "p02-ch1.csv",
+  "id": "S1.5.3-001",
+  "status": "Built",
+  "problems": [
+   "label not found in spec.test.ts: \"uses derivesetup\""
+  ]
+ },
+ {
+  "file": "p04-ch3-D.csv",
+  "id": "AC-3.1",
+  "status": "Built",
+  "problems": [
+   "label not found in packages/cdp-engine/test/spec.test.ts: \"all listed\""
+  ]
+ },
+ {
+  "file": "p04-ch3-D.csv",
+  "id": "AC-3.6",
+  "status": "Built",
+  "problems": [
+   "label not found in scripts/inspect-ac24.mjs: \"pass lines\""
+  ]
+ },
+ {
+  "file": "p05-ch4.csv",
+  "id": "S4.1-001",
+  "status": "Built",
+  "problems": [
+   "label not found in oracle.test.ts: \"evaluation deep\""
+  ]
+ },
+ {
+  "file": "p05-ch4.csv",
+  "id": "S4.4-004",
+  "status": "Built",
+  "problems": [
+   "label not found in oracle.test.ts: \"evaluation deep\""
+  ]
+ },
+ {
+  "file": "p05-ch4.csv",
+  "id": "S4.5.4-005",
+  "status": "Built",
+  "problems": [
+   "label not found in oracle.test.ts: \"evaluation deep\""
+  ]
+ },
+ {
+  "file": "p05-ch4.csv",
+  "id": "S4.5.4-006",
+  "status": "Built",
+  "problems": [
+   "label not found in oracle.test.ts: \"evaluation deep\""
+  ]
+ },
+ {
+  "file": "p05-ch4.csv",
+  "id": "S4.5.6-001",
+  "status": "Built",
+  "problems": [
+   "label not found in oracle.test.ts: \"evaluation deep\""
+  ]
+ },
+ {
+  "file": "p05-ch4.csv",
+  "id": "S4.5.6-002",
+  "status": "Built",
+  "problems": [
+   "label not found in oracle.test.ts: \"evaluation deep\""
+  ]
+ },
+ {
+  "file": "p06-ch5.csv",
+  "id": "S5.5.9-003",
+  "status": "Built",
+  "problems": [
+   "label not found in acceptance.test.ts: \"migration 16\""
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6.2-003",
+  "status": "Built",
+  "problems": [
+   "line 61 beyond end of advance/route.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6-04.c",
+  "status": "Built",
+  "problems": [
+   "line 117 beyond end of trend.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6-05",
+  "status": "Built",
+  "problems": [
+   "line 144 beyond end of apps/web/lib/rollover.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6.5-003",
+  "status": "Built",
+  "problems": [
+   "line 129 beyond end of packages/cdp-engine/src/reassess.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6.5-004",
+  "status": "Built",
+  "problems": [
+   "line 130 beyond end of packages/cdp-engine/src/reassess.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6.5-005",
+  "status": "Built",
+  "problems": [
+   "line 131 beyond end of packages/cdp-engine/src/reassess.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6.5-007",
+  "status": "Built",
+  "problems": [
+   "line 141 beyond end of packages/cdp-engine/src/reassess.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6.5-008",
+  "status": "Built",
+  "problems": [
+   "line 142 beyond end of packages/cdp-engine/src/reassess.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6.5-009",
+  "status": "Built",
+  "problems": [
+   "line 143 beyond end of packages/cdp-engine/src/reassess.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6.5-015",
+  "status": "Built",
+  "problems": [
+   "line 159 beyond end of packages/cdp-engine/src/reassess.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6.5-016",
+  "status": "Built",
+  "problems": [
+   "line 160 beyond end of packages/cdp-engine/src/reassess.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6.5-017",
+  "status": "Built",
+  "problems": [
+   "line 161 beyond end of packages/cdp-engine/src/reassess.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6.5-018",
+  "status": "Built",
+  "problems": [
+   "line 163 beyond end of packages/cdp-engine/src/reassess.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6.5-019",
+  "status": "Built",
+  "problems": [
+   "line 157 beyond end of packages/cdp-engine/src/reassess.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6.5-AR1",
+  "status": "Built",
+  "problems": [
+   "line 177 beyond end of packages/cdp-engine/src/reassess.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6.5-AR2",
+  "status": "Built",
+  "problems": [
+   "line 177 beyond end of packages/cdp-engine/src/reassess.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6.5-AR6",
+  "status": "Built",
+  "problems": [
+   "line 177 beyond end of packages/cdp-engine/src/reassess.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6.6-001",
+  "status": "Built",
+  "problems": [
+   "line 199 beyond end of packages/cdp-engine/src/reassess.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6.6-002",
+  "status": "Built",
+  "problems": [
+   "line 198 beyond end of packages/cdp-engine/src/reassess.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "S6.6-RO5",
+  "status": "Built",
+  "problems": [
+   "line 102 beyond end of lib/trend.ts"
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "APPE-P2",
+  "status": "Built",
+  "problems": [
+   "label not found in spec.test.ts: \"see p02\""
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "APPE-P4",
+  "status": "Built",
+  "problems": [
+   "label not found in spec.test.ts: \"ut ids\""
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "APPE-P5",
+  "status": "Built",
+  "problems": [
+   "label not found in spec.test.ts: \"ut ids\""
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "APPE-P6",
+  "status": "Built",
+  "problems": [
+   "label not found in spec.test.ts: \"ut ids\""
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "APPE-P8",
+  "status": "Built",
+  "problems": [
+   "label not found in spec.test.ts: \"ut ids\""
+  ]
+ },
+ {
+  "file": "p07-ch6-E-F.csv",
+  "id": "APPF-003",
+  "status": "Built",
+  "problems": [
+   "label not found in oracle.test.ts: \"122 datasets\""
+  ]
+ }
+]

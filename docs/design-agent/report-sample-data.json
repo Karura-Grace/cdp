@@ -1,0 +1,897 @@
+{
+ "_note": "FICTIONAL sample for design work: Zendaro Group (invented name, owner Q-D8-22), 45 invited, 41 answered (5 executives, 36 staff). Numbers come from demo sample 7. No real respondent data. Shapes follow the CDP score object and evaluation; the names block, departments, leadership_360 and themes were added 4 Nov (owner Q-D8-17).",
+ "organisation": "Zendaro Group",
+ "respondents": {
+  "invited": 45,
+  "submitted": 41,
+  "executives": 5,
+  "staff": 36
+ },
+ "score": {
+  "eos": {
+   "Q1": 41,
+   "Q2": -2,
+   "Q3": -29,
+   "Q4": -27,
+   "Q5": 15,
+   "Q6": 5,
+   "Q7": 46,
+   "Q8": -22,
+   "index": "3.4"
+  },
+  "counts": {
+   "now": 41,
+   "preferred": 41
+  },
+  "cohorts": {
+   "staff": {
+    "n": 36,
+    "now": {
+     "ENGAGE": "23.17",
+     "GOVERN": "23.90",
+     "PERFORM": "30.20",
+     "INNOVATE": "22.73"
+    }
+   },
+   "executive": {
+    "n": 5,
+    "now": {
+     "ENGAGE": "30.40",
+     "GOVERN": "20.01",
+     "PERFORM": "25.62",
+     "INNOVATE": "23.97"
+    }
+   }
+  },
+  "quality": {
+   "flags": {
+    "SPEEDING": 0,
+    "STRAIGHT_LINING": 0,
+    "UNIFORM_ALLOCATION": 0,
+    "PERSPECTIVE_DUPLICATION": 0
+   },
+   "states": {
+    "COMPLETE": 41
+   },
+   "median_duration": 1664
+  },
+  "analytics": {
+   "risk": {
+    "gap": "51",
+    "band": "MEDIUM",
+    "index": "50",
+    "dispersion": "64",
+    "misalignment": "35",
+    "misalignment_source": "PERCEPTION_GAP"
+   },
+   "entropy": {
+    "band": "MODERATE",
+    "score": "10.13"
+   },
+   "tensions": [
+    {
+     "a": "ENGAGE",
+     "b": "PERFORM",
+     "band": "HIGH",
+     "pair": "ENGAGE_PERFORM",
+     "score": "10.0"
+    },
+    {
+     "a": "INNOVATE",
+     "b": "GOVERN",
+     "band": "HIGH",
+     "pair": "INNOVATE_GOVERN",
+     "score": "10.0"
+    }
+   ],
+   "gap_bands": {
+    "ENGAGE": "SIGNIFICANT",
+    "GOVERN": "SIGNIFICANT",
+    "PERFORM": "SIGNIFICANT",
+    "INNOVATE": "SIGNIFICANT"
+   },
+   "dispersion": {
+    "D1": {
+     "avg": "7.20",
+     "ENGAGE": "6.13",
+     "GOVERN": "8.69",
+     "PERFORM": "6.50",
+     "INNOVATE": "7.47"
+    },
+    "D2": {
+     "avg": "7.70",
+     "ENGAGE": "6.86",
+     "GOVERN": "9.47",
+     "PERFORM": "6.49",
+     "INNOVATE": "8.00"
+    },
+    "D3": {
+     "avg": "7.74",
+     "ENGAGE": "7.03",
+     "GOVERN": "9.88",
+     "PERFORM": "6.72",
+     "INNOVATE": "7.32"
+    },
+    "D4": {
+     "avg": "8.08",
+     "ENGAGE": "7.95",
+     "GOVERN": "9.15",
+     "PERFORM": "7.79",
+     "INNOVATE": "7.42"
+    },
+    "D5": {
+     "avg": "8.02",
+     "ENGAGE": "6.62",
+     "GOVERN": "9.76",
+     "PERFORM": "7.21",
+     "INNOVATE": "8.49"
+    },
+    "D6": {
+     "avg": "7.55",
+     "ENGAGE": "7.10",
+     "GOVERN": "9.56",
+     "PERFORM": "6.56",
+     "INNOVATE": "6.96"
+    },
+    "overall": "7.71"
+   }
+  },
+  "dominance": {
+   "shared": false,
+   "dominant": [
+    "PERFORM"
+   ],
+   "secondary": "ENGAGE"
+  },
+  "readiness": {
+   "d7": "3.4045",
+   "d8": "3.2297",
+   "d9": "3.1992",
+   "tps": "3.33",
+   "alpha": {
+    "D7": "0.61",
+    "D8": "0.85",
+    "D9": "0.45"
+   },
+   "d7_band": "Moderately ready",
+   "d8_band": "Moderate safety",
+   "d9_band": "Moderate readiness",
+   "coverage": "0.9111",
+   "tps_band": "ENABLEMENT_REQUIRED",
+   "provisional": false,
+   "leadership_alignment": "3.6673",
+   "leadership_alignment_source": "BLENDED"
+  },
+  "congruence": {
+   "band": "FRAGMENTED",
+   "lens": {
+    "PRACTICE": "PERFORM",
+    "STRATEGY": "GOVERN",
+    "agreement": 2,
+    "LEADERSHIP": "ENGAGE"
+   },
+   "dimension_pct": "33.3",
+   "dimension_count": 2
+  },
+  "eos_detail": {
+   "Q1": {
+    "n": 41,
+    "passives": 14,
+    "promoters": 22,
+    "detractors": 5
+   },
+   "Q2": {
+    "n": 41,
+    "passives": 16,
+    "promoters": 12,
+    "detractors": 13
+   },
+   "Q3": {
+    "n": 41,
+    "passives": 15,
+    "promoters": 7,
+    "detractors": 19
+   },
+   "Q4": {
+    "n": 41,
+    "passives": 12,
+    "promoters": 9,
+    "detractors": 20
+   },
+   "Q5": {
+    "n": 41,
+    "passives": 15,
+    "promoters": 16,
+    "detractors": 10
+   },
+   "Q6": {
+    "n": 41,
+    "passives": 17,
+    "promoters": 13,
+    "detractors": 11
+   },
+   "Q7": {
+    "n": 41,
+    "passives": 10,
+    "promoters": 25,
+    "detractors": 6
+   },
+   "Q8": {
+    "n": 41,
+    "passives": 18,
+    "promoters": 7,
+    "detractors": 16
+   }
+  },
+  "lenses_now": {
+   "PRACTICE": {
+    "ENGAGE": "24.42",
+    "GOVERN": "21.47",
+    "PERFORM": "33.08",
+    "INNOVATE": "21.02"
+   },
+   "STRATEGY": {
+    "ENGAGE": "19.16",
+    "GOVERN": "27.84",
+    "PERFORM": "26.92",
+    "INNOVATE": "26.09"
+   },
+   "LEADERSHIP": {
+    "ENGAGE": "32.71",
+    "GOVERN": "20.46",
+    "PERFORM": "24.76",
+    "INNOVATE": "22.07"
+   }
+  },
+  "significant": {
+   "ENGAGE": true,
+   "GOVERN": true,
+   "PERFORM": true,
+   "INNOVATE": true
+  },
+  "dimension_now": {
+   "D1": {
+    "ENGAGE": "22.72",
+    "GOVERN": "24.28",
+    "PERFORM": "31.81",
+    "INNOVATE": "21.20"
+   },
+   "D2": {
+    "ENGAGE": "32.71",
+    "GOVERN": "20.46",
+    "PERFORM": "24.76",
+    "INNOVATE": "22.07"
+   },
+   "D3": {
+    "ENGAGE": "31.26",
+    "GOVERN": "17.71",
+    "PERFORM": "29.00",
+    "INNOVATE": "22.03"
+   },
+   "D4": {
+    "ENGAGE": "19.29",
+    "GOVERN": "22.43",
+    "PERFORM": "38.44",
+    "INNOVATE": "19.84"
+   },
+   "D5": {
+    "ENGAGE": "19.56",
+    "GOVERN": "34.48",
+    "PERFORM": "27.11",
+    "INNOVATE": "18.85"
+   },
+   "D6": {
+    "ENGAGE": "18.76",
+    "GOVERN": "21.20",
+    "PERFORM": "26.72",
+    "INNOVATE": "33.32"
+   }
+  },
+  "strength_band": "DIFFUSE",
+  "classification": {
+   "ENGAGE": "BUILD",
+   "GOVERN": "MODERATE",
+   "PERFORM": "MODERATE",
+   "INNOVATE": "BUILD"
+  },
+  "perception_gap": {
+   "ENGAGE": "7.23",
+   "GOVERN": "3.89",
+   "PERFORM": "4.58",
+   "INNOVATE": "1.24"
+  },
+  "readiness_items": {
+   "D7": [
+    "3.51",
+    "3.46",
+    "3.41",
+    "3.39",
+    "3.37",
+    "3.46",
+    "3.15",
+    "3.49",
+    "3.44",
+    "3.49",
+    "3.32",
+    "3.37"
+   ],
+   "D8": [
+    "3.24",
+    "2.95",
+    "3.29",
+    "3.32",
+    "3.20",
+    "3.32",
+    "3.17",
+    "3.22",
+    "3.17",
+    "3.49",
+    "3.39",
+    "3.00"
+   ],
+   "D9": [
+    "3.39",
+    "3.00",
+    "3.10",
+    "3.29",
+    "3.17",
+    "3.07",
+    "3.29",
+    "3.32",
+    "3.22",
+    "3.17",
+    "3.27",
+    "3.10"
+   ]
+  },
+  "culture_strength": "4.64",
+  "perception_flags": {
+   "ENGAGE": "SHADOW_CULTURE",
+   "GOVERN": "NONE",
+   "PERFORM": "NONE",
+   "INNOVATE": "NONE"
+  },
+  "orientation_scores": {
+   "gap": {
+    "ENGAGE": "11.34",
+    "GOVERN": "-10.10",
+    "PERFORM": "-10.15",
+    "INNOVATE": "8.91"
+   },
+   "now": {
+    "ENGAGE": "24.05",
+    "GOVERN": "23.43",
+    "PERFORM": "29.64",
+    "INNOVATE": "22.88"
+   },
+   "preferred": {
+    "ENGAGE": "35.39",
+    "GOVERN": "13.33",
+    "PERFORM": "19.49",
+    "INNOVATE": "31.79"
+   }
+  },
+  "dimension_preferred": {
+   "D1": {
+    "ENGAGE": "34.23",
+    "GOVERN": "13.66",
+    "PERFORM": "20.06",
+    "INNOVATE": "32.06"
+   },
+   "D2": {
+    "ENGAGE": "38.52",
+    "GOVERN": "13.91",
+    "PERFORM": "17.96",
+    "INNOVATE": "29.61"
+   },
+   "D3": {
+    "ENGAGE": "38.60",
+    "GOVERN": "14.02",
+    "PERFORM": "15.20",
+    "INNOVATE": "32.18"
+   },
+   "D4": {
+    "ENGAGE": "35.69",
+    "GOVERN": "13.75",
+    "PERFORM": "21.89",
+    "INNOVATE": "28.67"
+   },
+   "D5": {
+    "ENGAGE": "32.80",
+    "GOVERN": "13.43",
+    "PERFORM": "19.93",
+    "INNOVATE": "33.85"
+   },
+   "D6": {
+    "ENGAGE": "32.51",
+    "GOVERN": "11.19",
+    "PERFORM": "21.90",
+    "INNOVATE": "34.40"
+   }
+  }
+ },
+ "evaluation": {
+  "checks": {
+   "C1": "MISS",
+   "C2": "HIT",
+   "C3": "PARTIAL_HIT",
+   "C4": "PARTIAL_HIT"
+  },
+  "findings": [
+   {
+    "type": "C1_PERFORMANCE_ALIGNMENT",
+    "metrics": {
+     "subs": {
+      "INNOVATE": "81.7"
+     },
+     "alignment_pct": "81.7"
+    },
+    "verdict": "MISS",
+    "blocking": false,
+    "evidence": {
+     "now": {
+      "INNOVATE": "22.88"
+     },
+     "overrides": [
+      "OVERRIDE_1_BELOW_THRESHOLD",
+      "OVERRIDE_2_LOWEST"
+     ],
+     "requirement": {
+      "type": "SINGLE",
+      "goal_type": "INNOVATION_NEW_MODELS",
+      "thresholds": {
+       "INNOVATE": "28"
+      },
+      "source_refs": [
+       "B3.1",
+       "B3.2"
+      ],
+      "orientations": [
+       "INNOVATE"
+      ],
+      "requirement_id": "req_01"
+     }
+    },
+    "severity": "CRITICAL",
+    "finding_id": "fnd_0001",
+    "orientation": [
+     "INNOVATE"
+    ]
+   },
+   {
+    "type": "C4_MODEL_READINESS",
+    "metrics": {
+     "subs": {
+      "ENGAGE": "80.2",
+      "PERFORM": "98.8"
+     },
+     "alignment_pct": "89.5"
+    },
+    "verdict": "PARTIAL_HIT",
+    "blocking": false,
+    "evidence": {
+     "overrides": [
+      "OVERRIDE_1_BELOW_THRESHOLD"
+     ],
+     "requirement": {
+      "type": "PAIRED",
+      "model": "SERVICE_B2C",
+      "thresholds": {
+       "ENGAGE": "30",
+       "PERFORM": "30"
+      },
+      "orientations": [
+       "ENGAGE",
+       "PERFORM"
+      ],
+      "model_transition": false
+     }
+    },
+    "severity": "HIGH",
+    "finding_id": "fnd_0002",
+    "orientation": [
+     "ENGAGE",
+     "PERFORM"
+    ]
+   },
+   {
+    "type": "C2_BEHAVIOUR_GAP",
+    "metrics": {
+     "rank": 1,
+     "intensity": "MARGINAL",
+     "shared_dominance": false,
+     "behaviour_gap_points": "0.00"
+    },
+    "verdict": "HIT",
+    "blocking": false,
+    "evidence": {
+     "target": "ENGAGE",
+     "profile": {
+      "ENGAGE": "31.99",
+      "GOVERN": "19.09",
+      "PERFORM": "26.88",
+      "INNOVATE": "22.05"
+     }
+    },
+    "severity": "LOW",
+    "finding_id": "fnd_0003",
+    "orientation": [
+     "ENGAGE"
+    ],
+    "escalated_with": null
+   },
+   {
+    "type": "C3_STOP_START",
+    "metrics": {
+     "identity_risk": true,
+     "moderate_count": 1
+    },
+    "verdict": "PARTIAL_HIT",
+    "blocking": false,
+    "evidence": {
+     "offending": [
+      "PERFORM"
+     ]
+    },
+    "severity": "MEDIUM",
+    "finding_id": "fnd_0004",
+    "orientation": [
+     "PERFORM"
+    ]
+   },
+   {
+    "type": "PERCEPTION_GAP",
+    "blocks": {
+     "orientation": "ENGAGE"
+    },
+    "metrics": {
+     "perception_gap": "7.23"
+    },
+    "verdict": "SHADOW_CULTURE",
+    "blocking": true,
+    "severity": "CRITICAL",
+    "finding_id": "fnd_0005",
+    "orientation": [
+     "ENGAGE"
+    ]
+   },
+   {
+    "type": "ENGAGEMENT_MISS",
+    "blocks": {
+     "cohort": "ORGANISATION",
+     "category": "Q2"
+    },
+    "metrics": {
+     "score": -2
+    },
+    "verdict": "FLAG",
+    "blocking": true,
+    "category": "Q2",
+    "severity": "CRITICAL",
+    "finding_id": "fnd_0006"
+   },
+   {
+    "type": "ENGAGEMENT_MISS",
+    "blocks": {
+     "cohort": "ORGANISATION",
+     "category": "Q3"
+    },
+    "metrics": {
+     "score": -29
+    },
+    "verdict": "FLAG",
+    "blocking": true,
+    "category": "Q3",
+    "severity": "CRITICAL",
+    "finding_id": "fnd_0007"
+   },
+   {
+    "type": "ENGAGEMENT_MISS",
+    "blocks": {
+     "cohort": "ORGANISATION",
+     "category": "Q4"
+    },
+    "metrics": {
+     "score": -27
+    },
+    "verdict": "FLAG",
+    "blocking": true,
+    "category": "Q4",
+    "severity": "CRITICAL",
+    "finding_id": "fnd_0008"
+   },
+   {
+    "type": "ENGAGEMENT_MISS",
+    "blocks": {
+     "cohort": "ORGANISATION",
+     "category": "Q8"
+    },
+    "metrics": {
+     "score": -22
+    },
+    "verdict": "FLAG",
+    "blocking": true,
+    "category": "Q8",
+    "severity": "CRITICAL",
+    "finding_id": "fnd_0009"
+   },
+   {
+    "type": "READINESS_SIGNAL",
+    "signal": "TPS_BAND",
+    "metrics": {
+     "band": "ENABLEMENT_REQUIRED",
+     "value": "3.33",
+     "coverage": "0.9111",
+     "provisional": false
+    },
+    "verdict": "FLAG",
+    "blocking": false,
+    "severity": "LOW",
+    "finding_id": "fnd_0010"
+   },
+   {
+    "type": "SUBCULTURE",
+    "metrics": {
+     "dominance_divergence": true
+    },
+    "verdict": "CONFIRMED",
+    "blocking": false,
+    "severity": "HIGH",
+    "finding_id": "fnd_0011",
+    "segment_definition": "department: Finance"
+   },
+   {
+    "type": "SUBCULTURE",
+    "metrics": {
+     "dominance_divergence": true
+    },
+    "verdict": "CONFIRMED",
+    "blocking": false,
+    "severity": "HIGH",
+    "finding_id": "fnd_0012",
+    "segment_definition": "department: People and Culture"
+   },
+   {
+    "type": "ENGAGEMENT_MISS",
+    "blocks": {
+     "cohort": "department: People and Culture",
+     "category": "Q5"
+    },
+    "metrics": {},
+    "verdict": "FLAG",
+    "blocking": true,
+    "category": "Q5",
+    "severity": "MEDIUM",
+    "finding_id": "fnd_0013",
+    "segment_definition": "department: People and Culture"
+   },
+   {
+    "type": "SUBCULTURE",
+    "metrics": {
+     "dominance_divergence": false
+    },
+    "verdict": "CONFIRMED",
+    "blocking": false,
+    "severity": "HIGH",
+    "finding_id": "fnd_0014",
+    "segment_definition": "department: Sales"
+   }
+  ],
+  "scenarios": [
+   {
+    "name": "Shadow culture",
+    "risks": [
+     "Interventions read as out of touch",
+     "Communication increases cynicism",
+     "Programme fails before content"
+    ],
+    "severity": "CRITICAL",
+    "diagnosis": "Executives and staff describe two different organisations.",
+    "hypotheses": [
+     "Which channels do executives rely on?",
+     "Is there an unfiltered upward route?",
+     "Do middle managers translate or buffer?"
+    ],
+    "scenario_id": "SC-05"
+   },
+   {
+    "name": "Sub-culture divergence",
+    "risks": [
+     "Friction at unit boundaries",
+     "Organisation-wide programmes land unevenly"
+    ],
+    "severity": "MEDIUM",
+    "diagnosis": "A unit runs a different operating logic.",
+    "hypotheses": [
+     "Is the unit's logic a strength to protect or a drift to correct?",
+     "What does the unit adopt and what does it do differently?"
+    ],
+    "scenario_id": "SC-06"
+   },
+   {
+    "name": "Capable leader, constrained unit",
+    "risks": [
+     "A capable leader burns out",
+     "Development spend aimed at the wrong person"
+    ],
+    "severity": "MEDIUM",
+    "diagnosis": "The constraint sits above or around the leader.",
+    "hypotheses": [
+     "Which decision rights does the unit lack?",
+     "Is the unit under-resourced relative to its demand?"
+    ],
+    "scenario_id": "SC-08"
+   }
+  ]
+ },
+ "names": {
+  "orientations": {
+   "ENGAGE": "Engage",
+   "INNOVATE": "Innovate",
+   "PERFORM": "Perform",
+   "GOVERN": "Govern"
+  },
+  "dimensions": {
+   "D1": "Cultural DNA",
+   "D2": "Leadership Blueprint",
+   "D3": "People Architecture",
+   "D4": "Cohesion Drivers",
+   "D5": "Strategic Compass",
+   "D6": "Victory Conditions",
+   "D7": "Digital readiness",
+   "D8": "Psychological safety",
+   "D9": "Adaptive capacity"
+  },
+  "voice": {
+   "Q1": "Would recommend as a place to work",
+   "Q2": "Leadership",
+   "Q3": "Innovation climate",
+   "Q4": "Development and growth",
+   "Q5": "Communication",
+   "Q6": "Wellbeing",
+   "Q7": "Inclusion and fairness",
+   "Q8": "Strategic clarity"
+  },
+  "labels": {
+   "readiness_scale": "1 to 5",
+   "gap_middle_band": "Watch",
+   "voice_above_zero": "Positive"
+  }
+ },
+ "departments": {
+  "note": "Departments with fewer than 5 responses are not shown. diff = department now minus organisation now.",
+  "rows": [
+   {
+    "label": "Finance",
+    "n": 8,
+    "dominant": "GOVERN",
+    "now": {
+     "ENGAGE": 20.6,
+     "INNOVATE": 15.5,
+     "PERFORM": 29.5,
+     "GOVERN": 34.4
+    },
+    "diff": {
+     "ENGAGE": -3.5,
+     "INNOVATE": -7.4,
+     "PERFORM": -0.1,
+     "GOVERN": 11
+    }
+   },
+   {
+    "label": "Operations",
+    "n": 12,
+    "dominant": "PERFORM",
+    "now": {
+     "ENGAGE": 18,
+     "INNOVATE": 17,
+     "PERFORM": 34.2,
+     "GOVERN": 30.8
+    },
+    "diff": {
+     "ENGAGE": -6.1,
+     "INNOVATE": -5.9,
+     "PERFORM": 4.6,
+     "GOVERN": 7.4
+    }
+   },
+   {
+    "label": "People and Culture",
+    "n": 6,
+    "dominant": "ENGAGE",
+    "now": {
+     "ENGAGE": 36.1,
+     "INNOVATE": 25,
+     "PERFORM": 21.4,
+     "GOVERN": 17.4
+    },
+    "diff": {
+     "ENGAGE": 12.1,
+     "INNOVATE": 2.1,
+     "PERFORM": -8.2,
+     "GOVERN": -6
+    }
+   },
+   {
+    "label": "Sales",
+    "n": 8,
+    "dominant": "PERFORM",
+    "now": {
+     "ENGAGE": 25.1,
+     "INNOVATE": 27,
+     "PERFORM": 36.3,
+     "GOVERN": 11.6
+    },
+    "diff": {
+     "ENGAGE": 1,
+     "INNOVATE": 4.1,
+     "PERFORM": 6.7,
+     "GOVERN": -11.8
+    }
+   },
+   {
+    "label": "Technology",
+    "n": 7,
+    "dominant": "INNOVATE",
+    "now": {
+     "ENGAGE": 26.9,
+     "INNOVATE": 35,
+     "PERFORM": 21.3,
+     "GOVERN": 16.8
+    },
+    "diff": {
+     "ENGAGE": 2.8,
+     "INNOVATE": 12.1,
+     "PERFORM": -8.3,
+     "GOVERN": -6.6
+    }
+   }
+  ]
+ },
+ "leadership_360": {
+  "leaders": 10,
+  "valid": 9,
+  "min_rater_forms": 3,
+  "bands": {
+   "Ready with support": 6,
+   "Enablement required": 3
+  },
+  "most_common_growth": "INNOVATE",
+  "most_common_default": "GOVERN",
+  "flags": {
+   "integrity": 4
+  },
+  "note": "No leader named on client pages; each leader gets a private result for development only."
+ },
+ "themes": {
+  "commenters": 31,
+  "min_comments_to_show": 8,
+  "rows": [
+   {
+    "theme": "Recognition",
+    "share_pct": 29,
+    "what_people_say": "Good work is noticed late or not at all, and the same few people are thanked."
+   },
+   {
+    "theme": "Decisions",
+    "share_pct": 26,
+    "what_people_say": "Decisions take long to reach the floor and the reasons are rarely explained."
+   },
+   {
+    "theme": "Tools and systems",
+    "share_pct": 19,
+    "what_people_say": "Old systems slow the team down and workarounds become normal."
+   },
+   {
+    "theme": "Growth",
+    "share_pct": 16,
+    "what_people_say": "People want clearer paths to learn and move, and time set aside to do it."
+   },
+   {
+    "theme": "Teamwork",
+    "share_pct": 10,
+    "what_people_say": "Colleagues help each other well inside a team, less so across departments."
+   }
+  ]
+ }
+}

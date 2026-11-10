@@ -1,0 +1,351 @@
+[
+  {
+    "id": "S1.1-002",
+    "status": "Built",
+    "evidence_code": "apps/web/app/v1/engagements/[id]/setup/[section]/agree/route.ts:25-41; apps/web/lib/setup-workshop.ts:14-17,50-60",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: agree with two staff ids / E without Executive and HR entries (409 SETUP_SEQUENCE_VIOLATION); scripts/e2e-setup.mjs: typed name refused",
+    "notes": "Only the consultant writes the AGREED record. The workshop record counts person ids in an executive grade only (typed names refused on save and never counted). E, F and G cannot be agreed without a saved Executive and HR entry. Checks are written; they need migration 20261019020000_setup_confirm_facilitator applied and the app rebuilt (see the report)."
+  },
+  {
+    "id": "S1.1-003",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-workshop.ts:36-60; apps/web/app/v1/engagements/[id]/setup/[section]/agree/route.ts:25-33",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: Section E cannot be agreed before B, C and D (409 SETUP_SEQUENCE_VIOLATION) / G cannot be agreed with no Executive and HR entry; scripts/e2e-setup.mjs: E without Executive and HR entries",
+    "notes": "B, C, D first; E, F, G need both an Executive and an HR entry saved before agreeing; Section I last. Sequence refusals use the new code SETUP_SEQUENCE_VIOLATION (409), added to Appendix J of the .md spec copy (the .docx is not edited). Sections A and H are not gated (sentence names B to G and I only). Checks are written; they need migration 20261019020000_setup_confirm_facilitator applied and the app rebuilt (see the report)."
+  },
+  {
+    "id": "S1.2-003",
+    "status": "Partial",
+    "severity": "Minor",
+    "evidence_code": "apps/web/app/v1/engagements/[id]/organisation/route.ts:10-45",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: Super Admin saves A1 to A4 too / Client Admin saves A1 to A4",
+    "notes": "Setup part closed: the Client Admin and the Super Admin both maintain A1 to A4. Demographics and the respondent list belong to other blocks."
+  },
+  {
+    "id": "S1.2-004",
+    "status": "Built",
+    "evidence_code": "apps/web/app/v1/engagements/[id]/setup/[section]/perspectives/[perspective]/route.ts:10-45; apps/web/app/v1/engagements/[id]/setup/[section]/confirm/route.ts; apps/web/app/engagements/[id]/setup/review/*; supabase/migrations/20261019020000_setup_confirm_facilitator.sql",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: Client Admin drafts Section B/A/C/D; an Executive confirms the agreed Section B; confirming twice records one tick; changing the section clears its ticks; read only: an Executive cannot save, agree or write a draft",
+    "notes": "Decision: Client Admin drafts of A to D are saved as EXECUTIVE perspective rows with status DRAFT (RLS refuses the AGREED perspective to a Client Admin; no new perspective was needed, no other code reads an EXECUTIVE row of A to D). The consultant agrees from them (setup page offers 'Start from the client draft'). Executives confirm each agreed section with a tick stored in the new table setup_confirmation (who and when, audited, cleared when the section changes); Executives get a read only review page at /engagements/{id}/setup/review. Checks are written; they need migration 20261019020000_setup_confirm_facilitator applied and the app rebuilt (see the report)."
+  },
+  {
+    "id": "S1-06",
+    "status": "Partial",
+    "severity": "Minor",
+    "evidence_code": "apps/web/app/engagements/[id]/setup/section-form.tsx:16-60; apps/web/app/v1/engagements/[id]/setup/[section]/route.ts:36-46,60-70; apps/web/app/v1/engagements/[id]/setup/facilitators/route.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: the facilitator pick list / explicit facilitator stored as a user id / not assigned refused / agree without a facilitator",
+    "notes": "Facilitator is a user reference to a PAC consultant assigned to the engagement (pick list endpoint and select in the form); setup_record.facilitator_user_id holds the id and facilitator holds the name shown (old typed text stays on earlier rows). Field level comments are not built (not in this slice's brief). Checks are written; they need migration 20261019020000_setup_confirm_facilitator applied and the app rebuilt (see the report)."
+  },
+  {
+    "id": "S1-07",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-compare.ts:30-56; apps/web/app/engagements/[id]/setup/perspectives/perspectives-client.tsx",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: comparison: both entries captured, six fields / comparison F1: the engine's divergence share / flags",
+    "notes": "Comparison screen and endpoint: Executive, HR and Agreed side by side with a divergence flag per field. Checks are written but not run: they need the server and migration 20261018104500_setup_flags applied."
+  },
+  {
+    "id": "S1-08",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-output.ts:20-50; apps/web/app/engagements/[id]/setup/requirements-panel.tsx",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: requirements: ... (before, after B C D, tie, leadership target)",
+    "notes": "GET /v1/engagements/{id}/setup/requirements and a panel on the setup and perspectives pages show C1, C4, the leadership target and the tie break reason, all from engine functions."
+  },
+  {
+    "id": "S1.4.2-002",
+    "status": "Built",
+    "evidence_code": "apps/web/app/v1/engagements/[id]/setup/[section]/perspectives/[perspective]/route.ts; apps/web/lib/setup-compare.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: consultant saves the Executive entry for E / Client Admin saves the HR entry for E / database: the EXECUTIVE and HR rows exist",
+    "notes": "EXECUTIVE and HR perspectives are captured; only AGREED is read by loadSetup (unchanged)."
+  },
+  {
+    "id": "S1.4.2-004",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-workshop.ts:14-17; apps/web/app/v1/engagements/[id]/setup/[section]/route.ts:30-46",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: an executive and a non executive id save; typed name refused; facilitator checks; pre-flight: typed names no longer count (L2 blocks)",
+    "notes": "Only person ids whose grade is_executive count toward the two executive minimum; typed names are refused on save and legacy typed names on old rows never count. Facilitator is a user reference. Every seed and e2e now uses real executive person ids (scripts/lib/seed.mjs setWorkshopExecutives, seed-measure-demo, rehearsal-verify, e2e-setup). Existing draft engagements in the live database that still carry typed names will fail L2 until their sections are saved again with person ids. Checks are written; they need migration 20261019020000_setup_confirm_facilitator applied and the app rebuilt (see the report)."
+  },
+  {
+    "id": "S1.4.2-005",
+    "status": "Built",
+    "evidence_code": "apps/web/app/v1/engagements/[id]/organisation/route.ts:28-46; apps/web/lib/tenant-fields.ts:44-58",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: Client Admin saves A1 to A4 / refusals / the consultant and super admin cannot edit",
+    "notes": "Edited by the tenant's Client Admin and by the Super Admin through PUT /v1/engagements/{id}/organisation (consultant and Executive get 403). Super Admin also keeps the organisations screen."
+  },
+  {
+    "id": "S1.4.2-006",
+    "status": "Built",
+    "evidence_code": "apps/web/app/v1/engagements/[id]/organisation/route.ts:28-46; apps/web/lib/tenant-fields.ts:44-58",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: Client Admin saves A1 to A4 / refusals / the consultant and super admin cannot edit",
+    "notes": "Edited by the tenant's Client Admin and by the Super Admin through PUT /v1/engagements/{id}/organisation (consultant and Executive get 403). Super Admin also keeps the organisations screen."
+  },
+  {
+    "id": "S1.4.2-007",
+    "status": "Built",
+    "evidence_code": "apps/web/app/v1/engagements/[id]/organisation/route.ts:28-46; apps/web/lib/tenant-fields.ts:44-58",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: Client Admin saves A1 to A4 / refusals / the consultant and super admin cannot edit",
+    "notes": "Edited by the tenant's Client Admin and by the Super Admin through PUT /v1/engagements/{id}/organisation (consultant and Executive get 403). Super Admin also keeps the organisations screen."
+  },
+  {
+    "id": "S1.4.2-008",
+    "status": "Built",
+    "evidence_code": "apps/web/app/v1/engagements/[id]/organisation/route.ts:28-46; apps/web/lib/tenant-fields.ts:44-58",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: Client Admin saves A1 to A4 / refusals / the consultant and super admin cannot edit",
+    "notes": "Edited by the tenant's Client Admin and by the Super Admin through PUT /v1/engagements/{id}/organisation (consultant and Executive get 403). Super Admin also keeps the organisations screen."
+  },
+  {
+    "id": "S1.4.2-010",
+    "status": "Partial",
+    "severity": "Minor",
+    "evidence_code": "apps/web/lib/export/full-model.ts (method chapter, Why the assessment was run); apps/web/lib/report-extras.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: A6 over 2000 characters refused / A6 trigger required",
+    "notes": "Field rule is checked. The trigger is now printed in the method chapter of the full report, but no seeded engagement has an A6 text, so the report line has no automated check yet."
+  },
+  {
+    "id": "S1.4.2-011",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-sections.ts:223",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: B1 four sentences refused / one and three accepted / over 1000 refused; scripts/check-setup-sections.mjs: B1 refuses four sentences",
+    "notes": "Sentences are counted after . ! ?, so an abbreviation counts as a break."
+  },
+  {
+    "id": "S1.4.2-014",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-sections.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: B4 value not in the list / B4 empty list",
+    "notes": ""
+  },
+  {
+    "id": "S1.4.2-015",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-sections.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: B5 over 1000 characters / B5 left out is optional",
+    "notes": ""
+  },
+  {
+    "id": "S1.4.2-020",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-sections.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: C3 trend not in the list / C3 trend required",
+    "notes": ""
+  },
+  {
+    "id": "S1.4.2-021",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-sections.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: C4 over 1000 characters / required",
+    "notes": ""
+  },
+  {
+    "id": "S1.4.2-022",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-sections.ts:82,98",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: C5 with three decimals refused / above 100 / below 0 / as text / two decimals accepted; scripts/check-setup-sections.mjs: C5",
+    "notes": ""
+  },
+  {
+    "id": "S1.4.2-023",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-sections.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: C6 above 365 / fraction / below 0 / at 365 / optional",
+    "notes": ""
+  },
+  {
+    "id": "S1.4.2-025",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-sections.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: D3 over 1000 characters / required",
+    "notes": ""
+  },
+  {
+    "id": "S1.4.2-026",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-sections.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: D4 over 1000 characters / required",
+    "notes": ""
+  },
+  {
+    "id": "S1.4.2-027",
+    "status": "Partial",
+    "severity": "Minor",
+    "evidence_code": "apps/web/lib/export/full-model.ts (gaps chapter, non negotiables under Govern when classed KEEP AND PROTECT)",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: D5 over 1000 characters / required",
+    "notes": "Field rule is checked. The D5 text is now printed in the gaps chapter when Govern is KEEP AND PROTECT, but no automated check builds a report with a D5 text. The short report model (model.ts) and report-story narrative are unchanged."
+  },
+  {
+    "id": "S1.4.2-E1",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-compare.ts; apps/web/app/v1/engagements/[id]/setup/[section]/perspectives/[perspective]/route.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: E1 over 2000 characters refused / required to agree / comparison: consultant flags E2 as different",
+    "notes": "Per perspective entry, with the consultant's divergence flag per field and a SETUP_DIVERGENCE finding."
+  },
+  {
+    "id": "S1.4.2-E2",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-compare.ts; apps/web/app/v1/engagements/[id]/setup/[section]/perspectives/[perspective]/route.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: E2 over 2000 characters refused / required to agree / comparison: consultant flags E2 as different",
+    "notes": "Per perspective entry, with the consultant's divergence flag per field and a SETUP_DIVERGENCE finding."
+  },
+  {
+    "id": "S1.4.2-E3",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-compare.ts; apps/web/app/v1/engagements/[id]/setup/[section]/perspectives/[perspective]/route.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: E3 over 2000 characters refused / required to agree / comparison: consultant flags E2 as different",
+    "notes": "Per perspective entry, with the consultant's divergence flag per field and a SETUP_DIVERGENCE finding."
+  },
+  {
+    "id": "S1.4.2-E4",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-compare.ts; apps/web/app/v1/engagements/[id]/setup/[section]/perspectives/[perspective]/route.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: E4 over 2000 characters refused / required to agree / comparison: consultant flags E2 as different",
+    "notes": "Per perspective entry, with the consultant's divergence flag per field and a SETUP_DIVERGENCE finding."
+  },
+  {
+    "id": "S1.4.2-E5",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-compare.ts; apps/web/app/v1/engagements/[id]/setup/[section]/perspectives/[perspective]/route.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: E5 over 2000 characters refused / required to agree / comparison: consultant flags E2 as different",
+    "notes": "Per perspective entry, with the consultant's divergence flag per field and a SETUP_DIVERGENCE finding."
+  },
+  {
+    "id": "S1.4.2-E6",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-compare.ts; apps/web/app/v1/engagements/[id]/setup/[section]/perspectives/[perspective]/route.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: E6 over 2000 characters refused / required to agree / comparison: consultant flags E2 as different",
+    "notes": "Per perspective entry, with the consultant's divergence flag per field and a SETUP_DIVERGENCE finding."
+  },
+  {
+    "id": "S1.4.2-G5",
+    "status": "Built",
+    "evidence_code": "apps/web/app/v1/assessments/[id]/evaluate/route.ts:10-18",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: G5: evaluation writes the KEEP AND PROTECT orientations back as system entries; G5: the setup output carries the workshop entries and the system entries",
+    "notes": "System entries are stored on engagement.g5_system labelled source SYSTEM and returned beside the workshop entries in the setup output. They are not copied into the rollover plan (lib/rollover.ts is not in this slice). G5 wording stays as the library text (owner decision)."
+  },
+  {
+    "id": "S1.4.2-F1w",
+    "status": "Partial",
+    "severity": "Minor",
+    "evidence_code": "apps/web/lib/setup-sections.ts:103; apps/web/app/v1/engagements/[id]/setup/[section]/route.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: F1 wording: a value statement warns / accepting the warning clears it and records the choice / audited",
+    "notes": "The consultant's override is recorded in the section (f1_overrides) and audited. The observable verb list is still a placeholder until PAC supplies it (open item)."
+  },
+  {
+    "id": "S1.4.2-F2",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-sections.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: F2 six behaviours refused / F2 needs five / tag left out accepted",
+    "notes": ""
+  },
+  {
+    "id": "S1.4.2-F3",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-sections.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: F3 over 1000 characters / required",
+    "notes": ""
+  },
+  {
+    "id": "S1.4.2-F4",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-sections.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: F4 over 1000 characters / required",
+    "notes": ""
+  },
+  {
+    "id": "S1.4.2-F5",
+    "status": "Partial",
+    "severity": "Minor",
+    "evidence_code": "apps/web/lib/export/full-model.ts (gaps chapter, beside the Innovate result)",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: F5 not in the list / required",
+    "notes": "F5 stays a consultant flag (owner decision). Field rule is checked. The risk appetite is printed beside the Innovate result in the gaps chapter of the full report, with no automated check that builds a report with F5 set."
+  },
+  {
+    "id": "S1.4.2-Ftb",
+    "status": "Built",
+    "evidence_code": "apps/web/app/v1/engagements/[id]/setup/[section]/agree/route.ts:47-53",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: a tie break with no recorded reason / a blank reason / a tie break with a reason",
+    "notes": "Reason stored in the F payload (tie_break_reason, up to 500 characters)."
+  },
+  {
+    "id": "S1.5.3-002",
+    "status": "Built",
+    "evidence_code": "apps/web/app/v1/engagements/[id]/setup/[section]/agree/route.ts:47-53",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: a tie with no tie break: 422 SETUP_TIE_UNRESOLVED / outside the tied orientations / no reason",
+    "notes": "Error code SETUP_TIE_UNRESOLVED (422) is now listed in Appendix J of docs/spec/CDP_Platform_Developer_Specification_v2_1.md and in lib/problem.ts; checks in e2e-setup-perspectives.mjs (tie without break, break outside the tied orientations, no reason, blank reason)."
+  },
+  {
+    "id": "S1.5.4-004",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-compare.ts:30-56; apps/web/lib/setup-output.ts:61-95",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: comparison F1: the engine's divergence share; raised as a SETUP_DIVERGENCE finding; consultant flags E2",
+    "notes": "F1 share from engine f1Divergence; text fields by the consultant's flag. Reported as SETUP_DIVERGENCE findings by the comparison endpoint and stored in the setup output at launch; it is not an evaluation finding row (those are produced after scoring)."
+  },
+  {
+    "id": "S1.4.2-Hcf",
+    "status": "Built",
+    "evidence_code": "apps/web/app/v1/engagements/[id]/setup/contradictions/route.ts; apps/web/lib/export/full-model.ts (C3 check)",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: after the debrief the consultant sets H1 and H4 / flags cannot be set before the debrief / Hcf: the contradiction flags appear in the report as C3 evidence",
+    "notes": "Flags live on engagement.contradiction_flags and can be set by the consultant from the REPORTING state onward (decision 18 Oct 2026; earlier DEBRIEF). Checks: refused while SETUP and SCORING, set at REPORTING. The report check runs only when pdftotext and a released organisational report exist."
+  },
+  {
+    "id": "S1.4.2-H1",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-sections.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: H1 over 2000 characters refused / required to agree",
+    "notes": ""
+  },
+  {
+    "id": "S1.4.2-H2",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-sections.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: H2 over 2000 characters refused / required to agree",
+    "notes": ""
+  },
+  {
+    "id": "S1.4.2-H3",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-sections.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: H3 over 2000 characters refused / required to agree",
+    "notes": ""
+  },
+  {
+    "id": "S1.4.2-H4",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-sections.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: H4 over 2000 characters refused / required to agree",
+    "notes": ""
+  },
+  {
+    "id": "S1.4.2-H5",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-sections.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: H5 over 2000 characters refused / required to agree",
+    "notes": ""
+  },
+  {
+    "id": "S1.4.2-H6",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-sections.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: H6 over 2000 characters refused / required to agree",
+    "notes": ""
+  },
+  {
+    "id": "S1.7-001",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/setup-output.ts:99-112; apps/web/app/v1/assessments/[id]/launch/route.ts:32; apps/web/app/v1/engagements/[id]/setup/output/route.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: setup output after launch: stored, version 1, requirements derived / executive grades, executive cohort size and survey settings / the object is stored on the engagement",
+    "notes": "Written to engagement.setup_snapshot at launch (and lazily on first read for a launch made before this change). executive_grades are grade ids; cohorts hold the executive cohort only until Section I cohorts exist."
+  },
+  {
+    "id": "AC-1.3",
+    "status": "Built",
+    "evidence_code": "apps/web/app/v1/engagements/[id]/setup/[section]/agree/route.ts:25-41",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: agree with two staff ids; pre-flight: two executive ids pass L2; typed names no longer count",
+    "notes": "A section is agreed only with a workshop date and two executives that are person ids in an executive grade; typed names never count (owner decision 18 Oct 2026). Checks are written; they need migration 20261019020000_setup_confirm_facilitator applied and the app rebuilt (see the report)."
+  },
+  {
+    "id": "V2",
+    "status": "Built",
+    "evidence_code": "apps/web/lib/org-graph.ts:106-119,194-215; apps/web/lib/preflight.ts",
+    "evidence_test": "scripts/e2e-setup-perspectives.mjs: V2: a leader who was not invited is a blocking defect / the defect clears when the leader is invited",
+    "notes": "Once links exist for the assessment (invitation_roster), engineInput passes invited per person. Before any link exists everyone active on the roster is about to be invited, so only the active person half applies. See Question 8."
+  }
+]

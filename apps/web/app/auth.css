@@ -1,0 +1,61 @@
+/* Sign in, verify device and expired link, in the new design (paper, ink, orange, Inter). Scoped under .auth. */
+.auth{--paper:#FAF7F2;--paper-2:#F3EEE5;--ink:#131313;--grey:#706F6F;--orange:#EB5733;--orange-d:#C2401D;--line:rgba(19,19,19,.12);--ease:cubic-bezier(.23,1,.32,1);
+  min-height:100dvh;display:grid;grid-template-columns:1.05fr .95fr;font-family:var(--font-inter),'Roboto',system-ui,sans-serif;color:var(--ink);line-height:1.5}
+.auth *{box-sizing:border-box}
+.auth h1,.auth h2{font-family:inherit}
+.auth.solo{grid-template-columns:1fr}
+.auth-brand{position:relative;overflow:hidden;background:var(--ink);color:var(--paper);padding:32px clamp(28px,5vw,56px);display:flex;flex-direction:column;justify-content:space-between}
+.auth-brand::after{content:"";position:absolute;top:-160px;right:-140px;width:520px;height:520px;border-radius:50%;background:radial-gradient(closest-side,rgba(235,87,51,.38),transparent);pointer-events:none}
+.auth-brand>*{position:relative;z-index:1}
+.auth-kicker{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--orange)}
+.auth-pac{height:28px;width:auto;display:block}
+.auth-hero{max-width:480px;margin:auto 0}
+.auth-hero h1{font-size:clamp(28px,3.4vw,40px);font-weight:700;line-height:1.12;letter-spacing:-.025em;margin:10px 0 14px}
+.auth-hero p{color:#cfc9bf;font-size:15px;max-width:440px}
+.auth-points{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:10px}
+.auth-points li{display:flex;gap:10px;font-size:14px;color:#ece6dc}
+.auth-points svg{flex:none;margin-top:3px}
+.auth-foot{font-size:12.5px;color:#a9a39a}
+.auth-form{background:var(--paper);display:flex;flex-direction:column;padding:28px clamp(20px,4vw,48px)}
+.auth-top{display:flex;align-items:center;gap:10px}
+.auth-mini{font-weight:800;font-size:28px;letter-spacing:-.03em;line-height:1;color:var(--ink);text-decoration:none}
+.auth-mini span{color:var(--orange)}
+.auth-back{margin-left:auto;display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--ink);text-decoration:none;padding:8px 14px;border:1.5px solid #CFC6B9;border-radius:999px;transition:border-color .15s var(--ease),background-color .15s var(--ease)}
+.auth-back:hover{border-color:var(--ink);background:#fff}
+.auth-minisub{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--grey)}
+.auth-cardwrap{flex:1;display:flex;align-items:center;justify-content:center;padding:20px 0}
+.auth-card{width:100%;max-width:420px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;box-shadow:0 10px 30px rgba(19,19,19,.08),0 1px 3px rgba(19,19,19,.06)}
+.auth-card h2{font-size:24px;font-weight:700;letter-spacing:-.02em}
+.auth-desc{color:var(--grey);font-size:14px;margin-top:4px}
+.auth-label{display:block;font-size:13px;font-weight:600;margin:16px 0 6px}
+.auth-card input{width:100%;padding:12px 14px;border:1.5px solid #CFC6B9;border-radius:10px;font:inherit;font-size:15px;color:var(--ink);background:#fff;transition:border-color .15s var(--ease),box-shadow .15s var(--ease)}
+.auth-card input:focus{outline:none;border-color:var(--orange);box-shadow:0 0 0 3px rgba(235,87,51,.18)}
+.auth-btn{width:100%;margin-top:18px;background:var(--ink);color:#fff;border:0;border-radius:10px;padding:13px 18px;font:inherit;font-size:15px;font-weight:700;cursor:pointer;text-align:center;text-decoration:none;display:inline-block;transition:transform .12s var(--ease),background-color .15s var(--ease)}
+.auth-btn:hover{background:#2b2b2b}
+.auth-btn:active{transform:scale(.98)}
+.auth-btn:disabled{opacity:.45;cursor:not-allowed}
+.auth-btn.orange{background:var(--orange)}.auth-btn.orange:hover{background:var(--orange-d)}
+.auth-btn.ghost{background:transparent;color:var(--ink);border:1.5px solid #CFC6B9}.auth-btn.ghost:hover{border-color:var(--ink);background:#fff}
+.auth a:focus-visible,.auth button:focus-visible,.auth input:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+.auth-err{color:#B3261E;font-size:13.5px;margin-top:12px}
+.auth-note{color:var(--grey);font-size:12.5px;margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
+.auth-note a{color:var(--ink)}
+.auth-badge{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:#FCE6DF;color:var(--orange-d)}
+.auth-soon{margin:14px 0 4px;padding:10px 12px;border-radius:10px;background:var(--paper-2);border:1px dashed #CFC6B9;font-size:13px}
+.auth-otp{display:flex;gap:8px;margin:14px 0 4px}
+.auth-card .auth-otp input{width:100%;text-align:center;font-size:20px;font-weight:700;padding:12px 0}
+.auth-icon{width:52px;height:52px;border-radius:14px;background:#FCE6DF;color:var(--orange-d);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.auth-steps{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:10px;font-size:14px}
+.auth-steps b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--grey)}
+@media (prefers-reduced-motion:reduce){.auth *{transition:none!important}}
+@media (max-width:860px){.auth{grid-template-columns:1fr}.auth-brand{padding:26px 22px}.auth-hero{margin:24px 0}.auth-foot{display:none}.auth-form{padding:22px 16px 40px}}
+
+/* option C (Q-RD3, 28 Oct 2026): the app's radius, hairlines and pill buttons; the CDP mark as the app's ink tile */
+.auth-card{border:1px solid #E9E2D6;border-radius:22px;box-shadow:none}
+.auth-card input{border-radius:14px;border-color:#E2D9CB}
+.auth-btn{border-radius:999px}
+.auth-soon{border-radius:14px}
+.auth-icon{border-radius:16px}
+.auth-badge{height:24px;font-size:11px;font-weight:800;letter-spacing:.06em;padding:0 10px}
+.auth-mini{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:14px;background:var(--ink);color:#fff;font-size:14px;letter-spacing:.02em}
+.auth-mini span{display:none}
